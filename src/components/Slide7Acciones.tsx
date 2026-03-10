@@ -1,28 +1,28 @@
 "use client";
 
 import SlideWrapper from "./SlideWrapper";
-import { AlertTriangle, TrendingUp, Info, ChevronRight } from "lucide-react";
+import { AlertTriangle, TrendingUp, ChevronRight } from "lucide-react";
 
 const alertas = [
   {
     icon: AlertTriangle,
     color: "#E31837",
-    texto: "Feb 2026 con caida de -12.8% vs Feb 2025 ($7.6M vs $8.7M).",
-    accion: "Verificar si hay facturas pendientes. Monitorear cierre de mes.",
-    responsable: "Mario Pena",
-  },
-  {
-    icon: AlertTriangle,
-    color: "#E31837",
-    texto: "BOTANAS Y DERIVADOS cayo -95.5% YTD (de $4.9M a $218K).",
+    texto: "BOTANAS Y DERIVADOS cayo -95.5% YTD (de $4.5M a $202K).",
     accion: "Contactar al cliente. ¿Perdimos la cuenta? ¿Cambiaron de proveedor?",
     responsable: "Direccion",
   },
   {
     icon: AlertTriangle,
     color: "#E31837",
-    texto: "HEB cayo -10.6% YTD ($1.1M a $1.0M). Durito concentra 45.7%.",
-    accion: "Revisar pedidos pendientes. Evaluar ampliar catalogo en la cadena.",
+    texto: "HEB cayo -2.5% YTD ($1.1M a $1.0M). Durito concentra 51.7% del mix.",
+    accion: "Diversificar catalogo en HEB. Evaluar promociones para otros SKUs.",
+    responsable: "Mario Pena",
+  },
+  {
+    icon: AlertTriangle,
+    color: "#E31837",
+    texto: "Datos de Feb-Mar 2026 vienen sin columna Cantidad/Unidades.",
+    accion: "Solicitar exportacion completa del ERP para tener pieza/kilo.",
     responsable: "Mario Pena",
   },
 ];
@@ -31,22 +31,29 @@ const positivos = [
   {
     icon: TrendingUp,
     color: "#27AE60",
-    texto: "ALSUPER crecio +154.0% YTD ($2.5M → $6.4M). 1er cliente nacional.",
-    accion: "Reforzar relacion y explorar ampliacion de catalogo.",
+    texto: "YTD 2026 crece +19.9% vs 2025 ($22.7M vs $19.0M). Ambos meses positivos.",
+    accion: "Mantener impulso y monitorear cierre de Q1.",
+    responsable: "Direccion",
+  },
+  {
+    icon: TrendingUp,
+    color: "#27AE60",
+    texto: "ALSUPER explota +209% YTD ($2.3M → $7.2M). 1er cliente nacional.",
+    accion: "Reforzar relacion, asegurar abasto y explorar ampliar catalogo.",
     responsable: "Mario Pena",
   },
   {
     icon: TrendingUp,
     color: "#27AE60",
-    texto: "MERCO crecio +41.2% YTD. Tostada Roja 70PZ con $2.0M (55.7%).",
-    accion: "Mantener abasto y explorar nuevas lineas con el cliente.",
+    texto: "MERCO crece +83.9% YTD. Tostada Roja 70PZ con $2.8M (54.9% del mix).",
+    accion: "Mantener abasto de tostadas y explorar nuevas lineas.",
     responsable: "Mario Pena",
   },
   {
     icon: TrendingUp,
     color: "#27AE60",
-    texto: "Trayectoria anual: $93.8M (2023) → $128.9M (2025), +37.4% en 2 anos.",
-    accion: "Establecer meta 2026 y monitorear mensualmente.",
+    texto: "Puente Foods: cliente nuevo de exportacion con $437K en 2 meses.",
+    accion: "Dar seguimiento para consolidar la relacion comercial.",
     responsable: "Direccion",
   },
 ];
@@ -116,7 +123,7 @@ export default function Slide7Acciones() {
       {/* Footer crema */}
       <div className="mt-4 bg-[#FDF8F0] rounded-lg px-6 py-3 text-center border border-[#E8DCC8]">
         <p className="text-gray-500 text-xs">
-          Datos actualizados al <span className="text-gray-800 font-semibold">23 de febrero 2026</span> · Resumen Ejecutivo DELIKOS
+          Datos actualizados al <span className="text-gray-800 font-semibold">10 de marzo 2026</span> · Resumen Ejecutivo DELIKOS
         </p>
       </div>
     </SlideWrapper>

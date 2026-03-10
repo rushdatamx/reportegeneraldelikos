@@ -18,7 +18,7 @@ export default function Slide1Portada() {
           Resumen Ejecutivo Sell-In
         </h1>
         <p className="text-2xl text-gray-500 font-light">DELIKOS</p>
-        <p className="text-lg text-gray-400">Febrero 2026</p>
+        <p className="text-lg text-gray-400">Marzo 2026</p>
         <div className="inline-block mt-4 px-6 py-2 rounded-full border border-[#F7B500]/50 text-[#F7B500] text-sm font-semibold bg-white/50">
           YTD 2026 vs 2025
         </div>

@@ -1,17 +1,17 @@
 "use client";
 
 import SlideWrapper from "./SlideWrapper";
-import { TrendingUp, TrendingDown } from "lucide-react";
+import { TrendingUp } from "lucide-react";
 
 const annualData = [
-  { year: "2023", value: "$93.8M", growth: null },
-  { year: "2024", value: "$105.8M", growth: "+12.8%" },
-  { year: "2025", value: "$128.9M", growth: "+21.9%" },
+  { year: "2023", value: "$107.9M", growth: null },
+  { year: "2024", value: "$113.5M", growth: "+5.2%" },
+  { year: "2025", value: "$138.6M", growth: "+22.1%" },
 ];
 
-const stackTotal = 6410 + 3578 + 1027;
-const stackAlsuper = Math.round((6410 / stackTotal) * 100);
-const stackMerco = Math.round((3578 / stackTotal) * 100);
+const stackTotal = 7218 + 4551 + 1037;
+const stackAlsuper = Math.round((7218 / stackTotal) * 100);
+const stackMerco = Math.round((4551 / stackTotal) * 100);
 const stackHeb = 100 - stackAlsuper - stackMerco;
 
 export default function Slide2KPIs() {
@@ -23,33 +23,33 @@ export default function Slide2KPIs() {
       <div className="flex items-center gap-8 mb-6">
         <div className="animate-count-up">
           <p className="text-gray-500 text-sm mb-1">Venta YTD 2026</p>
-          <p className="text-6xl font-bold text-[#F7B500] tracking-tight">$17.8M</p>
+          <p className="text-6xl font-bold text-[#F7B500] tracking-tight">$22.7M</p>
           <p className="text-gray-400 text-xs mt-1">Ene - Feb 2026</p>
         </div>
-        <div className="flex items-center gap-2 bg-[#E31837]/10 border border-[#E31837]/20 rounded-xl px-5 py-3 animate-count-up" style={{ animationDelay: "150ms" }}>
-          <TrendingDown className="w-5 h-5 text-[#E31837]" />
+        <div className="flex items-center gap-2 bg-[#27AE60]/10 border border-[#27AE60]/20 rounded-xl px-5 py-3 animate-count-up" style={{ animationDelay: "150ms" }}>
+          <TrendingUp className="w-5 h-5 text-[#27AE60]" />
           <div>
-            <p className="text-[#E31837] text-2xl font-bold">-2.1%</p>
+            <p className="text-[#27AE60] text-2xl font-bold">+19.9%</p>
             <p className="text-gray-500 text-[10px]">vs YTD 2025</p>
           </div>
         </div>
         <div className="flex-1" />
         <div className="text-right animate-count-up" style={{ animationDelay: "300ms" }}>
           <p className="text-gray-500 text-xs mb-1">Febrero 2026</p>
-          <p className="text-3xl font-bold text-gray-800">$7.6M</p>
+          <p className="text-3xl font-bold text-gray-800">$11.5M</p>
           <div className="flex items-center justify-end gap-1 mt-1">
-            <TrendingDown className="w-3 h-3 text-[#E31837]" />
-            <span className="text-[#E31837] text-sm font-bold">-12.8%</span>
-            <span className="text-gray-400 text-[10px]">vs $8.7M Feb 25</span>
+            <TrendingUp className="w-3 h-3 text-[#27AE60]" />
+            <span className="text-[#27AE60] text-sm font-bold">+25.7%</span>
+            <span className="text-gray-400 text-[10px]">vs $9.1M Feb 25</span>
           </div>
         </div>
         <div className="text-right animate-count-up" style={{ animationDelay: "450ms" }}>
           <p className="text-gray-500 text-xs mb-1">Enero 2026</p>
-          <p className="text-3xl font-bold text-gray-800">$10.2M</p>
+          <p className="text-3xl font-bold text-gray-800">$11.2M</p>
           <div className="flex items-center justify-end gap-1 mt-1">
             <TrendingUp className="w-3 h-3 text-[#27AE60]" />
-            <span className="text-[#27AE60] text-sm font-bold">+7.8%</span>
-            <span className="text-gray-400 text-[10px]">vs Ene 25</span>
+            <span className="text-[#27AE60] text-sm font-bold">+14.4%</span>
+            <span className="text-gray-400 text-[10px]">vs $9.8M Ene 25</span>
           </div>
         </div>
       </div>
@@ -62,8 +62,8 @@ export default function Slide2KPIs() {
           <div style={{ width: `${stackHeb}%`, backgroundColor: "#9CA3AF" }} className="h-full" />
         </div>
         <div className="flex justify-between mt-2 text-[10px]">
-          <span className="text-[#B8860B] font-semibold">ALSUPER $6.4M ({stackAlsuper}%)</span>
-          <span className="text-gray-800 font-semibold">MERCO $3.6M ({stackMerco}%)</span>
+          <span className="text-[#B8860B] font-semibold">ALSUPER $7.2M ({stackAlsuper}%)</span>
+          <span className="text-gray-800 font-semibold">MERCO $4.6M ({stackMerco}%)</span>
           <span className="text-[#6B7280] font-semibold">HEB $1.0M ({stackHeb}%)</span>
         </div>
       </div>
@@ -86,9 +86,9 @@ export default function Slide2KPIs() {
             ))}
           </div>
         </div>
-        <div className="bg-[#E31837]/5 border border-[#E31837]/20 rounded-xl px-5 py-4 max-w-[320px] flex items-center">
-          <p className="text-[#E31837] text-[11px] font-semibold leading-relaxed">
-            &#9888; Feb 2026 muestra caida de -12.8% vs Feb 2025. Verificar si hay facturas pendientes de capturar.
+        <div className="bg-[#27AE60]/5 border border-[#27AE60]/20 rounded-xl px-5 py-4 max-w-[320px] flex items-center">
+          <p className="text-[#27AE60] text-[11px] font-semibold leading-relaxed">
+            &#10003; YTD 2026 crece +19.9% vs 2025. Ambos meses positivos: Ene +14.4%, Feb +25.7%.
           </p>
         </div>
       </div>

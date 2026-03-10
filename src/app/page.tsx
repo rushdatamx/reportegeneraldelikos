@@ -8,6 +8,8 @@ import Slide3Clientes from "@/components/Slide3Clientes";
 import Slide4TopProductos from "@/components/Slide4TopProductos";
 import Slide5Tendencia from "@/components/Slide5Tendencia";
 import Slide6Exportacion from "@/components/Slide6Exportacion";
+import Slide7Acciones from "@/components/Slide7Acciones";
+
 const slides = [
   { component: Slide1Portada, label: "Portada" },
   { component: Slide2KPIs, label: "KPIs" },
@@ -15,6 +17,7 @@ const slides = [
   { component: Slide4TopProductos, label: "Top Productos" },
   { component: Slide5Tendencia, label: "Tendencia" },
   { component: Slide6Exportacion, label: "Exportación" },
+  { component: Slide7Acciones, label: "Acciones" },
 ];
 
 export default function Home() {

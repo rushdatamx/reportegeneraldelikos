@@ -13,30 +13,30 @@ import {
 } from "recharts";
 
 const data = [
-  { mes: "Mar 24", alsuper: 931485, merco: 846783, heb: 113856 },
-  { mes: "Abr 24", alsuper: 1698824, merco: 1047564, heb: 52348 },
-  { mes: "May 24", alsuper: 1704009, merco: 1058000, heb: 112032 },
-  { mes: "Jun 24", alsuper: 1374332, merco: 1107497, heb: 147086 },
-  { mes: "Jul 24", alsuper: 1159919, merco: 1155995, heb: 84570 },
-  { mes: "Ago 24", alsuper: 1308426, merco: 1029216, heb: 20585 },
-  { mes: "Sep 24", alsuper: 1586014, merco: 1557093, heb: 44755 },
-  { mes: "Oct 24", alsuper: 1164566, merco: 1200049, heb: 47174 },
-  { mes: "Nov 24", alsuper: 1697368, merco: 974805, heb: 51905 },
-  { mes: "Dic 24", alsuper: 1951505, merco: 1062805, heb: 810375 },
-  { mes: "Ene 25", alsuper: 1596591, merco: 1586768, heb: 595558 },
-  { mes: "Feb 25", alsuper: 927252, merco: 947841, heb: 553533 },
-  { mes: "Mar 25", alsuper: 7997534, merco: 1275863, heb: 535595 },
-  { mes: "Abr 25", alsuper: 7398584, merco: 1640477, heb: 652552 },
-  { mes: "May 25", alsuper: 2408191, merco: 1314068, heb: 601245 },
-  { mes: "Jun 25", alsuper: 2218516, merco: 1120824, heb: 759314 },
-  { mes: "Jul 25", alsuper: 2857354, merco: 1909930, heb: 605462 },
-  { mes: "Ago 25", alsuper: 2137585, merco: 1539254, heb: 1217619 },
-  { mes: "Sep 25", alsuper: 2448593, merco: 2172498, heb: 426543 },
-  { mes: "Oct 25", alsuper: 3616293, merco: 1630440, heb: 1183197 },
-  { mes: "Nov 25", alsuper: 3523636, merco: 1914256, heb: 331449 },
-  { mes: "Dic 25", alsuper: 2800615, merco: 1451079, heb: 978343 },
-  { mes: "Ene 26", alsuper: 4112155, merco: 2241812, heb: 734917 },
-  { mes: "Feb 26", alsuper: 2297532, merco: 1336266, heb: 292132 },
+  { mes: "Mar 24", alsuper: 862486, merco: 828165, heb: 108397 },
+  { mes: "Abr 24", alsuper: 1572985, merco: 1018370, heb: 49913 },
+  { mes: "May 24", alsuper: 1577786, merco: 1038765, heb: 126001 },
+  { mes: "Jun 24", alsuper: 1272529, merco: 1088115, heb: 140518 },
+  { mes: "Jul 24", alsuper: 1073999, merco: 1132286, heb: 80469 },
+  { mes: "Ago 24", alsuper: 1211506, merco: 1015489, heb: 19060 },
+  { mes: "Sep 24", alsuper: 1468531, merco: 1526147, heb: 41440 },
+  { mes: "Oct 24", alsuper: 1078301, merco: 1154378, heb: 43680 },
+  { mes: "Nov 24", alsuper: 1716641, merco: 951781, heb: 48060 },
+  { mes: "Dic 24", alsuper: 1874303, merco: 1041705, heb: 750347 },
+  { mes: "Ene 25", alsuper: 1478325, merco: 1537337, heb: 551443 },
+  { mes: "Feb 25", alsuper: 858567, merco: 937062, heb: 512531 },
+  { mes: "Mar 25", alsuper: 8126469, merco: 1251241, heb: 495921 },
+  { mes: "Abr 25", alsuper: 7102871, merco: 1602470, heb: 656843 },
+  { mes: "May 25", alsuper: 2360062, merco: 1284541, heb: 556708 },
+  { mes: "Jun 25", alsuper: 2187060, merco: 1245202, heb: 703068 },
+  { mes: "Jul 25", alsuper: 2725262, merco: 1850279, heb: 560613 },
+  { mes: "Ago 25", alsuper: 2048102, merco: 1515668, heb: 1127425 },
+  { mes: "Sep 25", alsuper: 2349493, merco: 2115952, heb: 394948 },
+  { mes: "Oct 25", alsuper: 3434413, merco: 1604708, heb: 1095553 },
+  { mes: "Nov 25", alsuper: 3435425, merco: 1883528, heb: 306897 },
+  { mes: "Dic 25", alsuper: 2659345, merco: 1630668, heb: 905873 },
+  { mes: "Ene 26", alsuper: 3968059, merco: 2183784, heb: 680479 },
+  { mes: "Feb 26", alsuper: 3249655, merco: 2367625, heb: 356499 },
 ];
 
 const formatPesos = (v: number) => `$${(v / 1_000_000).toFixed(1)}M`;
@@ -60,8 +60,8 @@ function CustomTooltip({ active, payload, label }: { active?: boolean; payload?:
 }
 
 const badges = [
-  { mes: "Mar 25", label: "ALSUPER $8.0M", color: "#F7B500", y: 7997534 },
-  { mes: "Abr 25", label: "ALSUPER $7.4M", color: "#F7B500", y: 7398584 },
+  { mes: "Mar 25", label: "ALSUPER $8.1M", color: "#F7B500", y: 8126469 },
+  { mes: "Abr 25", label: "ALSUPER $7.1M", color: "#F7B500", y: 7102871 },
 ];
 
 export default function Slide5Tendencia() {
@@ -138,8 +138,8 @@ export default function Slide5Tendencia() {
       </div>
 
       <div className="flex justify-between mt-2 text-[10px] text-gray-500">
-        <span>Pico: ALSUPER Mar 2025 ($8.0M) — pedido masivo de Almendras y Frutos Secos</span>
-        <span>Datos al 23 de febrero 2026</span>
+        <span>Pico: ALSUPER Mar 2025 ($8.1M) — pedido masivo de Almendras y Frutos Secos</span>
+        <span>Datos al 10 de marzo 2026</span>
       </div>
     </SlideWrapper>
   );

@@ -4,16 +4,16 @@ import SlideWrapper from "./SlideWrapper";
 import { Award } from "lucide-react";
 
 const productos = [
-  { nombre: "Papa Diabla 5.5oz La Molienda", venta: 2940538, pct: 16.6, color: "#F7B500", tag: "Export" },
-  { nombre: "Papa Salada 5.5oz La Molienda", venta: 2178409, pct: 12.3, color: "#F7B500", tag: "Export" },
-  { nombre: "Tostada Roja 70PZ Mi Marca", venta: 1991952, pct: 11.2, color: "#1A1A1A", tag: "MERCO" },
-  { nombre: "Durito con 20 piezas", venta: 711044, pct: 4.0, color: "#9CA3AF", tag: "HEB" },
-  { nombre: "Almendra Rebanada Domo 200g", venta: 625408, pct: 3.5, color: "#F7B500", tag: "ALSUPER" },
-  { nombre: "Papa Frita Natural Mimarca 450g", venta: 555517, pct: 3.1, color: "#F7B500", tag: "ALSUPER" },
-  { nombre: "Uva Pasa Domo 250g", venta: 530842, pct: 3.0, color: "#F7B500", tag: "ALSUPER" },
-  { nombre: "Almendra Entera Domo 250g", venta: 519683, pct: 2.9, color: "#F7B500", tag: "ALSUPER" },
-  { nombre: "Papa Deshidratada 300g", venta: 377263, pct: 2.1, color: "#F7B500", tag: "ALSUPER" },
-  { nombre: "Pistache Salado Domo 200g", venta: 270939, pct: 1.5, color: "#F7B500", tag: "ALSUPER" },
+  { nombre: "Papa Diabla 5.5oz La Molienda", venta: 3769759, pct: 14.7, color: "#F7B500", tag: "Export" },
+  { nombre: "Tostada Roja 70PZ Mi Marca", venta: 2846736, pct: 11.1, color: "#1A1A1A", tag: "MERCO" },
+  { nombre: "Papa Salada 5.5oz La Molienda", venta: 2810546, pct: 11.0, color: "#F7B500", tag: "Export" },
+  { nombre: "Almendra Entera Domo 250g", venta: 854243, pct: 3.3, color: "#F7B500", tag: "ALSUPER" },
+  { nombre: "Durito con 20 piezas", venta: 845610, pct: 3.3, color: "#1A1A1A", tag: "MERCO" },
+  { nombre: "Almendra Rebanada Domo 200g", venta: 799629, pct: 3.1, color: "#F7B500", tag: "ALSUPER" },
+  { nombre: "Uva Pasa Domo 250g", venta: 747930, pct: 2.9, color: "#F7B500", tag: "ALSUPER" },
+  { nombre: "Papa Frita Natural Mimarca 450g", venta: 704955, pct: 2.8, color: "#F7B500", tag: "ALSUPER" },
+  { nombre: "Papa Deshidratada 300g", venta: 457459, pct: 1.8, color: "#F7B500", tag: "ALSUPER" },
+  { nombre: "Rueda Enchilada 84g C/24", venta: 426014, pct: 1.7, color: "#F7B500", tag: "Export" },
 ];
 
 const maxVenta = productos[0].venta;
@@ -37,7 +37,7 @@ export default function Slide4TopProductos() {
         <Award className="w-7 h-7 text-[#F7B500]" />
         <h2 className="text-3xl font-bold text-gray-800">Top 10 Productos 2026</h2>
       </div>
-      <p className="text-gray-500 text-sm mb-5">Ranking por venta acumulada YTD (Ene-Feb) · Top 10 concentra 60.3%</p>
+      <p className="text-gray-500 text-sm mb-5">Ranking por venta acumulada YTD (Ene-Mar parcial) · Top 10 concentra 55.8%</p>
 
       <div className="flex-1 space-y-2">
         {productos.map((p, i) => {
@@ -86,7 +86,7 @@ export default function Slide4TopProductos() {
 
       <div className="mt-3 flex justify-between items-center bg-[#FDF8F0] rounded-lg px-5 py-3 border border-[#E8DCC8]">
         <span className="text-gray-500 text-sm">Total 2026 YTD</span>
-        <span className="text-[#F7B500] font-bold text-lg">$17.8M</span>
+        <span className="text-[#F7B500] font-bold text-lg">$25.6M</span>
       </div>
     </SlideWrapper>
   );

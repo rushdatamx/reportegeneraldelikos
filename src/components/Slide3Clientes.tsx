@@ -7,27 +7,27 @@ const clientes = [
   {
     nombre: "ALSUPER",
     razon: "Operadora Futurama",
-    ytd2025: 2.5,
-    ytd2026: 6.4,
-    variacion: "+154.0%",
+    ytd2025: 2.3,
+    ytd2026: 7.2,
+    variacion: "+208.9%",
     positivo: true,
-    feb2026: "$2.3M",
-    feb2025: "$927K",
-    topProducto: "Almendra Rebanada 200g",
-    topVenta: "$625K (9.8%)",
+    feb2026: "$3.2M",
+    feb2025: "$859K",
+    topProducto: "Almendra Entera Domo 250g",
+    topVenta: "$854K (10.7%)",
     dotColor: "#F7B500",
   },
   {
     nombre: "MERCO",
     razon: "Operadora Merco",
     ytd2025: 2.5,
-    ytd2026: 3.6,
-    variacion: "+41.2%",
+    ytd2026: 4.6,
+    variacion: "+83.9%",
     positivo: true,
-    feb2026: "$1.3M",
-    feb2025: "$948K",
+    feb2026: "$2.4M",
+    feb2025: "$937K",
     topProducto: "Tostada Roja 70PZ",
-    topVenta: "$2.0M (55.7%)",
+    topVenta: "$2.8M (54.9%)",
     dotColor: "#1A1A1A",
   },
   {
@@ -35,23 +35,23 @@ const clientes = [
     razon: "Supermercados Internacionales",
     ytd2025: 1.1,
     ytd2026: 1.0,
-    variacion: "-10.6%",
+    variacion: "-2.5%",
     positivo: false,
-    feb2026: "$292K",
-    feb2025: "$554K",
+    feb2026: "$356K",
+    feb2025: "$513K",
     topProducto: "Durito 20 piezas",
-    topVenta: "$469K (45.7%)",
+    topVenta: "$576K (51.7%)",
     dotColor: "#9CA3AF",
   },
 ];
 
-const maxVal = 6.4;
+const maxVal = 7.2;
 
 export default function Slide3Clientes() {
   return (
     <SlideWrapper className="bg-[#F5F5F5] p-10">
       <h2 className="text-3xl font-bold text-gray-800 mb-1">Desempeno por Cliente</h2>
-      <p className="text-gray-500 text-sm mb-5">YTD Ene-Feb 2025 vs 2026 — Facturación sell-in</p>
+      <p className="text-gray-500 text-sm mb-5">YTD Ene-Feb 2025 vs 2026 — Facturacion sell-in</p>
 
       <div className="grid grid-cols-3 gap-5 flex-1">
         {clientes.map((c, i) => {
@@ -133,7 +133,7 @@ export default function Slide3Clientes() {
           <div className="w-6 h-2.5 rounded bg-[#F7B500]" />
           <span className="text-[#B8860B]">YTD 2026</span>
         </div>
-        <span className="text-gray-400 ml-4">Montos en columna Total (incluye IVA)</span>
+        <span className="text-gray-400 ml-4">Montos en Total (M)</span>
       </div>
     </SlideWrapper>
   );

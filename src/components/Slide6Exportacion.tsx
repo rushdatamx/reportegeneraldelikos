@@ -1,52 +1,53 @@
 "use client";
 
 import SlideWrapper from "./SlideWrapper";
-import { Globe, TrendingDown, TrendingUp, ArrowRight } from "lucide-react";
+import { Globe, TrendingUp, ArrowRight } from "lucide-react";
 
 const clientes = [
   {
     nombre: "La Molienda Mexicana",
     pais: "USA",
     mxn2025ytd: "$6.0M",
-    mxn2026ytd: "$5.6M",
-    variacion: "-7.7%",
-    positivo: false,
-    tc: "1.00 (factura en MXN)",
+    mxn2026ytd: "$6.2M",
+    variacion: "+3.2%",
+    positivo: true,
+    tc: "Factura en MXN",
     nota: "Cliente #1 de exportacion",
   },
   {
     nombre: "Dulces La Mejor",
     pais: "USA",
-    mxn2025ytd: "$80K",
-    mxn2026ytd: "$90K",
-    variacion: "+12.1%",
+    mxn2025ytd: "$1.7M",
+    mxn2026ytd: "$2.1M",
+    variacion: "+27.6%",
     positivo: true,
-    tc: "17.47",
-    nota: "Factura en USD",
+    tc: "TC prom: 7.96",
+    nota: "Crecimiento sostenido",
   },
   {
     nombre: "Puente Foods",
     pais: "USA",
     mxn2025ytd: "$0",
-    mxn2026ytd: "$25K",
+    mxn2026ytd: "$437K",
     variacion: "Nuevo",
     positivo: true,
-    tc: "17.24",
+    tc: "TC prom: 7.96",
     nota: "Cliente nuevo 2026",
   },
 ];
 
 const topProductos = [
-  { nombre: "Papa Diabla 5.5oz La Molienda", venta: "$2.9M" },
-  { nombre: "Papa Salada 5.5oz La Molienda", venta: "$2.2M" },
-  { nombre: "Ranchito con Chile La Molienda", venta: "$227K" },
-  { nombre: "Papa Jalapeno 5.5oz La Molienda", venta: "$165K" },
+  { nombre: "Papa Diabla 5.5oz La Molienda", venta: "$3.8M" },
+  { nombre: "Papa Salada 5.5oz La Molienda", venta: "$2.8M" },
+  { nombre: "Rueda Enchilada 84g C/24", venta: "$426K" },
+  { nombre: "Rueda con Salsita 84g C/24", venta: "$418K" },
+  { nombre: "Ranchito con Chile La Molienda", venta: "$379K" },
 ];
 
 const exportAnual = [
-  { year: "2023", value: "$33.2M", bar: 76 },
-  { year: "2024", value: "$35.9M", bar: 82 },
-  { year: "2025", value: "$43.9M", bar: 100 },
+  { year: "2023", value: "$49.6M", bar: 88 },
+  { year: "2024", value: "$47.0M", bar: 83 },
+  { year: "2025", value: "$56.5M", bar: 100 },
 ];
 
 export default function Slide6Exportacion() {
@@ -56,11 +57,10 @@ export default function Slide6Exportacion() {
         <Globe className="w-7 h-7 text-[#F7B500]" />
         <h2 className="text-3xl font-bold text-gray-800">Exportacion</h2>
       </div>
-      <p className="text-gray-500 text-sm mb-5">Clientes internacionales · YTD Ene-Feb 2026 vs 2025 · Montos en MXN equivalente</p>
+      <p className="text-gray-500 text-sm mb-5">Clientes internacionales · YTD Ene-Feb 2026 vs 2025 · Montos en Total (M)</p>
 
       <div className="grid grid-cols-3 gap-4 mb-5">
         {clientes.map((c, i) => {
-          const Trend = c.positivo ? TrendingUp : TrendingDown;
           const color = c.positivo ? "#27AE60" : "#E31837";
           return (
             <div
@@ -78,12 +78,12 @@ export default function Slide6Exportacion() {
                   className="text-xs font-bold flex items-center gap-0.5"
                   style={{ color }}
                 >
-                  <Trend className="w-3 h-3" />
+                  <TrendingUp className="w-3 h-3" />
                   {c.variacion}
                 </span>
               </div>
               <p className="text-gray-400 text-[10px] mb-1">2025 YTD: {c.mxn2025ytd}</p>
-              <p className="text-gray-400 text-[10px]">TC: {c.tc}</p>
+              <p className="text-gray-400 text-[10px]">{c.tc}</p>
               <p className="text-[#B8860B] text-[10px] mt-2 font-semibold">{c.nota}</p>
             </div>
           );
@@ -106,7 +106,7 @@ export default function Slide6Exportacion() {
           </div>
         </div>
         <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-4">
-          <p className="text-gray-500 text-xs mb-3">Exportacion anual (MXN equivalente)</p>
+          <p className="text-gray-500 text-xs mb-3">Exportacion anual (Total M)</p>
           <div className="space-y-2">
             {exportAnual.map((d, i) => (
               <div key={i}>
@@ -123,7 +123,7 @@ export default function Slide6Exportacion() {
               </div>
             ))}
           </div>
-          <p className="text-[#27AE60] text-[10px] mt-3 font-semibold">+32.2% crecimiento 2023 a 2025</p>
+          <p className="text-[#27AE60] text-[10px] mt-3 font-semibold">+13.9% crecimiento 2023 a 2025</p>
         </div>
       </div>
     </SlideWrapper>
