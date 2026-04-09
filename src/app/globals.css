@@ -6,7 +6,11 @@
   --gold: #F7B500;
   --red: #E31837;
   --green: #27AE60;
+  --blue: #2E75B6;
   --cream: #FDF8F0;
+  --tab-q1: #F7B500;
+  --tab-estrategico: #2E75B6;
+  --tab-tendencias: #27AE60;
 }
 
 @theme inline {

@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Resumen Ejecutivo Sell-In — DELIKOS",
-  description: "Presentación ejecutiva de facturación para dirección",
+  title: "Q1 2026 vs Q1 2025 — DELIKOS Sell-In",
+  description: "Presentación ejecutiva Q1 2026 — facturación sell-in DELIKOS",
 };
 
 export default function RootLayout({
