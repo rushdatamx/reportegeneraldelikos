@@ -7,19 +7,17 @@ const data = [
   {
     year: "2024",
     exportMxn: "$46,956,581",
-    exportUsd: "$2,562,433",
-    totalUsd: "$6,153,661",
+    exportUsd: "$2,608,699",
+    totalUsd: "$6,264,769",
     pctExport: "41.6%",
-    tc: "18.325",
-    bar: 91,
+    bar: 86,
   },
   {
     year: "2025",
     exportMxn: "$54,524,428",
-    exportUsd: "$2,828,177",
-    totalUsd: "$7,028,013",
+    exportUsd: "$3,029,135",
+    totalUsd: "$7,527,392",
     pctExport: "40.2%",
-    tc: "19.279",
     bar: 100,
   },
 ];
@@ -76,10 +74,6 @@ export default function Slide16FDAExportSales() {
                   {d.pctExport}
                 </span>
               </div>
-              <div className="flex items-center justify-between">
-                <span className="text-gray-400 text-xs">TC promedio</span>
-                <span className="text-gray-500 text-xs">{d.tc}</span>
-              </div>
             </div>
           </div>
         ))}
@@ -113,7 +107,7 @@ export default function Slide16FDAExportSales() {
           </div>
           <div className="flex items-center gap-2 mt-3">
             <TrendingUp className="w-4 h-4 text-[#27AE60]" />
-            <span className="text-[#27AE60] text-sm font-bold">+10.4%</span>
+            <span className="text-[#27AE60] text-sm font-bold">+16.1%</span>
             <span className="text-gray-400 text-[10px]">YoY growth (USD)</span>
           </div>
         </div>

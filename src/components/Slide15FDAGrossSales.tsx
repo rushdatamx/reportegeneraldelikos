@@ -7,22 +7,19 @@ const data = [
   {
     year: "2024",
     mxn: "$112,765,842",
-    usd: "$6,153,661",
-    tc: "18.325",
+    usd: "$6,264,769",
     bar: 83,
   },
   {
     year: "2025",
     mxn: "$135,493,059",
-    usd: "$7,028,013",
-    tc: "19.279",
+    usd: "$7,527,392",
     bar: 100,
   },
 ];
 
 const growth = {
-  mxn: "+20.2%",
-  usd: "+14.2%",
+  usd: "+20.2%",
 };
 
 export default function Slide15FDAGrossSales() {
@@ -58,10 +55,6 @@ export default function Slide15FDAGrossSales() {
                 <span className="text-gray-700 font-bold text-sm">
                   {d.mxn}
                 </span>
-              </div>
-              <div className="flex items-center justify-between mt-1">
-                <span className="text-gray-400 text-xs">TC promedio</span>
-                <span className="text-gray-500 text-sm">{d.tc}</span>
               </div>
             </div>
           </div>

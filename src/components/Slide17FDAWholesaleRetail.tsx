@@ -4,14 +4,14 @@ import SlideWrapper from "./SlideWrapper";
 import { ShoppingCart, Building2, ArrowRight } from "lucide-react";
 
 const topClients = [
-  { nombre: "La Molienda Mexicana, LLC", tipo: "Distributor (US)", mxn2024: "$35.2M", mxn2025: "$43.3M" },
-  { nombre: "Botanas y Derivados", tipo: "Distributor", mxn2024: "$28.8M", mxn2025: "$11.7M" },
-  { nombre: "Alsuper (Op. Futurama)", tipo: "Retail chain", mxn2024: "$15.7M", mxn2025: "$38.2M" },
-  { nombre: "MERCO", tipo: "Retail chain", mxn2024: "$12.7M", mxn2025: "$18.1M" },
-  { nombre: "Dulces La Mejor LLC", tipo: "Distributor (US)", mxn2024: "$11.4M", mxn2025: "$9.8M" },
-  { nombre: "HEB / MiTienda", tipo: "Retail chain", mxn2024: "$1.6M", mxn2025: "$7.8M" },
-  { nombre: "Promanuez", tipo: "Distributor", mxn2024: "$2.3M", mxn2025: "$2.2M" },
-  { nombre: "Others (32+ clients)", tipo: "Wholesale", mxn2024: "$5.1M", mxn2025: "$4.4M" },
+  { nombre: "La Molienda Mexicana, LLC", tipo: "Distributor (US)", usd2024: "$2.0M", usd2025: "$2.4M" },
+  { nombre: "Botanas y Derivados", tipo: "Distributor", usd2024: "$1.6M", usd2025: "$652K" },
+  { nombre: "Alsuper (Op. Futurama)", tipo: "Retail chain", usd2024: "$870K", usd2025: "$2.1M" },
+  { nombre: "MERCO", tipo: "Retail chain", usd2024: "$707K", usd2025: "$1.0M" },
+  { nombre: "Dulces La Mejor LLC", tipo: "Distributor (US)", usd2024: "$632K", usd2025: "$542K" },
+  { nombre: "HEB / MiTienda", tipo: "Retail chain", usd2024: "$90K", usd2025: "$434K" },
+  { nombre: "Promanuez", tipo: "Distributor", usd2024: "$125K", usd2025: "$123K" },
+  { nombre: "Others (32+ clients)", tipo: "Wholesale", usd2024: "$284K", usd2025: "$244K" },
 ];
 
 export default function Slide17FDAWholesaleRetail() {
@@ -79,7 +79,7 @@ export default function Slide17FDAWholesaleRetail() {
 
       <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-4 flex-1">
         <p className="text-gray-500 text-xs mb-3">
-          Top wholesale clients (MXN) — 2024 vs 2025
+          Top wholesale clients (USD) — 2024 vs 2025
         </p>
         <div className="space-y-1">
           <div className="flex items-center text-[10px] text-gray-400 border-b border-gray-100 pb-1 mb-1">
@@ -102,10 +102,10 @@ export default function Slide17FDAWholesaleRetail() {
                 {c.tipo}
               </span>
               <span className="text-gray-500 text-[11px] font-semibold w-20 text-right">
-                {c.mxn2024}
+                {c.usd2024}
               </span>
               <span className="text-gray-800 text-[11px] font-bold w-20 text-right">
-                {c.mxn2025}
+                {c.usd2025}
               </span>
             </div>
           ))}
