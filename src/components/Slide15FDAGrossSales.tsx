@@ -29,8 +29,8 @@ export default function Slide15FDAGrossSales() {
   return (
     <SlideWrapper className="bg-[#F5F5F5] p-10">
       <div className="flex items-center gap-3 mb-1">
-        <div className="w-8 h-8 rounded-lg bg-[#2E75B6]/10 flex items-center justify-center">
-          <DollarSign className="w-5 h-5 text-[#2E75B6]" />
+        <div className="w-8 h-8 rounded-lg bg-[#F7B500]/10 flex items-center justify-center">
+          <DollarSign className="w-5 h-5 text-[#F7B500]" />
         </div>
         <h2 className="text-3xl font-bold text-gray-800">
           FDA Audit — Total Annual Gross Sales
@@ -50,7 +50,7 @@ export default function Slide15FDAGrossSales() {
             <p className="text-gray-400 text-xs mb-2 uppercase tracking-wider font-semibold">
               {d.year}
             </p>
-            <p className="text-4xl font-bold text-[#2E75B6] mb-1">{d.usd}</p>
+            <p className="text-4xl font-bold text-[#F7B500] mb-1">{d.usd}</p>
             <p className="text-gray-500 text-sm">USD</p>
             <div className="border-t border-gray-100 mt-4 pt-3">
               <div className="flex items-center justify-between">
@@ -85,7 +85,7 @@ export default function Slide15FDAGrossSales() {
               </div>
               <div className="w-full bg-gray-100 rounded-full h-4">
                 <div
-                  className="h-4 rounded-full bg-[#2E75B6] animate-bar-grow"
+                  className="h-4 rounded-full bg-[#F7B500] animate-bar-grow"
                   style={{
                     width: `${d.bar}%`,
                     animationDelay: `${i * 200}ms`,
@@ -105,8 +105,8 @@ export default function Slide15FDAGrossSales() {
             <p className="text-gray-500 text-[10px]">YoY growth (USD)</p>
           </div>
         </div>
-        <div className="bg-[#2E75B6]/5 border border-[#2E75B6]/20 rounded-xl px-5 py-3 flex-1 flex items-center animate-count-up" style={{ animationDelay: "550ms" }}>
-          <p className="text-[#2E75B6] text-[11px] font-semibold leading-relaxed">
+        <div className="bg-[#F7B500]/5 border border-[#F7B500]/20 rounded-xl px-5 py-3 flex-1 flex items-center animate-count-up" style={{ animationDelay: "550ms" }}>
+          <p className="text-[#F7B500] text-[11px] font-semibold leading-relaxed">
             Source: ERP billing data (Total M column, MXN). Converted to USD using annual average exchange rates from Banxico. All figures represent gross sales before taxes.
           </p>
         </div>
