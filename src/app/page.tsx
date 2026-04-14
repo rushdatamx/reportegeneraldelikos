@@ -17,6 +17,9 @@ import Slide11Tendencia from "@/components/Slide11Tendencia";
 import Slide12Precios from "@/components/Slide12Precios";
 import Slide13Estacionalidad from "@/components/Slide13Estacionalidad";
 import Slide14CierreQ1 from "@/components/Slide14CierreQ1";
+import Slide15FDAGrossSales from "@/components/Slide15FDAGrossSales";
+import Slide16FDAExportSales from "@/components/Slide16FDAExportSales";
+import Slide17FDAWholesaleRetail from "@/components/Slide17FDAWholesaleRetail";
 
 const tabs = [
   {
@@ -52,6 +55,16 @@ const tabs = [
       Slide12Precios,
       Slide13Estacionalidad,
       Slide14CierreQ1,
+    ],
+  },
+  {
+    id: "fda",
+    label: "FDA Audit",
+    color: "#E31837",
+    slides: [
+      Slide15FDAGrossSales,
+      Slide16FDAExportSales,
+      Slide17FDAWholesaleRetail,
     ],
   },
 ];
