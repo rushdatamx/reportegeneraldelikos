@@ -6,7 +6,6 @@ import { Globe, TrendingUp, ArrowRight } from "lucide-react";
 const data = [
   {
     year: "2024",
-    exportMxn: "$46,956,581",
     exportUsd: "$2,608,699",
     totalUsd: "$6,264,769",
     pctExport: "41.6%",
@@ -14,7 +13,6 @@ const data = [
   },
   {
     year: "2025",
-    exportMxn: "$54,524,428",
     exportUsd: "$3,029,135",
     totalUsd: "$7,527,392",
     pctExport: "40.2%",
@@ -61,13 +59,7 @@ export default function Slide16FDAExportSales() {
               {d.exportUsd}
             </p>
             <p className="text-gray-500 text-sm">USD exported to US</p>
-            <div className="border-t border-gray-100 mt-3 pt-3 space-y-1">
-              <div className="flex items-center justify-between">
-                <span className="text-gray-400 text-xs">MXN</span>
-                <span className="text-gray-700 font-bold text-sm">
-                  {d.exportMxn}
-                </span>
-              </div>
+            <div className="border-t border-gray-100 mt-3 pt-3">
               <div className="flex items-center justify-between">
                 <span className="text-gray-400 text-xs">% of total sales</span>
                 <span className="text-[#F7B500] font-bold text-sm">

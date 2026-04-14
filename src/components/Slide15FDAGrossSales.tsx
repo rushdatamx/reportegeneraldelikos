@@ -6,13 +6,11 @@ import { DollarSign, TrendingUp } from "lucide-react";
 const data = [
   {
     year: "2024",
-    mxn: "$112,765,842",
     usd: "$6,264,769",
     bar: 83,
   },
   {
     year: "2025",
-    mxn: "$135,493,059",
     usd: "$7,527,392",
     bar: 100,
   },
@@ -49,14 +47,6 @@ export default function Slide15FDAGrossSales() {
             </p>
             <p className="text-4xl font-bold text-[#F7B500] mb-1">{d.usd}</p>
             <p className="text-gray-500 text-sm">USD</p>
-            <div className="border-t border-gray-100 mt-4 pt-3">
-              <div className="flex items-center justify-between">
-                <span className="text-gray-400 text-xs">MXN</span>
-                <span className="text-gray-700 font-bold text-sm">
-                  {d.mxn}
-                </span>
-              </div>
-            </div>
           </div>
         ))}
       </div>
