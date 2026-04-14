@@ -105,11 +105,6 @@ export default function Slide15FDAGrossSales() {
             <p className="text-gray-500 text-[10px]">YoY growth (USD)</p>
           </div>
         </div>
-        <div className="bg-[#F7B500]/5 border border-[#F7B500]/20 rounded-xl px-5 py-3 flex-1 flex items-center animate-count-up" style={{ animationDelay: "550ms" }}>
-          <p className="text-[#F7B500] text-[11px] font-semibold leading-relaxed">
-            Source: ERP billing data (Total M column, MXN). Converted to USD using annual average exchange rates from Banxico. All figures represent gross sales before taxes.
-          </p>
-        </div>
       </div>
     </SlideWrapper>
   );

@@ -112,11 +112,6 @@ export default function Slide17FDAWholesaleRetail() {
         </div>
       </div>
 
-      <div className="bg-[#27AE60]/5 border border-[#27AE60]/20 rounded-xl px-5 py-3 mt-3 animate-count-up" style={{ animationDelay: "700ms" }}>
-        <p className="text-[#27AE60] text-[11px] font-semibold leading-relaxed">
-          DELIKOS does not operate retail stores or sell directly to end consumers. 100% of sales are B2B: to supermarket chains (Alsuper, MERCO, HEB), national distributors, and US-based export brokers who redistribute the product.
-        </p>
-      </div>
     </SlideWrapper>
   );
 }
