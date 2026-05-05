@@ -4,16 +4,16 @@ import SlideWrapper from "./SlideWrapper";
 import { Award } from "lucide-react";
 
 const productos = [
-  { nombre: "Papa Diabla 5.5oz La Molienda", venta: 4993000, pct: 14.8, tag: "Export" },
-  { nombre: "Tostada Roja 70PZ Mi Marca", venta: 3928000, pct: 11.6, tag: "MERCO" },
-  { nombre: "Papa Salada 5.5oz La Molienda", venta: 3816000, pct: 11.3, tag: "Export" },
-  { nombre: "Almendra Entera Domo 250g", venta: 1532000, pct: 4.5, tag: "ALSUPER" },
-  { nombre: "Durito con 20 piezas", venta: 1388000, pct: 4.1, tag: "Multi" },
-  { nombre: "Uva Pasa Domo 250g", venta: 1100000, pct: 3.3, tag: "ALSUPER" },
-  { nombre: "Almendra Rebanada Domo 200g", venta: 1080000, pct: 3.2, tag: "ALSUPER" },
-  { nombre: "Papa Frita Natural Mimarca 450g", venta: 950000, pct: 2.8, tag: "ALSUPER" },
-  { nombre: "Ranchito con Chile La Molienda", venta: 620000, pct: 1.8, tag: "Export" },
-  { nombre: "Rueda Enchilada 84g C/24", venta: 590000, pct: 1.7, tag: "Export" },
+  { nombre: "Papa Diabla 5.5oz La Molienda", venta: 7311683, pct: 15.7, tag: "Multi" },
+  { nombre: "Papa Salada 5.5oz La Molienda", venta: 5828310, pct: 12.6, tag: "Multi" },
+  { nombre: "Tostada Roja 70PZ Mi Marca", venta: 4556304, pct: 9.8, tag: "MERCO" },
+  { nombre: "Durito con 20 piezas", venta: 1516204, pct: 3.3, tag: "HEB" },
+  { nombre: "Almendra Entera Domo 250g", venta: 1440838, pct: 3.1, tag: "ALSUPER" },
+  { nombre: "Papa Frita Natural Mimarca 450g", venta: 1296448, pct: 2.8, tag: "ALSUPER" },
+  { nombre: "Uva Pasa Domo 250g", venta: 1255014, pct: 2.7, tag: "ALSUPER" },
+  { nombre: "Almendra Rebanada Domo 200g", venta: 1103398, pct: 2.4, tag: "ALSUPER" },
+  { nombre: "Ranchito con Chile La Molienda", venta: 920645, pct: 2.0, tag: "Export" },
+  { nombre: "Papa Deshidratada 300g", venta: 783458, pct: 1.7, tag: "ALSUPER" },
 ];
 
 const maxVenta = productos[0].venta;
@@ -36,9 +36,9 @@ export default function Slide4TopProductos() {
     <SlideWrapper className="bg-[#F5F5F5] p-10">
       <div className="flex items-center gap-3 mb-1">
         <Award className="w-7 h-7 text-[#F7B500]" />
-        <h2 className="text-3xl font-bold text-gray-800">Top 10 Productos Q1 2026</h2>
+        <h2 className="text-3xl font-bold text-gray-800">Top 10 Productos Ene-Abr 2026</h2>
       </div>
-      <p className="text-gray-500 text-sm mb-5">Ranking por venta acumulada Ene-Mar · Top 10 concentra 59.2%</p>
+      <p className="text-gray-500 text-sm mb-5">Ranking por venta acumulada Ene-Abr · Top 10 concentra 56.0%</p>
 
       <div className="flex-1 space-y-2">
         {productos.map((p, i) => {
@@ -85,8 +85,8 @@ export default function Slide4TopProductos() {
       </div>
 
       <div className="mt-3 flex justify-between items-center bg-[#FDF8F0] rounded-lg px-5 py-3 border border-[#E8DCC8]">
-        <span className="text-gray-500 text-sm">Total Q1 2026</span>
-        <span className="text-[#F7B500] font-bold text-lg">$33.7M</span>
+        <span className="text-gray-500 text-sm">Total Ene-Abr 2026</span>
+        <span className="text-[#F7B500] font-bold text-lg">$46.4M</span>
       </div>
     </SlideWrapper>
   );

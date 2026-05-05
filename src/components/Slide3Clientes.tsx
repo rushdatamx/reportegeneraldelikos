@@ -7,48 +7,48 @@ const clientes = [
   {
     nombre: "ALSUPER",
     razon: "Operadora Futurama",
-    q1_2025: 10.1,
-    q1_2026: 10.3,
-    variacion: "+1.7%",
-    positivo: true,
+    q1_2025: 17.2,
+    q1_2026: 13.4,
+    variacion: "-21.8%",
+    positivo: false,
     topMes: "Ene 26: $4.0M",
     topProducto: "Almendra Entera Domo 250g",
-    topVenta: "$1.5M (14.9%)",
+    topVenta: "$1.4M (10.7%)",
     dotColor: "#F7B500",
   },
   {
     nombre: "MERCO",
     razon: "Operadora Merco",
-    q1_2025: 3.7,
-    q1_2026: 6.8,
-    variacion: "+83.6%",
+    q1_2025: 5.3,
+    q1_2026: 8.1,
+    variacion: "+51.7%",
     positivo: true,
-    topMes: "Feb 26: $2.4M",
+    topMes: "Mar 26: $2.4M",
     topProducto: "Tostada Roja 70PZ",
-    topVenta: "$3.9M (57.5%)",
+    topVenta: "$4.6M (56.4%)",
     dotColor: "#1A1A1A",
   },
   {
     nombre: "HEB",
     razon: "Supermercados Internacionales",
-    q1_2025: 1.6,
-    q1_2026: 3.3,
-    variacion: "+113.5%",
+    q1_2025: 2.2,
+    q1_2026: 2.7,
+    variacion: "+26.8%",
     positivo: true,
-    topMes: "Ene 26: $1.5M",
+    topMes: "Mar 26: $1.1M",
     topProducto: "Durito 20 piezas",
-    topVenta: "$1.0M (30.6%)",
+    topVenta: "$1.1M (40.4%)",
     dotColor: "#9CA3AF",
   },
 ];
 
-const maxVal = 10.3;
+const maxVal = 17.2;
 
 export default function Slide3Clientes() {
   return (
     <SlideWrapper className="bg-[#F5F5F5] p-10">
       <h2 className="text-3xl font-bold text-gray-800 mb-1">Top 3 Clientes Nacionales</h2>
-      <p className="text-gray-500 text-sm mb-5">Q1 2025 vs Q1 2026 — Facturacion sell-in</p>
+      <p className="text-gray-500 text-sm mb-5">Ene-Abr 2025 vs 2026 — Facturacion sell-in</p>
 
       <div className="grid grid-cols-3 gap-5 flex-1">
         {clientes.map((c, i) => {
@@ -78,7 +78,7 @@ export default function Slide3Clientes() {
               <div className="space-y-2 mb-4">
                 <div>
                   <div className="flex justify-between text-[10px] mb-1">
-                    <span className="text-gray-500">Q1 2025</span>
+                    <span className="text-gray-500">Ene-Abr 2025</span>
                     <span className="text-gray-600 font-semibold">${c.q1_2025}M</span>
                   </div>
                   <div className="w-full bg-gray-100 rounded-full h-4">
@@ -92,7 +92,7 @@ export default function Slide3Clientes() {
                 </div>
                 <div>
                   <div className="flex justify-between text-[10px] mb-1">
-                    <span className="text-[#B8860B] font-semibold">Q1 2026</span>
+                    <span className="text-[#B8860B] font-semibold">Ene-Abr 2026</span>
                     <span className="text-[#B8860B] font-bold">${c.q1_2026}M</span>
                   </div>
                   <div className="w-full bg-gray-100 rounded-full h-4">
@@ -111,7 +111,7 @@ export default function Slide3Clientes() {
               </div>
 
               <div className="mt-auto bg-[#FDF8F0] rounded-lg p-3 border border-[#E8DCC8]">
-                <p className="text-gray-400 text-[10px] mb-1">Producto #1 Q1 2026</p>
+                <p className="text-gray-400 text-[10px] mb-1">Producto #1 Ene-Abr 2026</p>
                 <p className="text-gray-800 text-sm font-semibold">{c.topProducto}</p>
                 <p className="text-gray-500 text-xs">{c.topVenta}</p>
               </div>
@@ -123,13 +123,13 @@ export default function Slide3Clientes() {
       <div className="flex items-center gap-6 mt-3 justify-center text-[10px]">
         <div className="flex items-center gap-1.5">
           <div className="w-6 h-2.5 rounded bg-gray-800" />
-          <span className="text-gray-500">Q1 2025</span>
+          <span className="text-gray-500">Ene-Abr 2025</span>
         </div>
         <div className="flex items-center gap-1.5">
           <div className="w-6 h-2.5 rounded bg-[#F7B500]" />
-          <span className="text-[#B8860B]">Q1 2026</span>
+          <span className="text-[#B8860B]">Ene-Abr 2026</span>
         </div>
-        <span className="text-gray-400 ml-4">Los 3 clientes nacionales crecen vs Q1 2025</span>
+        <span className="text-gray-400 ml-4">MERCO y HEB crecen; ALSUPER baja vs 2025 (pedidos atipicos Mar-Abr 25)</span>
       </div>
     </SlideWrapper>
   );

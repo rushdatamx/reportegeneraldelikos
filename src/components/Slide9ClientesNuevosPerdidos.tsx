@@ -4,25 +4,26 @@ import SlideWrapper from "./SlideWrapper";
 import { UserPlus, UserMinus, AlertTriangle } from "lucide-react";
 
 const nuevos = [
+  { nombre: "Aztek Marketing LLC", tipo: "Export", monto: "$452K", nota: "Nuevo cliente USA — diversificacion export" },
   { nombre: "Puente Foods LLC", tipo: "Export", monto: "$437K", nota: "Nuevo cliente USA" },
 ];
 
 const crecimiento = [
-  { nombre: "MERCO", tipo: "Nacional", monto: "$6.8M", var: "+83.6%", nota: "Q1 25: $3.7M — crecimiento explosivo" },
-  { nombre: "HEB / MITIENDA", tipo: "Nacional", monto: "$3.3M", var: "+113.5%", nota: "Q1 25: $1.6M — PDQs + Duritos" },
-  { nombre: "La Molienda", tipo: "Export", monto: "$10.1M", var: "+11.2%", nota: "Estable y creciendo" },
+  { nombre: "MERCO", tipo: "Nacional", monto: "$8.1M", var: "+51.7%", nota: "Ene-Abr 25: $5.3M — crecimiento sostenido" },
+  { nombre: "HEB / MITIENDA", tipo: "Nacional", monto: "$2.7M", var: "+26.8%", nota: "Ene-Abr 25: $2.2M — PDQs + Duritos" },
+  { nombre: "Dulces La Mejor", tipo: "Export", monto: "$4.3M", var: "+21.8%", nota: "Ene-Abr 25: $3.5M — crecimiento acelerado" },
 ];
 
 const enRiesgo = [
-  { nombre: "Botanas y Derivados", tipo: "Nacional", q25: "$8.6M", q26: "$202K", var: "-97.7%", nota: "Colapso — era cliente #2 en Q1 25" },
-  { nombre: "ALSUPER", tipo: "Nacional", q25: "$10.1M", q26: "$10.3M", var: "+1.7%", nota: "Estancado vs Q1 25 (efecto Mar 25 atipico)" },
+  { nombre: "Botanas y Derivados", tipo: "Nacional", q25: "$10.1M", q26: "$202K", var: "-98.0%", nota: "Colapso — era cliente #2 en Ene-Abr 25" },
+  { nombre: "ALSUPER", tipo: "Nacional", q25: "$17.2M", q26: "$13.4M", var: "-21.8%", nota: "Baja vs Ene-Abr 25 (pedidos atipicos Mar-Abr 25)" },
 ];
 
 export default function Slide9ClientesNuevosPerdidos() {
   return (
     <SlideWrapper className="bg-[#F5F5F5] p-10">
-      <h2 className="text-3xl font-bold text-gray-800 mb-1">Movimiento de Clientes Q1</h2>
-      <p className="text-gray-500 text-sm mb-4">Nuevos, en crecimiento, y en riesgo — Q1 2025 vs Q1 2026</p>
+      <h2 className="text-3xl font-bold text-gray-800 mb-1">Movimiento de Clientes Ene-Abr</h2>
+      <p className="text-gray-500 text-sm mb-4">Nuevos, en crecimiento, y en riesgo — Ene-Abr 2025 vs Ene-Abr 2026</p>
 
       <div className="flex gap-4 flex-1">
         {/* Column 1: Nuevos + Crecimiento */}
@@ -91,11 +92,11 @@ export default function Slide9ClientesNuevosPerdidos() {
                   </div>
                   <div className="grid grid-cols-2 gap-2 mb-2">
                     <div className="bg-white rounded px-2 py-1">
-                      <p className="text-gray-400 text-[9px]">Q1 2025</p>
+                      <p className="text-gray-400 text-[9px]">Ene-Abr 2025</p>
                       <p className="text-gray-600 font-semibold text-sm">{c.q25}</p>
                     </div>
                     <div className="bg-white rounded px-2 py-1">
-                      <p className="text-gray-400 text-[9px]">Q1 2026</p>
+                      <p className="text-gray-400 text-[9px]">Ene-Abr 2026</p>
                       <p className="text-gray-800 font-bold text-sm">{c.q26}</p>
                     </div>
                   </div>
@@ -106,7 +107,7 @@ export default function Slide9ClientesNuevosPerdidos() {
 
             <div className="mt-4 bg-[#FDF8F0] rounded-lg p-3 border border-[#E8DCC8]">
               <p className="text-[#B8860B] text-[11px] font-semibold leading-relaxed">
-                Botanas y Derivados colapso de $8.6M a $202K — investigar causa. ALSUPER plano si se normaliza Mar 25.
+                Botanas y Derivados colapso de $10.1M a $202K — investigar causa. ALSUPER baja -21.8% (normalizar Mar-Abr 25 atipicos).
               </p>
             </div>
           </div>

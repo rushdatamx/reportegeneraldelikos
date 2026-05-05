@@ -4,26 +4,26 @@ import SlideWrapper from "./SlideWrapper";
 import { TrendingUp, TrendingDown, Plus, Minus } from "lucide-react";
 
 const crecimiento = [
-  { nombre: "Tostada Roja 70PZ", q25: "$1.3M", q26: "$3.9M", var: "+192.5%", delta: "+$2.6M" },
-  { nombre: "Almendra Domo 250g", q25: "$184K", q26: "$1.5M", var: "+733%", delta: "+$1.3M" },
-  { nombre: "Durito 20 pzs", q25: "$546K", q26: "$1.4M", var: "+154%", delta: "+$842K" },
-  { nombre: "Uva Pasa Domo 250g", q25: "$87K", q26: "$1.1M", var: "+1164%", delta: "+$1.0M" },
-  { nombre: "La Molienda Diabla", q25: "$4.4M", q26: "$5.0M", var: "+12.6%", delta: "+$557K" },
+  { nombre: "Almendra Entera Domo", q25: "$194K", q26: "$1.4M", var: "+643%", delta: "+$1.2M" },
+  { nombre: "Tostada Roja 70PZ", q25: "$3.4M", q26: "$4.6M", var: "+35%", delta: "+$1.2M" },
+  { nombre: "Uva Pasa Domo 250g", q25: "$84K", q26: "$1.3M", var: "+1387%", delta: "+$1.2M" },
+  { nombre: "Almendra Reb. Domo", q25: "$121K", q26: "$1.1M", var: "+815%", delta: "+$983K" },
+  { nombre: "PDQ 240 Papa 340g", q25: "$0", q26: "$696K", var: "NUEVO", delta: "+$696K" },
 ];
 
 const caida = [
-  { nombre: "Papa Casera Sal 5KG", q25: "$4.9M", q26: "$0", var: "-100%", delta: "-$4.9M" },
-  { nombre: "Almendra Entera 250g*", q25: "$2.0M", q26: "$152K", var: "-92.4%", delta: "-$1.8M" },
-  { nombre: "Uva Pasa 250g*", q25: "$1.1M", q26: "$94K", var: "-91.8%", delta: "-$1.0M" },
-  { nombre: "Pepita Natural 250g*", q25: "$524K", q26: "$49K", var: "-90.6%", delta: "-$475K" },
-  { nombre: "Papa Casera Jal 5KG", q25: "$393K", q26: "$43K", var: "-89.0%", delta: "-$350K" },
+  { nombre: "Papa Casera Sal 5KG", q25: "$5.8M", q26: "$0", var: "-100%", delta: "-$5.8M" },
+  { nombre: "Papa Casera Jal 5KG", q25: "$2.3M", q26: "$202K", var: "-91.3%", delta: "-$2.1M" },
+  { nombre: "Cacahuate Tost. 270g", q25: "$1.5M", q26: "$0", var: "-100%", delta: "-$1.5M" },
+  { nombre: "Coco Rallado 190g", q25: "$1.3M", q26: "$0", var: "-100%", delta: "-$1.3M" },
+  { nombre: "Canela Entera 50g", q25: "$1.2M", q26: "$0", var: "-100%", delta: "-$1.2M" },
 ];
 
 export default function Slide7CrecimientoCaida() {
   return (
     <SlideWrapper className="bg-[#F5F5F5] p-10">
-      <h2 className="text-3xl font-bold text-gray-800 mb-1">Crecimiento y Caida Q1</h2>
-      <p className="text-gray-500 text-sm mb-4">Productos con mayor cambio absoluto Q1 2025 → Q1 2026</p>
+      <h2 className="text-3xl font-bold text-gray-800 mb-1">Crecimiento y Caida Ene-Abr</h2>
+      <p className="text-gray-500 text-sm mb-4">Productos con mayor cambio absoluto Ene-Abr 2025 → Ene-Abr 2026</p>
 
       <div className="grid grid-cols-2 gap-5 flex-1">
         {/* Crecimiento */}
@@ -40,9 +40,9 @@ export default function Slide7CrecimientoCaida() {
                   <span className="text-[#27AE60] font-bold text-sm">{p.delta}</span>
                 </div>
                 <div className="flex items-center gap-3 text-[10px]">
-                  <span className="text-gray-400">Q1 25: {p.q25}</span>
+                  <span className="text-gray-400">Ene-Abr 25: {p.q25}</span>
                   <span className="text-gray-400">→</span>
-                  <span className="text-gray-600 font-semibold">Q1 26: {p.q26}</span>
+                  <span className="text-gray-600 font-semibold">Ene-Abr 26: {p.q26}</span>
                   <span className="text-[#27AE60] font-bold ml-auto bg-[#27AE60]/10 px-2 py-0.5 rounded">{p.var}</span>
                 </div>
               </div>
@@ -64,9 +64,9 @@ export default function Slide7CrecimientoCaida() {
                   <span className="text-[#E31837] font-bold text-sm">{p.delta}</span>
                 </div>
                 <div className="flex items-center gap-3 text-[10px]">
-                  <span className="text-gray-400">Q1 25: {p.q25}</span>
+                  <span className="text-gray-400">Ene-Abr 25: {p.q25}</span>
                   <span className="text-gray-400">→</span>
-                  <span className="text-gray-600 font-semibold">Q1 26: {p.q26}</span>
+                  <span className="text-gray-600 font-semibold">Ene-Abr 26: {p.q26}</span>
                   <span className="text-[#E31837] font-bold ml-auto bg-[#E31837]/10 px-2 py-0.5 rounded">{p.var}</span>
                 </div>
               </div>
@@ -81,16 +81,16 @@ export default function Slide7CrecimientoCaida() {
           <Plus className="w-5 h-5 text-[#27AE60]" />
           <div>
             <span className="text-[#27AE60] font-bold text-lg">52</span>
-            <span className="text-gray-500 text-sm ml-2">productos nuevos en Q1 2026</span>
-            <p className="text-gray-400 text-[10px]">SKUs Domo ALSUPER + PDQ HEB + nuevos MERCO</p>
+            <span className="text-gray-500 text-sm ml-2">productos nuevos en Ene-Abr 2026</span>
+            <p className="text-gray-400 text-[10px]">PDQ HEB ($1.3M) + SKUs Domo ALSUPER + nuevos MERCO</p>
           </div>
         </div>
         <div className="bg-[#E31837]/5 border border-[#E31837]/20 rounded-xl px-5 py-3 flex items-center gap-3">
           <Minus className="w-5 h-5 text-[#E31837]" />
           <div>
-            <span className="text-[#E31837] font-bold text-lg">41</span>
-            <span className="text-gray-500 text-sm ml-2">productos perdidos vs Q1 2025</span>
-            <p className="text-gray-400 text-[10px]">*SKUs Domo reemplazan versiones anteriores (migracion, no perdida)</p>
+            <span className="text-[#E31837] font-bold text-lg">44</span>
+            <span className="text-gray-500 text-sm ml-2">productos perdidos vs Ene-Abr 2025</span>
+            <p className="text-gray-400 text-[10px]">Botanas y Derivados perdido ($16.5M total) — Casera 5KG, Cacahuate, Coco, Canela</p>
           </div>
         </div>
       </div>

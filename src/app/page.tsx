@@ -25,7 +25,7 @@ import Slide18FDAWholesaleRetail from "@/components/Slide17FDAWholesaleRetail";
 const tabs = [
   {
     id: "q1",
-    label: "Q1 2026",
+    label: "Ene-Abr 2026",
     color: "#F7B500",
     slides: [
       Slide1Portada,
@@ -141,7 +141,7 @@ function HomeInner() {
       }
 
       document.body.removeChild(container);
-      pdf.save(`${tab.label}_DELIKOS_Q1_2026.pdf`);
+      pdf.save(`${tab.label}_DELIKOS_EneAbr_2026.pdf`);
     } catch (err) {
       console.error("Error exporting PDF:", err);
     } finally {
