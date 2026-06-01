@@ -100,13 +100,13 @@ export default function Slide8Concentracion() {
             </div>
             <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-3 text-center">
               <p className="text-gray-400 text-[10px] mb-1">Nacional</p>
-              <p className="text-gray-800 text-2xl font-bold">57.6%</p>
-              <p className="text-[#E31837] text-[9px] font-semibold">-22.0% vs Ene-May 25</p>
+              <p className="text-gray-800 text-2xl font-bold">57.0%</p>
+              <p className="text-[#E31837] text-[9px] font-semibold">-23.1% vs Ene-May 25</p>
             </div>
             <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-3 text-center">
               <p className="text-gray-400 text-[10px] mb-1">Exportacion</p>
-              <p className="text-[#2E75B6] text-2xl font-bold">42.4%</p>
-              <p className="text-[#27AE60] text-[9px] font-semibold">+4.7% vs Ene-May 25</p>
+              <p className="text-[#2E75B6] text-2xl font-bold">43.0%</p>
+              <p className="text-[#27AE60] text-[9px] font-semibold">+7.3% vs Ene-May 25</p>
             </div>
           </div>
 

@@ -86,7 +86,7 @@ export default function Slide4TopProductos() {
 
       <div className="mt-3 flex justify-between items-center bg-[#FDF8F0] rounded-lg px-5 py-3 border border-[#E8DCC8]">
         <span className="text-gray-500 text-sm">Total Ene-May 2026</span>
-        <span className="text-[#F7B500] font-bold text-lg">$56.1M</span>
+        <span className="text-[#F7B500] font-bold text-lg">$56.7M</span>
       </div>
     </SlideWrapper>
   );

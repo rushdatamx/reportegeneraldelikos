@@ -25,14 +25,14 @@ const clientes = [
     nota: "Crecimiento sostenido — 20.6% del export",
   },
   {
-    nombre: "Aztek Marketing + Puente Foods",
+    nombre: "Mixteca + Aztek + Puente",
     pais: "USA",
     q1_2025: "$0",
-    q1_2026: "$889K",
+    q1_2026: "$1.5M",
     variacion: "Nuevos",
     positivo: true,
-    tc: "TC prom: ~17.30",
-    nota: "2 clientes nuevos 2026 — diversificacion",
+    tc: "TC prom: ~17.50",
+    nota: "3 clientes nuevos Ene-May 2026 — diversificacion",
   },
 ];
 
@@ -57,7 +57,7 @@ export default function Slide5Exportacion() {
         <Globe className="w-7 h-7 text-[#F7B500]" />
         <h2 className="text-3xl font-bold text-gray-800">Exportacion Ene-May</h2>
       </div>
-      <p className="text-gray-500 text-sm mb-5">Ene-May 2025: $22.7M → Ene-May 2026: $23.8M · <span className="text-[#27AE60] font-semibold">+4.7%</span> · 42.4% del total</p>
+      <p className="text-gray-500 text-sm mb-5">Ene-May 2025: $22.7M → Ene-May 2026: $24.4M · <span className="text-[#27AE60] font-semibold">+7.3%</span> · 43.0% del total</p>
 
       <div className="grid grid-cols-3 gap-4 mb-5">
         {clientes.map((c, i) => {
@@ -120,7 +120,7 @@ export default function Slide5Exportacion() {
               </div>
             ))}
           </div>
-          <p className="text-[#27AE60] text-[10px] mt-3 font-semibold">Export crece +4.7% Ene-May — motor de diversificacion activo + 2 clientes nuevos</p>
+          <p className="text-[#27AE60] text-[10px] mt-3 font-semibold">Export crece +7.3% Ene-May — motor de diversificacion activo + 3 clientes nuevos</p>
         </div>
       </div>
     </SlideWrapper>

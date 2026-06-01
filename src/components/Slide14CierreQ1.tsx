@@ -7,9 +7,9 @@ const hallazgos = [
   { tipo: "positivo", texto: "Ene y Feb 2026 crecen +14.4% y +21.7% vs 2025 — tendencia de fondo solida" },
   { tipo: "positivo", texto: "MERCO crece +59.9% Ene-May ($10.6M) — mayor motor de crecimiento nacional" },
   { tipo: "positivo", texto: "HEB / MITIENDA crece +34.1% Ene-May ($3.7M) — PDQs + Duritos" },
-  { tipo: "positivo", texto: "Exportacion +4.7% ($23.8M) — 42.4% del total, 3 clientes export nuevos" },
+  { tipo: "positivo", texto: "Exportacion +7.3% ($24.4M) — 43.0% del total, 3 clientes export nuevos" },
   { tipo: "positivo", texto: "Precios unitarios estables o con incrementos moderados (+2-3%)" },
-  { tipo: "alerta", texto: "Ene-May baja -13.3% vs 2025, explicado por Mar-Abr 25 atipicos (ALSUPER $15.2M)" },
+  { tipo: "alerta", texto: "Ene-May baja -12.4% vs 2025, explicado por Mar-Abr 25 atipicos (ALSUPER $15.2M)" },
   { tipo: "alerta", texto: "Botanas y Derivados colapso de $10.6M a $202K — perdida critica de cliente" },
   { tipo: "alerta", texto: "ALSUPER baja -21.8% YoY ($-4.4M) — normalizar Mar-Abr 25 atipicos" },
 ];
@@ -66,7 +66,7 @@ export default function Slide14CierreQ1() {
           <div className="grid grid-cols-3 gap-2">
             <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-3 text-center">
               <p className="text-gray-400 text-[9px]">Ene-May 2026</p>
-              <p className="text-[#F7B500] text-xl font-bold">$56.1M</p>
+              <p className="text-[#F7B500] text-xl font-bold">$56.7M</p>
             </div>
             <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-3 text-center">
               <p className="text-gray-400 text-[9px]">Productos activos</p>
