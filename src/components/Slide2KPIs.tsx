@@ -14,7 +14,7 @@ const months = [
   { mes: "Febrero", q26: 11.1, q25: 9.1, var: "+21.7%", pos: true },
   { mes: "Marzo", q26: 11.7, q25: 18.5, var: "-36.9%", pos: false },
   { mes: "Abril", q26: 12.7, q25: 16.8, var: "-24.3%", pos: false },
-  { mes: "Mayo", q26: 9.4, q25: 10.5, var: "-10.4%", pos: false },
+  { mes: "Mayo", q26: 9.5, q25: 10.5, var: "-10.4%", pos: false },
 ];
 
 const stackAlsuper = Math.round((15568 / (15568 + 10574 + 3724)) * 100);
