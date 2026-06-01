@@ -45,9 +45,9 @@ const topProductos = [
 ];
 
 const exportAnual = [
-  { year: "2023", value: "$46.8M", bar: 86 },
-  { year: "2024", value: "$47.0M", bar: 86 },
-  { year: "2025", value: "$54.5M", bar: 100 },
+  { year: "2023", value: "$49.6M", bar: 88 },
+  { year: "2024", value: "$47.0M", bar: 83 },
+  { year: "2025", value: "$56.5M", bar: 100 },
 ];
 
 export default function Slide5Exportacion() {
@@ -57,7 +57,7 @@ export default function Slide5Exportacion() {
         <Globe className="w-7 h-7 text-[#F7B500]" />
         <h2 className="text-3xl font-bold text-gray-800">Exportacion Ene-May</h2>
       </div>
-      <p className="text-gray-500 text-sm mb-5">Ene-May 2025: $22.7M → Ene-May 2026: $23.8M · <span className="text-[#27AE60] font-semibold">+4.7%</span> · 42.8% del total</p>
+      <p className="text-gray-500 text-sm mb-5">Ene-May 2025: $22.7M → Ene-May 2026: $23.8M · <span className="text-[#27AE60] font-semibold">+4.7%</span> · 42.4% del total</p>
 
       <div className="grid grid-cols-3 gap-4 mb-5">
         {clientes.map((c, i) => {

@@ -10,14 +10,14 @@ const nuevos = [
 ];
 
 const crecimiento = [
-  { nombre: "MERCO", tipo: "Nacional", monto: "$10.3M", var: "+56.2%", nota: "Ene-May 25: $6.6M — crecimiento sostenido" },
-  { nombre: "HEB / MITIENDA", tipo: "Nacional", monto: "$3.7M", var: "+36.7%", nota: "Ene-May 25: $2.7M — PDQs + Duritos" },
+  { nombre: "MERCO", tipo: "Nacional", monto: "$10.6M", var: "+59.9%", nota: "Ene-May 25: $6.6M — crecimiento sostenido" },
+  { nombre: "HEB / MITIENDA", tipo: "Nacional", monto: "$3.7M", var: "+34.1%", nota: "Ene-May 25: $2.8M — PDQs + Duritos" },
   { nombre: "Dulces La Mejor", tipo: "Export", monto: "$4.9M", var: "+8.8%", nota: "Ene-May 25: $4.5M — crecimiento sostenido" },
 ];
 
 const enRiesgo = [
   { nombre: "Botanas y Derivados", tipo: "Nacional", q25: "$10.6M", q26: "$202K", var: "-98.1%", nota: "Colapso — era cliente #2 en Ene-May 25" },
-  { nombre: "ALSUPER", tipo: "Nacional", q25: "$19.5M", q26: "$15.3M", var: "-21.4%", nota: "Baja vs Ene-May 25 (pedidos atipicos Mar-Abr 25)" },
+  { nombre: "ALSUPER", tipo: "Nacional", q25: "$19.9M", q26: "$15.6M", var: "-21.8%", nota: "Baja vs Ene-May 25 (pedidos atipicos Mar-Abr 25)" },
 ];
 
 export default function Slide9ClientesNuevosPerdidos() {
@@ -110,7 +110,7 @@ export default function Slide9ClientesNuevosPerdidos() {
 
             <div className="mt-4 bg-[#FDF8F0] rounded-lg p-3 border border-[#E8DCC8]">
               <p className="text-[#B8860B] text-[11px] font-semibold leading-relaxed">
-                Botanas y Derivados colapso de $10.6M a $202K — investigar causa. ALSUPER baja -21.4% (normalizar Mar-Abr 25 atipicos).
+                Botanas y Derivados colapso de $10.6M a $202K — investigar causa. ALSUPER baja -21.8% (normalizar Mar-Abr 25 atipicos).
               </p>
             </div>
           </div>

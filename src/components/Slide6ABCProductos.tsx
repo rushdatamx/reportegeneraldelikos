@@ -4,27 +4,27 @@ import SlideWrapper from "./SlideWrapper";
 import { BarChart3 } from "lucide-react";
 
 const abcSummary = [
-  { clase: "A", productos: 34, pct: "79.7%", color: "#2E75B6", desc: "Top productos — 80% del ingreso" },
-  { clase: "B", productos: 41, pct: "15.2%", color: "#F7B500", desc: "Contribucion media" },
-  { clase: "C", productos: 65, pct: "5.0%", color: "#9CA3AF", desc: "Cola larga" },
+  { clase: "A", productos: 34, pct: "79.9%", color: "#2E75B6", desc: "Top productos — 80% del ingreso" },
+  { clase: "B", productos: 40, pct: "15.0%", color: "#F7B500", desc: "Contribucion media" },
+  { clase: "C", productos: 66, pct: "5.2%", color: "#9CA3AF", desc: "Cola larga" },
 ];
 
 const top15 = [
-  { rank: 1, nombre: "Papa Diabla 5.5oz", venta: "$8.7M", acum: "15.7%", clase: "A" },
-  { rank: 2, nombre: "Papa Salada 5.5oz", venta: "$6.8M", acum: "27.8%", clase: "A" },
-  { rank: 3, nombre: "Tostada Roja 70PZ", venta: "$5.4M", acum: "37.6%", clase: "A" },
-  { rank: 4, nombre: "Durito 20 pzs", venta: "$2.2M", acum: "41.6%", clase: "A" },
-  { rank: 5, nombre: "Almendra Entera Domo", venta: "$1.6M", acum: "44.4%", clase: "A" },
-  { rank: 6, nombre: "Papa Nat. Mimarca 450g", venta: "$1.5M", acum: "47.0%", clase: "A" },
-  { rank: 7, nombre: "Uva Pasa Domo 250g", venta: "$1.3M", acum: "49.3%", clase: "A" },
-  { rank: 8, nombre: "Almendra Reb. Domo", venta: "$1.2M", acum: "51.6%", clase: "A" },
-  { rank: 9, nombre: "Ranchito Chile", venta: "$1.2M", acum: "53.7%", clase: "A" },
-  { rank: 10, nombre: "PDQ 240 Papa 340g", venta: "$904K", acum: "55.3%", clase: "A" },
-  { rank: 11, nombre: "Papa Desh. 300g", venta: "$881K", acum: "56.9%", clase: "A" },
-  { rank: 12, nombre: "Rueda Enchilada 84g", venta: "$829K", acum: "58.4%", clase: "A" },
-  { rank: 13, nombre: "Rueda c/Salsita 84g", venta: "$813K", acum: "59.8%", clase: "A" },
-  { rank: 14, nombre: "PDQ 1260 Papa 45g HEB", venta: "$803K", acum: "61.2%", clase: "A" },
-  { rank: 15, nombre: "Papa Jalapeño 5.5oz", venta: "$758K", acum: "62.6%", clase: "A" },
+  { rank: 1, nombre: "Papa Diabla 5.5oz", venta: "$8.7M", acum: "15.5%", clase: "A" },
+  { rank: 2, nombre: "Papa Salada 5.5oz", venta: "$6.8M", acum: "27.6%", clase: "A" },
+  { rank: 3, nombre: "Tostada Roja 70PZ", venta: "$5.4M", acum: "37.2%", clase: "A" },
+  { rank: 4, nombre: "Durito 20 pzs", venta: "$2.2M", acum: "41.1%", clase: "A" },
+  { rank: 5, nombre: "Almendra Entera Domo", venta: "$1.6M", acum: "43.9%", clase: "A" },
+  { rank: 6, nombre: "Papa Nat. Mimarca 450g", venta: "$1.5M", acum: "46.7%", clase: "A" },
+  { rank: 7, nombre: "Uva Pasa Domo 250g", venta: "$1.3M", acum: "49.0%", clase: "A" },
+  { rank: 8, nombre: "Almendra Reb. Domo", venta: "$1.2M", acum: "51.2%", clase: "A" },
+  { rank: 9, nombre: "Ranchito Chile", venta: "$1.2M", acum: "53.3%", clase: "A" },
+  { rank: 10, nombre: "Papa Desh. 300g", venta: "$909K", acum: "54.9%", clase: "A" },
+  { rank: 11, nombre: "PDQ 240 Papa 340g", venta: "$904K", acum: "56.5%", clase: "A" },
+  { rank: 12, nombre: "Rueda Enchilada 84g", venta: "$829K", acum: "58.0%", clase: "A" },
+  { rank: 13, nombre: "Rueda c/Salsita 84g", venta: "$813K", acum: "59.4%", clase: "A" },
+  { rank: 14, nombre: "PDQ 1260 Papa 45g HEB", venta: "$803K", acum: "60.8%", clase: "A" },
+  { rank: 15, nombre: "Rueda Natural 330g", venta: "$793K", acum: "62.3%", clase: "A" },
 ];
 
 export default function Slide6ABCProductos() {
@@ -63,7 +63,6 @@ export default function Slide6ABCProductos() {
           <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-4 flex-1">
             <p className="text-gray-500 text-xs mb-3">Curva Pareto — Concentracion de ingreso</p>
             <div className="relative h-[180px]">
-              {/* Y axis labels */}
               <div className="absolute left-0 top-0 h-full flex flex-col justify-between text-[9px] text-gray-400 w-8">
                 <span>100%</span>
                 <span>80%</span>
@@ -72,15 +71,11 @@ export default function Slide6ABCProductos() {
                 <span>20%</span>
                 <span>0%</span>
               </div>
-              {/* Chart area */}
               <div className="ml-10 h-full relative">
-                {/* 80% line */}
                 <div className="absolute top-[20%] left-0 right-0 border-t border-dashed border-[#2E75B6]/30" />
                 <span className="absolute top-[18%] right-0 text-[8px] text-[#2E75B6] font-semibold">80% ingreso</span>
-                {/* 24% line (A class) */}
                 <div className="absolute top-0 bottom-0 left-[24%] border-l border-dashed border-[#2E75B6]/30" />
                 <span className="absolute bottom-0 left-[24%] -translate-x-1/2 text-[8px] text-[#2E75B6] font-semibold">24% prods</span>
-                {/* Curve */}
                 <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
                   <polyline
                     points="0,100 10,38 20,24 24,20 54,5 100,0"

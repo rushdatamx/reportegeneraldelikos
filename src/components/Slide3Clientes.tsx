@@ -7,42 +7,42 @@ const clientes = [
   {
     nombre: "ALSUPER",
     razon: "Operadora Futurama",
-    q1_2025: 19.5,
-    q1_2026: 15.3,
-    variacion: "-21.4%",
+    q1_2025: 19.9,
+    q1_2026: 15.6,
+    variacion: "-21.8%",
     positivo: false,
     topMes: "Ene 26: $4.0M",
     topProducto: "Almendra Entera Domo 250g",
-    topVenta: "$1.6M (10.2%)",
+    topVenta: "$1.6M (10.0%)",
     dotColor: "#F7B500",
   },
   {
     nombre: "MERCO",
     razon: "Operadora Merco",
     q1_2025: 6.6,
-    q1_2026: 10.3,
-    variacion: "+56.2%",
+    q1_2026: 10.6,
+    variacion: "+59.9%",
     positivo: true,
-    topMes: "Mar 26: $2.4M",
+    topMes: "May 26: $2.5M",
     topProducto: "Tostada Roja 70PZ",
-    topVenta: "$5.4M (52.4%)",
+    topVenta: "$5.4M (51.2%)",
     dotColor: "#1A1A1A",
   },
   {
     nombre: "HEB",
     razon: "Supermercados Internacionales",
-    q1_2025: 2.7,
+    q1_2025: 2.8,
     q1_2026: 3.7,
-    variacion: "+36.7%",
+    variacion: "+34.1%",
     positivo: true,
     topMes: "May 26: $1.0M",
     topProducto: "Durito 20 piezas",
-    topVenta: "$1.6M (43.2%)",
+    topVenta: "$1.6M (43.3%)",
     dotColor: "#9CA3AF",
   },
 ];
 
-const maxVal = 19.5;
+const maxVal = 19.9;
 
 export default function Slide3Clientes() {
   return (
@@ -129,7 +129,7 @@ export default function Slide3Clientes() {
           <div className="w-6 h-2.5 rounded bg-[#F7B500]" />
           <span className="text-[#B8860B]">Ene-May 2026</span>
         </div>
-        <span className="text-gray-400 ml-4">MERCO +56.2% y HEB +36.7% lideran; ALSUPER -21.4% (Mar-Abr 25 atipicos)</span>
+        <span className="text-gray-400 ml-4">MERCO +59.9% y HEB +34.1% lideran; ALSUPER -21.8% (Mar-Abr 25 atipicos)</span>
       </div>
     </SlideWrapper>
   );

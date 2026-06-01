@@ -6,9 +6,9 @@ import { TrendingUp, TrendingDown, Plus, Minus } from "lucide-react";
 const crecimiento = [
   { nombre: "Almendra Entera Domo 250g", q25: "$234K", q26: "$1.6M", var: "+568%", delta: "+$1.3M" },
   { nombre: "Uva Pasa Domo 250g", q25: "$93K", q26: "$1.3M", var: "+1296%", delta: "+$1.2M" },
+  { nombre: "Tostada Roja 70PZ", q25: "$4.2M", q26: "$5.4M", var: "+28.4%", delta: "+$1.2M" },
   { nombre: "Almendra Rebanada Domo", q25: "$136K", q26: "$1.2M", var: "+815%", delta: "+$1.1M" },
-  { nombre: "Tostada Roja 70PZ", q25: "$4.5M", q26: "$5.4M", var: "+19.4%", delta: "+$880K" },
-  { nombre: "Durito 20 piezas", q25: "$1.6M", q26: "$2.2M", var: "+39.1%", delta: "+$624K" },
+  { nombre: "PDQ 240 Papa 340g", q25: "$0", q26: "$904K", var: "NUEVO", delta: "+$904K" },
 ];
 
 const caida = [
@@ -16,7 +16,7 @@ const caida = [
   { nombre: "Papa Casera Jalapeño 5KG", q25: "$2.5M", q26: "$202K", var: "-91.8%", delta: "-$2.3M" },
   { nombre: "Cacahuate Tostado 270g", q25: "$1.6M", q26: "$0", var: "-100%", delta: "-$1.6M" },
   { nombre: "Coco Rallado 190g", q25: "$1.4M", q26: "$0", var: "-100%", delta: "-$1.4M" },
-  { nombre: "Canela Entera 50g", q25: "$1.2M", q26: "$0", var: "-100%", delta: "-$1.2M" },
+  { nombre: "Canela Entera 50g", q25: "$1.4M", q26: "$0", var: "-100%", delta: "-$1.4M" },
 ];
 
 export default function Slide7CrecimientoCaida() {
@@ -90,7 +90,7 @@ export default function Slide7CrecimientoCaida() {
           <div>
             <span className="text-[#E31837] font-bold text-lg">22</span>
             <span className="text-gray-500 text-sm ml-2">productos perdidos vs Ene-May 2025</span>
-            <p className="text-gray-400 text-[10px]">Botanas y Derivados ($10.3M total) — Casera 5KG, Cacahuate, Coco, Canela</p>
+            <p className="text-gray-400 text-[10px]">Botanas y Derivados ($10.6M total) — Casera 5KG, Cacahuate, Coco, Canela</p>
           </div>
         </div>
       </div>

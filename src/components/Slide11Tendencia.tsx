@@ -13,30 +13,30 @@ import {
 } from "recharts";
 
 const data = [
-  { mes: "Jun 24", alsuper: 1272529, merco: 1088115, lamolienda: 1606497 },
+  { mes: "Jun 24", alsuper: 1272529, merco: 1088115, lamolienda: 1647150 },
   { mes: "Jul 24", alsuper: 1073999, merco: 1132286, lamolienda: 2177861 },
   { mes: "Ago 24", alsuper: 1211506, merco: 1015489, lamolienda: 1727405 },
   { mes: "Sep 24", alsuper: 1468531, merco: 1526147, lamolienda: 2437685 },
-  { mes: "Oct 24", alsuper: 1078301, merco: 1154378, lamolienda: 3908613 },
-  { mes: "Nov 24", alsuper: 1571637, merco: 951781, lamolienda: 3294988 },
-  { mes: "Dic 24", alsuper: 1806949, merco: 1041705, lamolienda: 2711565 },
-  { mes: "Ene 25", alsuper: 1478325, merco: 1532743, lamolienda: 3294146 },
+  { mes: "Oct 24", alsuper: 1078301, merco: 1154378, lamolienda: 3949265 },
+  { mes: "Nov 24", alsuper: 1716641, merco: 951781, lamolienda: 3294988 },
+  { mes: "Dic 24", alsuper: 1874303, merco: 1041705, lamolienda: 2711565 },
+  { mes: "Ene 25", alsuper: 1478325, merco: 1537337, lamolienda: 3294146 },
   { mes: "Feb 25", alsuper: 858567, merco: 937062, lamolienda: 2752218 },
-  { mes: "Mar 25", alsuper: 7768329, merco: 1251241, lamolienda: 3031174 },
-  { mes: "Abr 25", alsuper: 7079441, merco: 1602470, lamolienda: 4716695 },
-  { mes: "May 25", alsuper: 2275880, merco: 1284541, lamolienda: 4420741 },
-  { mes: "Jun 25", alsuper: 2095306, merco: 1092562, lamolienda: 4812717 },
-  { mes: "Jul 25", alsuper: 2698672, merco: 1850279, lamolienda: 5047645 },
-  { mes: "Ago 25", alsuper: 2048102, merco: 1487587, lamolienda: 2167606 },
-  { mes: "Sep 25", alsuper: 2349493, merco: 2107933, lamolienda: 3065386 },
-  { mes: "Oct 25", alsuper: 3434413, merco: 1604708, lamolienda: 3532307 },
+  { mes: "Mar 25", alsuper: 8126469, merco: 1251241, lamolienda: 3031174 },
+  { mes: "Abr 25", alsuper: 7102871, merco: 1602470, lamolienda: 4716695 },
+  { mes: "May 25", alsuper: 2360062, merco: 1284541, lamolienda: 4420741 },
+  { mes: "Jun 25", alsuper: 2187060, merco: 1245202, lamolienda: 4812717 },
+  { mes: "Jul 25", alsuper: 2725262, merco: 1850279, lamolienda: 5047645 },
+  { mes: "Ago 25", alsuper: 2048102, merco: 1515668, lamolienda: 3495011 },
+  { mes: "Sep 25", alsuper: 2349493, merco: 2115952, lamolienda: 3065386 },
+  { mes: "Oct 25", alsuper: 3434413, merco: 1604708, lamolienda: 3711220 },
   { mes: "Nov 25", alsuper: 3435425, merco: 1883528, lamolienda: 2934145 },
-  { mes: "Dic 25", alsuper: 2659345, merco: 1416972, lamolienda: 3507354 },
+  { mes: "Dic 25", alsuper: 2659345, merco: 1630668, lamolienda: 3507354 },
   { mes: "Ene 26", alsuper: 3968059, merco: 2183784, lamolienda: 2308918 },
   { mes: "Feb 26", alsuper: 3095625, merco: 2292048, lamolienda: 3928636 },
-  { mes: "Mar 26", alsuper: 3213052, merco: 2355983, lamolienda: 3861014 },
+  { mes: "Mar 26", alsuper: 3495697, merco: 2355983, lamolienda: 3866295 },
   { mes: "Abr 26", alsuper: 3159981, merco: 1245931, lamolienda: 4994678 },
-  { mes: "May 26", alsuper: 1855435, merco: 2240738, lamolienda: 2898008 },
+  { mes: "May 26", alsuper: 1855434, merco: 2495887, lamolienda: 2898008 },
 ];
 
 const formatPesos = (v: number) => `$${(v / 1_000_000).toFixed(1)}M`;
@@ -80,7 +80,7 @@ export default function Slide11Tendencia() {
         </div>
         <div className="ml-auto">
           <span className="px-2 py-0.5 rounded-full text-[9px] font-bold bg-[#F7B500]/20 text-[#B8860B] border border-[#F7B500]/40">
-            ALSUPER Mar 25: $7.8M (atipico)
+            ALSUPER Mar 25: $8.1M (atipico)
           </span>
         </div>
       </div>
@@ -102,7 +102,7 @@ export default function Slide11Tendencia() {
       </div>
 
       <div className="flex justify-between mt-2 text-[10px] text-gray-500">
-        <span>MERCO: tendencia ascendente sostenida (+56.2% Ene-May YoY)</span>
+        <span>MERCO: tendencia ascendente sostenida (+59.9% Ene-May YoY)</span>
         <span>La Molienda: estable $2.3-5.0M/mes — cliente ancla de exportacion</span>
       </div>
     </SlideWrapper>

@@ -15,18 +15,18 @@ import {
 import { Calendar } from "lucide-react";
 
 const data = [
-  { mes: "Ene", indice: 1.11, tipo: "fuerte" },
+  { mes: "Ene", indice: 1.10, tipo: "fuerte" },
   { mes: "Feb", indice: 0.84, tipo: "debil" },
-  { mes: "Mar", indice: 1.38, tipo: "fuerte" },
-  { mes: "Abr", indice: 1.19, tipo: "fuerte" },
+  { mes: "Mar", indice: 1.37, tipo: "fuerte" },
+  { mes: "Abr", indice: 1.18, tipo: "fuerte" },
   { mes: "May", indice: 0.97, tipo: "normal" },
-  { mes: "Jun", indice: 0.95, tipo: "normal" },
+  { mes: "Jun", indice: 0.98, tipo: "normal" },
   { mes: "Jul", indice: 0.95, tipo: "normal" },
-  { mes: "Ago", indice: 0.88, tipo: "debil" },
-  { mes: "Sep", indice: 0.85, tipo: "debil" },
-  { mes: "Oct", indice: 0.93, tipo: "normal" },
+  { mes: "Ago", indice: 0.91, tipo: "normal" },
+  { mes: "Sep", indice: 0.83, tipo: "debil" },
+  { mes: "Oct", indice: 0.92, tipo: "normal" },
   { mes: "Nov", indice: 1.02, tipo: "normal" },
-  { mes: "Dic", indice: 0.94, tipo: "normal" },
+  { mes: "Dic", indice: 0.93, tipo: "normal" },
 ];
 
 const colorMap: Record<string, string> = {
@@ -80,15 +80,15 @@ export default function Slide13Estacionalidad() {
             <div className="space-y-1.5">
               <div className="flex items-center justify-between">
                 <span className="text-gray-700 text-sm">Marzo</span>
-                <span className="text-[#27AE60] font-bold">1.38</span>
+                <span className="text-[#27AE60] font-bold">1.37</span>
               </div>
               <div className="flex items-center justify-between">
                 <span className="text-gray-700 text-sm">Abril</span>
-                <span className="text-[#27AE60] font-bold">1.19</span>
+                <span className="text-[#27AE60] font-bold">1.18</span>
               </div>
               <div className="flex items-center justify-between">
                 <span className="text-gray-700 text-sm">Enero</span>
-                <span className="text-[#27AE60] font-bold">1.11</span>
+                <span className="text-[#27AE60] font-bold">1.10</span>
               </div>
             </div>
             <p className="text-gray-400 text-[10px] mt-2">Ene + Mar + Abr = temporada alta de pedidos</p>
@@ -128,7 +128,7 @@ export default function Slide13Estacionalidad() {
                 <span className="text-gray-500">Debil ({"<"}0.90)</span>
               </div>
             </div>
-            <p className="text-gray-400 text-[10px]">Nota: Mar 2025 inflado por pedido atipico ALSUPER ($7.8M). Indice real de marzo sin anomalia seria ~1.10.</p>
+            <p className="text-gray-400 text-[10px]">Nota: Mar 2025 inflado por pedido atipico ALSUPER ($8.1M). Indice real de marzo sin anomalia seria ~1.10.</p>
           </div>
         </div>
       </div>
