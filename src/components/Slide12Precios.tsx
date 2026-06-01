@@ -4,10 +4,10 @@ import SlideWrapper from "./SlideWrapper";
 import { DollarSign, TrendingUp, Minus } from "lucide-react";
 
 const productos = [
-  { nombre: "Papa Diabla 5.5oz", q1_25: "$21.13", q1_26: "$21.84", var: "+3.4%", positivo: true },
-  { nombre: "Papa Salada 5.5oz", q1_25: "$21.00", q1_26: "$21.84", var: "+4.0%", positivo: true },
+  { nombre: "Papa Diabla 5.5oz", q1_25: "$21.39", q1_26: "$21.84", var: "+2.1%", positivo: true },
+  { nombre: "Papa Salada 5.5oz", q1_25: "$21.38", q1_26: "$21.84", var: "+2.2%", positivo: true },
   { nombre: "Tostada Roja 70PZ", q1_25: "$31.80", q1_26: "$31.80", var: "0.0%", positivo: null },
-  { nombre: "Durito 20 pzs", q1_25: "$45.27", q1_26: "$47.01", var: "+3.9%", positivo: true },
+  { nombre: "Durito 20 pzs", q1_25: "$48.28", q1_26: "$46.79", var: "-3.1%", positivo: false },
   { nombre: "Almendra Entera Domo", q1_25: "$69.70", q1_26: "$69.70", var: "0.0%", positivo: null },
   { nombre: "Papa Nat. Mimarca 450g", q1_25: "$75.20", q1_26: "$75.20", var: "0.0%", positivo: null },
   { nombre: "Uva Pasa Domo 250g", q1_25: "$25.60", q1_26: "$25.60", var: "0.0%", positivo: null },
@@ -15,10 +15,10 @@ const productos = [
 ];
 
 const precioCliente = [
-  { cliente: "HEB", precioPromQ1: "$62.69", nota: "Durito + Papa PDQ — ticket alto" },
-  { cliente: "ALSUPER", precioPromQ1: "$44.33", nota: "Productos Domo premium — ticket medio-alto" },
-  { cliente: "MERCO", precioPromQ1: "$24.15", nota: "Mix Tostada + Papa — ticket medio" },
-  { cliente: "La Molienda", precioPromQ1: "$22.56", nota: "Papa granel export — precio unitario" },
+  { cliente: "HEB", precioPromQ1: "$62.45", nota: "Durito + Papa PDQ — ticket alto" },
+  { cliente: "ALSUPER", precioPromQ1: "$44.10", nota: "Productos Domo premium — ticket medio-alto" },
+  { cliente: "MERCO", precioPromQ1: "$24.30", nota: "Mix Tostada + Papa — ticket medio" },
+  { cliente: "La Molienda", precioPromQ1: "$21.84", nota: "Papa granel export — precio unitario" },
 ];
 
 export default function Slide12Precios() {
@@ -28,7 +28,7 @@ export default function Slide12Precios() {
         <DollarSign className="w-7 h-7 text-[#27AE60]" />
         <h2 className="text-3xl font-bold text-gray-800">Evolucion de Precios</h2>
       </div>
-      <p className="text-gray-500 text-sm mb-4">Precio unitario promedio Ene-Abr 2025 vs Ene-Abr 2026 · Top productos</p>
+      <p className="text-gray-500 text-sm mb-4">Precio unitario promedio Ene-May 2025 vs Ene-May 2026 · Top productos</p>
 
       <div className="flex gap-4 flex-1">
         {/* Price table */}
@@ -38,8 +38,8 @@ export default function Slide12Precios() {
             <thead>
               <tr className="border-b border-gray-200">
                 <th className="text-left text-gray-400 font-normal pb-2 text-xs">Producto</th>
-                <th className="text-right text-gray-400 font-normal pb-2 text-xs">Ene-Abr 2025</th>
-                <th className="text-right text-gray-400 font-normal pb-2 text-xs">Ene-Abr 2026</th>
+                <th className="text-right text-gray-400 font-normal pb-2 text-xs">Ene-May 2025</th>
+                <th className="text-right text-gray-400 font-normal pb-2 text-xs">Ene-May 2026</th>
                 <th className="text-right text-gray-400 font-normal pb-2 text-xs">Var.</th>
               </tr>
             </thead>
@@ -68,7 +68,7 @@ export default function Slide12Precios() {
         {/* Client price comparison */}
         <div className="w-[380px] flex flex-col gap-3">
           <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-4 flex-1">
-            <p className="text-gray-500 text-xs mb-3">Precio promedio por cliente Ene-Abr 2026</p>
+            <p className="text-gray-500 text-xs mb-3">Precio promedio por cliente Ene-May 2026</p>
             <div className="space-y-3">
               {precioCliente.map((c, i) => (
                 <div key={i} className="animate-count-up" style={{ animationDelay: `${i * 100}ms` }}>
@@ -84,7 +84,7 @@ export default function Slide12Precios() {
 
           <div className="bg-[#27AE60]/5 border border-[#27AE60]/20 rounded-xl px-4 py-3">
             <p className="text-[#27AE60] text-[11px] font-semibold leading-relaxed">
-              &#10003; Precios estables o con incrementos moderados (+3-6%). Sin erosion de precio en ningun producto clave. Productos Domo ALSUPER mantienen precio fijo.
+              &#10003; Precios estables o con incrementos moderados (+2-3%). Sin erosion de precio en productos clave. Durito -3.1% por mix de presentaciones. Productos Domo ALSUPER mantienen precio fijo.
             </p>
           </div>
         </div>

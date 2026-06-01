@@ -15,18 +15,18 @@ import {
 import { Calendar } from "lucide-react";
 
 const data = [
-  { mes: "Ene", indice: 1.21, tipo: "fuerte" },
-  { mes: "Feb", indice: 0.81, tipo: "debil" },
-  { mes: "Mar", indice: 1.37, tipo: "fuerte" },
-  { mes: "Abr", indice: 1.20, tipo: "fuerte" },
-  { mes: "May", indice: 0.95, tipo: "normal" },
-  { mes: "Jun", indice: 0.86, tipo: "debil" },
-  { mes: "Jul", indice: 0.99, tipo: "normal" },
-  { mes: "Ago", indice: 0.79, tipo: "debil" },
-  { mes: "Sep", indice: 0.89, tipo: "debil" },
-  { mes: "Oct", indice: 1.01, tipo: "normal" },
-  { mes: "Nov", indice: 1.04, tipo: "normal" },
-  { mes: "Dic", indice: 0.89, tipo: "debil" },
+  { mes: "Ene", indice: 1.11, tipo: "fuerte" },
+  { mes: "Feb", indice: 0.84, tipo: "debil" },
+  { mes: "Mar", indice: 1.38, tipo: "fuerte" },
+  { mes: "Abr", indice: 1.19, tipo: "fuerte" },
+  { mes: "May", indice: 0.97, tipo: "normal" },
+  { mes: "Jun", indice: 0.95, tipo: "normal" },
+  { mes: "Jul", indice: 0.95, tipo: "normal" },
+  { mes: "Ago", indice: 0.88, tipo: "debil" },
+  { mes: "Sep", indice: 0.85, tipo: "debil" },
+  { mes: "Oct", indice: 0.93, tipo: "normal" },
+  { mes: "Nov", indice: 1.02, tipo: "normal" },
+  { mes: "Dic", indice: 0.94, tipo: "normal" },
 ];
 
 const colorMap: Record<string, string> = {
@@ -52,7 +52,7 @@ export default function Slide13Estacionalidad() {
         <Calendar className="w-7 h-7 text-[#27AE60]" />
         <h2 className="text-3xl font-bold text-gray-800">Estacionalidad</h2>
       </div>
-      <p className="text-gray-500 text-sm mb-4">Indice mensual promedio (2024-2026) · 1.00 = promedio anual</p>
+      <p className="text-gray-500 text-sm mb-4">Indice mensual promedio (2023-2025) · 1.00 = promedio anual</p>
 
       <div className="flex gap-5 flex-1">
         {/* Chart */}
@@ -80,15 +80,15 @@ export default function Slide13Estacionalidad() {
             <div className="space-y-1.5">
               <div className="flex items-center justify-between">
                 <span className="text-gray-700 text-sm">Marzo</span>
-                <span className="text-[#27AE60] font-bold">1.37</span>
-              </div>
-              <div className="flex items-center justify-between">
-                <span className="text-gray-700 text-sm">Enero</span>
-                <span className="text-[#27AE60] font-bold">1.21</span>
+                <span className="text-[#27AE60] font-bold">1.38</span>
               </div>
               <div className="flex items-center justify-between">
                 <span className="text-gray-700 text-sm">Abril</span>
-                <span className="text-[#27AE60] font-bold">1.20</span>
+                <span className="text-[#27AE60] font-bold">1.19</span>
+              </div>
+              <div className="flex items-center justify-between">
+                <span className="text-gray-700 text-sm">Enero</span>
+                <span className="text-[#27AE60] font-bold">1.11</span>
               </div>
             </div>
             <p className="text-gray-400 text-[10px] mt-2">Ene + Mar + Abr = temporada alta de pedidos</p>
@@ -98,16 +98,16 @@ export default function Slide13Estacionalidad() {
             <h3 className="text-[#E31837] font-bold text-sm mb-2">Meses Debiles</h3>
             <div className="space-y-1.5">
               <div className="flex items-center justify-between">
-                <span className="text-gray-700 text-sm">Agosto</span>
-                <span className="text-[#E31837] font-bold">0.79</span>
-              </div>
-              <div className="flex items-center justify-between">
                 <span className="text-gray-700 text-sm">Febrero</span>
-                <span className="text-[#E31837] font-bold">0.81</span>
+                <span className="text-[#E31837] font-bold">0.84</span>
               </div>
               <div className="flex items-center justify-between">
-                <span className="text-gray-700 text-sm">Junio</span>
-                <span className="text-[#E31837] font-bold">0.86</span>
+                <span className="text-gray-700 text-sm">Septiembre</span>
+                <span className="text-[#E31837] font-bold">0.85</span>
+              </div>
+              <div className="flex items-center justify-between">
+                <span className="text-gray-700 text-sm">Agosto</span>
+                <span className="text-[#E31837] font-bold">0.88</span>
               </div>
             </div>
             <p className="text-gray-400 text-[10px] mt-2">Valles naturales — oportunidad para promociones</p>
@@ -128,7 +128,7 @@ export default function Slide13Estacionalidad() {
                 <span className="text-gray-500">Debil ({"<"}0.90)</span>
               </div>
             </div>
-            <p className="text-gray-400 text-[10px]">Nota: Mar 2025 inflado por pedido atipico ALSUPER ($8.1M). Indice real de marzo sin anomalia seria ~1.10.</p>
+            <p className="text-gray-400 text-[10px]">Nota: Mar 2025 inflado por pedido atipico ALSUPER ($7.8M). Indice real de marzo sin anomalia seria ~1.10.</p>
           </div>
         </div>
       </div>

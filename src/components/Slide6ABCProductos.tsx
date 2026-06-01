@@ -4,35 +4,27 @@ import SlideWrapper from "./SlideWrapper";
 import { BarChart3 } from "lucide-react";
 
 const abcSummary = [
-  { clase: "A", productos: 34, pct: "80.4%", color: "#2E75B6", desc: "Top productos — 80% del ingreso" },
-  { clase: "B", productos: 41, pct: "14.6%", color: "#F7B500", desc: "Contribucion media" },
-  { clase: "C", productos: 63, pct: "5.0%", color: "#9CA3AF", desc: "Cola larga" },
+  { clase: "A", productos: 34, pct: "79.7%", color: "#2E75B6", desc: "Top productos — 80% del ingreso" },
+  { clase: "B", productos: 41, pct: "15.2%", color: "#F7B500", desc: "Contribucion media" },
+  { clase: "C", productos: 65, pct: "5.0%", color: "#9CA3AF", desc: "Cola larga" },
 ];
 
 const top15 = [
-  { rank: 1, nombre: "Papa Diabla 5.5oz", venta: "$7.3M", acum: "15.7%", clase: "A" },
-  { rank: 2, nombre: "Papa Salada 5.5oz", venta: "$5.8M", acum: "28.3%", clase: "A" },
-  { rank: 3, nombre: "Tostada Roja 70PZ", venta: "$4.6M", acum: "38.1%", clase: "A" },
-  { rank: 4, nombre: "Durito 20 pzs", venta: "$1.5M", acum: "41.4%", clase: "A" },
-  { rank: 5, nombre: "Almendra Entera Domo", venta: "$1.4M", acum: "44.5%", clase: "A" },
-  { rank: 6, nombre: "Papa Nat. Mimarca 450g", venta: "$1.3M", acum: "47.3%", clase: "A" },
-  { rank: 7, nombre: "Uva Pasa Domo 250g", venta: "$1.3M", acum: "50.0%", clase: "A" },
-  { rank: 8, nombre: "Almendra Reb. Domo", venta: "$1.1M", acum: "52.4%", clase: "A" },
-  { rank: 9, nombre: "Ranchito Chile", venta: "$921K", acum: "54.3%", clase: "A" },
-  { rank: 10, nombre: "Papa Desh. 300g", venta: "$783K", acum: "56.0%", clase: "A" },
-  { rank: 11, nombre: "Rueda Enchilada 84g", venta: "$732K", acum: "57.6%", clase: "A" },
-  { rank: 12, nombre: "Rueda c/Salsita 84g", venta: "$718K", acum: "59.1%", clase: "A" },
-  { rank: 13, nombre: "PDQ 240 Papa 340g", venta: "$696K", acum: "60.6%", clase: "A" },
-  { rank: 14, nombre: "Rueda Natural 330g", venta: "$655K", acum: "62.1%", clase: "A" },
-  { rank: 15, nombre: "Donita Enchilada 84g", venta: "$622K", acum: "63.4%", clase: "A" },
-];
-
-const paretoSteps = [
-  { pctProd: "10%", pctRev: "61%", x: 10 },
-  { pctProd: "20%", pctRev: "76%", x: 20 },
-  { pctProd: "25%", pctRev: "80%", x: 25 },
-  { pctProd: "54%", pctRev: "95%", x: 54 },
-  { pctProd: "100%", pctRev: "100%", x: 100 },
+  { rank: 1, nombre: "Papa Diabla 5.5oz", venta: "$8.7M", acum: "15.7%", clase: "A" },
+  { rank: 2, nombre: "Papa Salada 5.5oz", venta: "$6.8M", acum: "27.8%", clase: "A" },
+  { rank: 3, nombre: "Tostada Roja 70PZ", venta: "$5.4M", acum: "37.6%", clase: "A" },
+  { rank: 4, nombre: "Durito 20 pzs", venta: "$2.2M", acum: "41.6%", clase: "A" },
+  { rank: 5, nombre: "Almendra Entera Domo", venta: "$1.6M", acum: "44.4%", clase: "A" },
+  { rank: 6, nombre: "Papa Nat. Mimarca 450g", venta: "$1.5M", acum: "47.0%", clase: "A" },
+  { rank: 7, nombre: "Uva Pasa Domo 250g", venta: "$1.3M", acum: "49.3%", clase: "A" },
+  { rank: 8, nombre: "Almendra Reb. Domo", venta: "$1.2M", acum: "51.6%", clase: "A" },
+  { rank: 9, nombre: "Ranchito Chile", venta: "$1.2M", acum: "53.7%", clase: "A" },
+  { rank: 10, nombre: "PDQ 240 Papa 340g", venta: "$904K", acum: "55.3%", clase: "A" },
+  { rank: 11, nombre: "Papa Desh. 300g", venta: "$881K", acum: "56.9%", clase: "A" },
+  { rank: 12, nombre: "Rueda Enchilada 84g", venta: "$829K", acum: "58.4%", clase: "A" },
+  { rank: 13, nombre: "Rueda c/Salsita 84g", venta: "$813K", acum: "59.8%", clase: "A" },
+  { rank: 14, nombre: "PDQ 1260 Papa 45g HEB", venta: "$803K", acum: "61.2%", clase: "A" },
+  { rank: 15, nombre: "Papa Jalapeño 5.5oz", venta: "$758K", acum: "62.6%", clase: "A" },
 ];
 
 export default function Slide6ABCProductos() {
@@ -42,7 +34,7 @@ export default function Slide6ABCProductos() {
         <BarChart3 className="w-7 h-7 text-[#2E75B6]" />
         <h2 className="text-3xl font-bold text-gray-800">Analisis ABC — Productos</h2>
       </div>
-      <p className="text-gray-500 text-sm mb-4">138 productos activos Ene-Abr 2026 · Clasificacion Pareto</p>
+      <p className="text-gray-500 text-sm mb-4">140 productos activos Ene-May 2026 · Clasificacion Pareto</p>
 
       <div className="flex gap-4 flex-1">
         {/* Left: Pareto visual + ABC summary */}
@@ -85,19 +77,19 @@ export default function Slide6ABCProductos() {
                 {/* 80% line */}
                 <div className="absolute top-[20%] left-0 right-0 border-t border-dashed border-[#2E75B6]/30" />
                 <span className="absolute top-[18%] right-0 text-[8px] text-[#2E75B6] font-semibold">80% ingreso</span>
-                {/* 28% line */}
-                <div className="absolute top-0 bottom-0 left-[25%] border-l border-dashed border-[#2E75B6]/30" />
-                <span className="absolute bottom-0 left-[25%] -translate-x-1/2 text-[8px] text-[#2E75B6] font-semibold">25% prods</span>
-                {/* Bars representing cumulative */}
+                {/* 24% line (A class) */}
+                <div className="absolute top-0 bottom-0 left-[24%] border-l border-dashed border-[#2E75B6]/30" />
+                <span className="absolute bottom-0 left-[24%] -translate-x-1/2 text-[8px] text-[#2E75B6] font-semibold">24% prods</span>
+                {/* Curve */}
                 <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
                   <polyline
-                    points="0,100 10,39 20,24 25,20 54,5 100,0"
+                    points="0,100 10,38 20,24 24,20 54,5 100,0"
                     fill="none"
                     stroke="#2E75B6"
                     strokeWidth="2"
                   />
                   <polygon
-                    points="0,100 10,39 20,24 25,20 54,5 100,0 100,100"
+                    points="0,100 10,38 20,24 24,20 54,5 100,0 100,100"
                     fill="#2E75B620"
                   />
                 </svg>
@@ -122,7 +114,7 @@ export default function Slide6ABCProductos() {
               <tr className="border-b border-gray-200">
                 <th className="text-left text-gray-400 font-normal pb-2 w-8">#</th>
                 <th className="text-left text-gray-400 font-normal pb-2">Producto</th>
-                <th className="text-right text-gray-400 font-normal pb-2">Venta Ene-Abr</th>
+                <th className="text-right text-gray-400 font-normal pb-2">Venta Ene-May</th>
                 <th className="text-right text-gray-400 font-normal pb-2">Acum.</th>
               </tr>
             </thead>

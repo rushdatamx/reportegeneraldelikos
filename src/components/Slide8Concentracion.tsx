@@ -4,12 +4,12 @@ import SlideWrapper from "./SlideWrapper";
 import { PieChart } from "lucide-react";
 
 const clientShares = [
-  { nombre: "La Molienda", pct: 32.5, color: "#2E75B6", monto: "$15.1M" },
-  { nombre: "ALSUPER", pct: 28.9, color: "#F7B500", monto: "$13.4M" },
-  { nombre: "MERCO", pct: 17.4, color: "#1A1A1A", monto: "$8.1M" },
-  { nombre: "Dulces La Mejor", pct: 9.3, color: "#27AE60", monto: "$4.3M" },
-  { nombre: "HEB", pct: 5.9, color: "#9CA3AF", monto: "$2.7M" },
-  { nombre: "Otros (21)", pct: 6.0, color: "#E5E7EB", monto: "$2.8M" },
+  { nombre: "La Molienda", pct: 32.4, color: "#2E75B6", monto: "$18.0M" },
+  { nombre: "ALSUPER", pct: 27.5, color: "#F7B500", monto: "$15.3M" },
+  { nombre: "MERCO", pct: 18.6, color: "#1A1A1A", monto: "$10.3M" },
+  { nombre: "Dulces La Mejor", pct: 8.8, color: "#27AE60", monto: "$4.9M" },
+  { nombre: "HEB", pct: 6.7, color: "#9CA3AF", monto: "$3.7M" },
+  { nombre: "Otros (22)", pct: 6.0, color: "#E5E7EB", monto: "$3.4M" },
 ];
 
 const segments = (() => {
@@ -25,7 +25,6 @@ function DonutSegment({ start, end, color, radius = 90, cx = 120, cy = 120, stro
   start: number; end: number; color: string; radius?: number; cx?: number; cy?: number; strokeWidth?: number;
 }) {
   const circumference = 2 * Math.PI * radius;
-  const startAngle = (start / 100) * 360 - 90;
   const sweepPct = (end - start) / 100;
   return (
     <circle
@@ -47,7 +46,7 @@ export default function Slide8Concentracion() {
         <PieChart className="w-7 h-7 text-[#2E75B6]" />
         <h2 className="text-3xl font-bold text-gray-800">Concentracion de Clientes</h2>
       </div>
-      <p className="text-gray-500 text-sm mb-5">Ene-Abr 2026 · Top 3 = 78.8% del ingreso</p>
+      <p className="text-gray-500 text-sm mb-5">Ene-May 2026 · Top 3 = 78.5% del ingreso</p>
 
       <div className="flex gap-6 flex-1">
         {/* Donut */}
@@ -56,7 +55,7 @@ export default function Slide8Concentracion() {
             {segments.map((s, i) => (
               <DonutSegment key={i} start={s.start} end={s.end} color={s.color} />
             ))}
-            <text x="120" y="110" textAnchor="middle" className="text-2xl font-bold" fill="#1A1A1A">78.8%</text>
+            <text x="120" y="110" textAnchor="middle" className="text-2xl font-bold" fill="#1A1A1A">78.5%</text>
             <text x="120" y="135" textAnchor="middle" className="text-xs" fill="#9CA3AF">Top 3</text>
           </svg>
           <div className="flex flex-wrap gap-2 mt-3 justify-center">
@@ -95,25 +94,25 @@ export default function Slide8Concentracion() {
           {/* KPI cards */}
           <div className="grid grid-cols-3 gap-3">
             <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-3 text-center">
-              <p className="text-gray-400 text-[10px] mb-1">HHI Ene-Abr 2026</p>
-              <p className="text-[#2E75B6] text-2xl font-bold">0.232</p>
+              <p className="text-gray-400 text-[10px] mb-1">HHI Ene-May 2026</p>
+              <p className="text-[#2E75B6] text-2xl font-bold">0.228</p>
               <p className="text-gray-400 text-[9px]">Concentracion moderada</p>
             </div>
             <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-3 text-center">
               <p className="text-gray-400 text-[10px] mb-1">Nacional</p>
-              <p className="text-gray-800 text-2xl font-bold">56.3%</p>
-              <p className="text-[#E31837] text-[9px] font-semibold">-28.3% vs Ene-Abr 25</p>
+              <p className="text-gray-800 text-2xl font-bold">57.2%</p>
+              <p className="text-[#E31837] text-[9px] font-semibold">-23.4% vs Ene-May 25</p>
             </div>
             <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-3 text-center">
               <p className="text-gray-400 text-[10px] mb-1">Exportacion</p>
-              <p className="text-[#2E75B6] text-2xl font-bold">43.7%</p>
-              <p className="text-[#27AE60] text-[9px] font-semibold">+17.1% vs Ene-Abr 25</p>
+              <p className="text-[#2E75B6] text-2xl font-bold">42.8%</p>
+              <p className="text-[#27AE60] text-[9px] font-semibold">+4.7% vs Ene-May 25</p>
             </div>
           </div>
 
           <div className="bg-[#2E75B6]/5 border border-[#2E75B6]/20 rounded-xl px-4 py-2">
             <p className="text-[#2E75B6] text-[11px] font-semibold">
-              &#9888; HHI en 0.232 — concentracion moderada. La Molienda desplaza a ALSUPER como cliente #1. Diversificar con nuevos clientes nacionales es prioridad.
+              &#9888; HHI en 0.228 — concentracion moderada. La Molienda desplaza a ALSUPER como cliente #1. Diversificar con nuevos clientes nacionales es prioridad.
             </p>
           </div>
         </div>

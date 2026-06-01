@@ -1,29 +1,30 @@
 "use client";
 
 import SlideWrapper from "./SlideWrapper";
-import { UserPlus, UserMinus, AlertTriangle } from "lucide-react";
+import { UserPlus, AlertTriangle } from "lucide-react";
 
 const nuevos = [
   { nombre: "Aztek Marketing LLC", tipo: "Export", monto: "$452K", nota: "Nuevo cliente USA — diversificacion export" },
   { nombre: "Puente Foods LLC", tipo: "Export", monto: "$437K", nota: "Nuevo cliente USA" },
+  { nombre: "El Chavito Mex Candys", tipo: "Export", monto: "$123K", nota: "Nuevo cliente USA" },
 ];
 
 const crecimiento = [
-  { nombre: "MERCO", tipo: "Nacional", monto: "$8.1M", var: "+51.7%", nota: "Ene-Abr 25: $5.3M — crecimiento sostenido" },
-  { nombre: "HEB / MITIENDA", tipo: "Nacional", monto: "$2.7M", var: "+26.8%", nota: "Ene-Abr 25: $2.2M — PDQs + Duritos" },
-  { nombre: "Dulces La Mejor", tipo: "Export", monto: "$4.3M", var: "+21.8%", nota: "Ene-Abr 25: $3.5M — crecimiento acelerado" },
+  { nombre: "MERCO", tipo: "Nacional", monto: "$10.3M", var: "+56.2%", nota: "Ene-May 25: $6.6M — crecimiento sostenido" },
+  { nombre: "HEB / MITIENDA", tipo: "Nacional", monto: "$3.7M", var: "+36.7%", nota: "Ene-May 25: $2.7M — PDQs + Duritos" },
+  { nombre: "Dulces La Mejor", tipo: "Export", monto: "$4.9M", var: "+8.8%", nota: "Ene-May 25: $4.5M — crecimiento sostenido" },
 ];
 
 const enRiesgo = [
-  { nombre: "Botanas y Derivados", tipo: "Nacional", q25: "$10.1M", q26: "$202K", var: "-98.0%", nota: "Colapso — era cliente #2 en Ene-Abr 25" },
-  { nombre: "ALSUPER", tipo: "Nacional", q25: "$17.2M", q26: "$13.4M", var: "-21.8%", nota: "Baja vs Ene-Abr 25 (pedidos atipicos Mar-Abr 25)" },
+  { nombre: "Botanas y Derivados", tipo: "Nacional", q25: "$10.6M", q26: "$202K", var: "-98.1%", nota: "Colapso — era cliente #2 en Ene-May 25" },
+  { nombre: "ALSUPER", tipo: "Nacional", q25: "$19.5M", q26: "$15.3M", var: "-21.4%", nota: "Baja vs Ene-May 25 (pedidos atipicos Mar-Abr 25)" },
 ];
 
 export default function Slide9ClientesNuevosPerdidos() {
   return (
     <SlideWrapper className="bg-[#F5F5F5] p-10">
-      <h2 className="text-3xl font-bold text-gray-800 mb-1">Movimiento de Clientes Ene-Abr</h2>
-      <p className="text-gray-500 text-sm mb-4">Nuevos, en crecimiento, y en riesgo — Ene-Abr 2025 vs Ene-Abr 2026</p>
+      <h2 className="text-3xl font-bold text-gray-800 mb-1">Movimiento de Clientes Ene-May</h2>
+      <p className="text-gray-500 text-sm mb-4">Nuevos, en crecimiento, y en riesgo — Ene-May 2025 vs Ene-May 2026</p>
 
       <div className="flex gap-4 flex-1">
         {/* Column 1: Nuevos + Crecimiento */}
@@ -32,20 +33,22 @@ export default function Slide9ClientesNuevosPerdidos() {
           <div className="bg-[#27AE60]/5 border border-[#27AE60]/20 rounded-xl p-4">
             <div className="flex items-center gap-2 mb-3">
               <UserPlus className="w-5 h-5 text-[#27AE60]" />
-              <h3 className="text-[#27AE60] font-bold">Cliente Nuevo</h3>
+              <h3 className="text-[#27AE60] font-bold">Clientes Nuevos</h3>
             </div>
-            {nuevos.map((c, i) => (
-              <div key={i} className="bg-white rounded-lg p-3 border border-[#27AE60]/20 animate-count-up">
-                <div className="flex items-center justify-between mb-1">
-                  <span className="text-gray-800 font-bold">{c.nombre}</span>
-                  <span className="text-[#27AE60] font-bold">{c.monto}</span>
+            <div className="space-y-2">
+              {nuevos.map((c, i) => (
+                <div key={i} className="bg-white rounded-lg p-3 border border-[#27AE60]/20 animate-count-up">
+                  <div className="flex items-center justify-between mb-1">
+                    <span className="text-gray-800 font-bold">{c.nombre}</span>
+                    <span className="text-[#27AE60] font-bold">{c.monto}</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <span className="text-[10px] px-2 py-0.5 rounded bg-[#27AE60]/10 text-[#27AE60] font-semibold">{c.tipo}</span>
+                    <span className="text-gray-400 text-[10px]">{c.nota}</span>
+                  </div>
                 </div>
-                <div className="flex items-center gap-2">
-                  <span className="text-[10px] px-2 py-0.5 rounded bg-[#27AE60]/10 text-[#27AE60] font-semibold">{c.tipo}</span>
-                  <span className="text-gray-400 text-[10px]">{c.nota}</span>
-                </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
 
           {/* En crecimiento */}
@@ -92,11 +95,11 @@ export default function Slide9ClientesNuevosPerdidos() {
                   </div>
                   <div className="grid grid-cols-2 gap-2 mb-2">
                     <div className="bg-white rounded px-2 py-1">
-                      <p className="text-gray-400 text-[9px]">Ene-Abr 2025</p>
+                      <p className="text-gray-400 text-[9px]">Ene-May 2025</p>
                       <p className="text-gray-600 font-semibold text-sm">{c.q25}</p>
                     </div>
                     <div className="bg-white rounded px-2 py-1">
-                      <p className="text-gray-400 text-[9px]">Ene-Abr 2026</p>
+                      <p className="text-gray-400 text-[9px]">Ene-May 2026</p>
                       <p className="text-gray-800 font-bold text-sm">{c.q26}</p>
                     </div>
                   </div>
@@ -107,7 +110,7 @@ export default function Slide9ClientesNuevosPerdidos() {
 
             <div className="mt-4 bg-[#FDF8F0] rounded-lg p-3 border border-[#E8DCC8]">
               <p className="text-[#B8860B] text-[11px] font-semibold leading-relaxed">
-                Botanas y Derivados colapso de $10.1M a $202K — investigar causa. ALSUPER baja -21.8% (normalizar Mar-Abr 25 atipicos).
+                Botanas y Derivados colapso de $10.6M a $202K — investigar causa. ALSUPER baja -21.4% (normalizar Mar-Abr 25 atipicos).
               </p>
             </div>
           </div>

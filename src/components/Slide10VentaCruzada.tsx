@@ -15,11 +15,11 @@ const clientes = [
 // 1 = sells, 0 = doesn't sell
 const matrix: number[][] = [
   // TOSTADA, PAPA, DURITO, CACAHUATE, RUEDA, CHURRITO, ROTINI, MINICUADRO, CONCHITA, PALOMITAS, ALMENDRA, FRUT.SECOS, DONITA
-  [1, 1, 0, 1, 1, 0, 1, 1, 0, 0, 1, 1, 0],  // ALSUPER (8/13)
-  [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1],  // MERCO (11/13)
-  [0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],  // HEB (2/13)
-  [0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0],  // La Molienda (4/13)
-  [0, 1, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 1],  // Dulces La Mejor (6/13)
+  [1, 1, 0, 1, 1, 0, 1, 1, 0, 0, 1, 1, 0],  // ALSUPER
+  [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1],  // MERCO
+  [0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],  // HEB
+  [0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0],  // La Molienda
+  [0, 1, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 1],  // Dulces La Mejor
 ];
 
 const oportunidades = [
@@ -35,7 +35,7 @@ export default function Slide10VentaCruzada() {
         <Grid3X3 className="w-7 h-7 text-[#2E75B6]" />
         <h2 className="text-3xl font-bold text-gray-800">Venta Cruzada</h2>
       </div>
-      <p className="text-gray-500 text-sm mb-4">Categorias por cliente Ene-Abr 2026 · Oportunidades de expansion</p>
+      <p className="text-gray-500 text-sm mb-4">Categorias por cliente Ene-May 2026 · Oportunidades de expansion</p>
 
       <div className="flex gap-4 flex-1">
         {/* Matrix */}

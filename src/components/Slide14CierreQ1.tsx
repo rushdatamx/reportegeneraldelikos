@@ -5,28 +5,29 @@ import { CheckCircle, AlertTriangle, ArrowRight } from "lucide-react";
 
 const hallazgos = [
   { tipo: "positivo", texto: "Ene y Feb 2026 crecen +14.5% y +21.8% vs 2025 — tendencia de fondo solida" },
-  { tipo: "positivo", texto: "MERCO crece +51.7% Ene-Abr — mayor motor de crecimiento nacional" },
-  { tipo: "positivo", texto: "Exportacion +17.1% ($20.3M) — 43.7% del total, 2 clientes nuevos (Aztek + Puente)" },
-  { tipo: "positivo", texto: "Precios unitarios estables o con incrementos moderados (+3-4%)" },
-  { tipo: "alerta", texto: "Ene-Abr baja -13.7% vs 2025, explicado por Mar-Abr 25 atipicos (ALSUPER $14.8M)" },
-  { tipo: "alerta", texto: "Botanas y Derivados colapso de $10.1M a $202K — perdida de cliente critica" },
-  { tipo: "alerta", texto: "44 productos perdidos ($16.5M) vs 52 nuevos ($6.1M) — deficit de $10.4M" },
+  { tipo: "positivo", texto: "MERCO crece +56.2% Ene-May ($10.3M) — mayor motor de crecimiento nacional" },
+  { tipo: "positivo", texto: "HEB / MITIENDA crece +36.7% Ene-May ($3.7M) — PDQs + Duritos" },
+  { tipo: "positivo", texto: "Exportacion +4.7% ($23.8M) — 42.8% del total, 3 clientes export nuevos" },
+  { tipo: "positivo", texto: "Precios unitarios estables o con incrementos moderados (+2-3%)" },
+  { tipo: "alerta", texto: "Ene-May baja -13.4% vs 2025, explicado por Mar-Abr 25 atipicos (ALSUPER $14.8M)" },
+  { tipo: "alerta", texto: "Botanas y Derivados colapso de $10.6M a $202K — perdida critica de cliente" },
+  { tipo: "alerta", texto: "ALSUPER baja -21.4% YoY ($-4.2M) — normalizar Mar-Abr 25 atipicos" },
 ];
 
 const acciones = [
-  "Investigar Botanas y Derivados — de $10.1M a $202K, perdida critica de volumen",
+  "Investigar Botanas y Derivados — de $10.6M a $202K, perdida critica de volumen",
   "Acelerar expansion en HEB (solo 2/13 categorias) — oportunidad mas grande",
   "Reforzar MERCO: mantener momentum tostadas + expandir Almendra y Frutos Secos",
   "Propuesta venta cruzada ALSUPER: Durito, Churrito, Conchita, Palomitas, Donita",
-  "Diversificar base de clientes nacionales — La Molienda ya es cliente #1 (32.5%)",
-  "Preparar Mayo: indice estacionalidad 0.95, impulsar con promociones",
+  "Diversificar base de clientes nacionales — La Molienda ya es cliente #1 (32.4%)",
+  "Preparar Jun-Jul: indice estacionalidad 0.95 — impulsar con promociones",
 ];
 
 export default function Slide14CierreQ1() {
   return (
     <SlideWrapper className="bg-[#F5F5F5] p-10">
-      <h2 className="text-3xl font-bold text-gray-800 mb-1">Cierre Ene-Abr 2026</h2>
-      <p className="text-gray-500 text-sm mb-4">Resumen ejecutivo — hallazgos clave y acciones para Mayo-Jun</p>
+      <h2 className="text-3xl font-bold text-gray-800 mb-1">Cierre Ene-May 2026</h2>
+      <p className="text-gray-500 text-sm mb-4">Resumen ejecutivo — hallazgos clave y acciones para Jun-Jul</p>
 
       <div className="flex gap-5 flex-1">
         {/* Hallazgos */}
@@ -50,7 +51,7 @@ export default function Slide14CierreQ1() {
         {/* Acciones */}
         <div className="w-[480px] flex flex-col gap-3">
           <div className="bg-[#27AE60]/5 border border-[#27AE60]/20 rounded-xl p-5 flex-1">
-            <h3 className="text-[#27AE60] font-bold mb-3">Acciones Mayo-Jun 2026</h3>
+            <h3 className="text-[#27AE60] font-bold mb-3">Acciones Jun-Jul 2026</h3>
             <div className="space-y-2.5">
               {acciones.map((a, i) => (
                 <div key={i} className="flex items-start gap-2.5 animate-count-up" style={{ animationDelay: `${i * 80 + 400}ms` }}>
@@ -64,16 +65,16 @@ export default function Slide14CierreQ1() {
           {/* Bottom KPIs */}
           <div className="grid grid-cols-3 gap-2">
             <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-3 text-center">
-              <p className="text-gray-400 text-[9px]">Ene-Abr 2026</p>
-              <p className="text-[#F7B500] text-xl font-bold">$46.4M</p>
+              <p className="text-gray-400 text-[9px]">Ene-May 2026</p>
+              <p className="text-[#F7B500] text-xl font-bold">$55.6M</p>
             </div>
             <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-3 text-center">
               <p className="text-gray-400 text-[9px]">Productos activos</p>
-              <p className="text-gray-800 text-xl font-bold">138</p>
+              <p className="text-gray-800 text-xl font-bold">140</p>
             </div>
             <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-3 text-center">
               <p className="text-gray-400 text-[9px]">Clientes activos</p>
-              <p className="text-gray-800 text-xl font-bold">26</p>
+              <p className="text-gray-800 text-xl font-bold">27</p>
             </div>
           </div>
         </div>

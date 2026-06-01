@@ -13,7 +13,6 @@ import {
 } from "recharts";
 
 const data = [
-  { mes: "May 24", alsuper: 1577786, merco: 1038765, lamolienda: 2304002 },
   { mes: "Jun 24", alsuper: 1272529, merco: 1088115, lamolienda: 1606497 },
   { mes: "Jul 24", alsuper: 1073999, merco: 1132286, lamolienda: 2177861 },
   { mes: "Ago 24", alsuper: 1211506, merco: 1015489, lamolienda: 1727405 },
@@ -37,6 +36,7 @@ const data = [
   { mes: "Feb 26", alsuper: 3095625, merco: 2292048, lamolienda: 3928636 },
   { mes: "Mar 26", alsuper: 3213052, merco: 2355983, lamolienda: 3861014 },
   { mes: "Abr 26", alsuper: 3159981, merco: 1245931, lamolienda: 4994678 },
+  { mes: "May 26", alsuper: 1855435, merco: 2240738, lamolienda: 2898008 },
 ];
 
 const formatPesos = (v: number) => `$${(v / 1_000_000).toFixed(1)}M`;
@@ -63,7 +63,7 @@ export default function Slide11Tendencia() {
   return (
     <SlideWrapper className="bg-[#F5F5F5] p-10">
       <h2 className="text-3xl font-bold text-gray-800 mb-1">Tendencia Mensual 24 Meses</h2>
-      <p className="text-gray-500 text-sm mb-3">Top 3 clientes por facturacion · May 2024 — Abr 2026</p>
+      <p className="text-gray-500 text-sm mb-3">Top 3 clientes por facturacion · Jun 2024 — May 2026</p>
 
       <div className="flex gap-5 mb-3 text-[10px]">
         <div className="flex items-center gap-1.5">
@@ -80,7 +80,7 @@ export default function Slide11Tendencia() {
         </div>
         <div className="ml-auto">
           <span className="px-2 py-0.5 rounded-full text-[9px] font-bold bg-[#F7B500]/20 text-[#B8860B] border border-[#F7B500]/40">
-            ALSUPER Mar 25: $8.1M (atipico)
+            ALSUPER Mar 25: $7.8M (atipico)
           </span>
         </div>
       </div>
@@ -102,7 +102,7 @@ export default function Slide11Tendencia() {
       </div>
 
       <div className="flex justify-between mt-2 text-[10px] text-gray-500">
-        <span>MERCO: tendencia ascendente sostenida (+51.7% Ene-Abr YoY)</span>
+        <span>MERCO: tendencia ascendente sostenida (+56.2% Ene-May YoY)</span>
         <span>La Molienda: estable $2.3-5.0M/mes — cliente ancla de exportacion</span>
       </div>
     </SlideWrapper>
