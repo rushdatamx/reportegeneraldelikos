@@ -4,13 +4,13 @@ import SlideWrapper from "./SlideWrapper";
 import { Award } from "lucide-react";
 
 const productos = [
-  { nombre: "Papa Diabla 5.5oz La Molienda", venta: 10380000, pct: 15.4, tag: "Export" },
-  { nombre: "Papa Salada 5.5oz La Molienda", venta: 8060000, pct: 12.0, tag: "Export" },
+  { nombre: "Papa Diabla 5.5oz La Molienda", venta: 10330000, pct: 15.2, tag: "Export" },
+  { nombre: "Papa Salada 5.5oz La Molienda", venta: 8020000, pct: 11.8, tag: "Export" },
   { nombre: "Tostada Roja 70PZ Mi Marca", venta: 6480000, pct: 9.6, tag: "MERCO" },
   { nombre: "Durito 20 piezas", venta: 2430000, pct: 3.6, tag: "Multi" },
-  { nombre: "Almendra Entera Domo 250g", venta: 1930000, pct: 2.9, tag: "ALSUPER" },
+  { nombre: "Almendra Entera Domo 250g", venta: 1930000, pct: 2.8, tag: "ALSUPER" },
   { nombre: "Papa Frita Natural Mimarca 450g", venta: 1820000, pct: 2.7, tag: "ALSUPER" },
-  { nombre: "Ranchito con Chile La Molienda", venta: 1470000, pct: 2.2, tag: "Export" },
+  { nombre: "Ranchito con Chile La Molienda", venta: 1460000, pct: 2.1, tag: "Export" },
   { nombre: "Almendra Rebanada Domo 200g", venta: 1410000, pct: 2.1, tag: "ALSUPER" },
   { nombre: "Uva Pasa Domo 250g", venta: 1350000, pct: 2.0, tag: "ALSUPER" },
   { nombre: "Papa Deshidratada 300g", venta: 1080000, pct: 1.6, tag: "ALSUPER" },
@@ -38,7 +38,7 @@ export default function Slide4TopProductos() {
         <Award className="w-7 h-7 text-[#F7B500]" />
         <h2 className="text-3xl font-bold text-gray-800">Top 10 Productos Ene-Jun 2026</h2>
       </div>
-      <p className="text-gray-500 text-sm mb-5">Ranking por venta acumulada Ene-Jun · Top 10 concentra 54.2%</p>
+      <p className="text-gray-500 text-sm mb-5">Ranking por venta acumulada Ene-Jun · Top 10 concentra 53.5%</p>
 
       <div className="flex-1 space-y-2">
         {productos.map((p, i) => {
@@ -86,7 +86,7 @@ export default function Slide4TopProductos() {
 
       <div className="mt-3 flex justify-between items-center bg-[#FDF8F0] rounded-lg px-5 py-3 border border-[#E8DCC8]">
         <span className="text-gray-500 text-sm">Total Ene-Jun 2026</span>
-        <span className="text-[#F7B500] font-bold text-lg">$67.2M</span>
+        <span className="text-[#F7B500] font-bold text-lg">$67.8M</span>
       </div>
     </SlideWrapper>
   );

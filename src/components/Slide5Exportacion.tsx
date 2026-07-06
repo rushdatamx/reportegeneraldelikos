@@ -8,11 +8,11 @@ const clientes = [
     nombre: "La Molienda Mexicana",
     pais: "USA",
     q1_2025: "$23.0M",
-    q1_2026: "$21.6M",
-    variacion: "-6.1%",
+    q1_2026: "$21.5M",
+    variacion: "-6.6%",
     positivo: false,
     tc: "Factura en MXN (TC=1.00)",
-    nota: "Cliente #1 export — 73.6% del total export",
+    nota: "Cliente #1 export — 71.7% del total export",
   },
   {
     nombre: "Dulces La Mejor",
@@ -22,22 +22,22 @@ const clientes = [
     variacion: "+14.9%",
     positivo: true,
     tc: "TC prom: ~17.2-17.5",
-    nota: "Crecimiento sostenido — 20.7% del export",
+    nota: "Crecimiento sostenido — 20.3% del export",
   },
   {
     nombre: "Mixteca + Aztek + Puente + 2",
     pais: "USA",
     q1_2025: "$0",
-    q1_2026: "$1.8M",
+    q1_2026: "$2.4M",
     variacion: "Nuevos",
     positivo: true,
     tc: "Incluye Safari Group y Chavito",
-    nota: "5 clientes nuevos Ene-Jun 2026 — diversificacion",
+    nota: "5 clientes nuevos Ene-Jun 2026 — Mixteca lidera con $1.2M",
   },
 ];
 
 const topProductos = [
-  { nombre: "Papa Diabla 5.5oz La Molienda", venta: "$10.4M" },
+  { nombre: "Papa Diabla 5.5oz La Molienda", venta: "$10.3M" },
   { nombre: "Papa Salada 5.5oz La Molienda", venta: "$8.0M" },
   { nombre: "Ranchito con Chile La Molienda", venta: "$1.5M" },
   { nombre: "Rueda Enchilada 84g C/24", venta: "$1.0M" },
@@ -57,7 +57,7 @@ export default function Slide5Exportacion() {
         <Globe className="w-7 h-7 text-[#F7B500]" />
         <h2 className="text-3xl font-bold text-gray-800">Exportacion Ene-Jun</h2>
       </div>
-      <p className="text-gray-500 text-sm mb-5">Ene-Jun 2025: $28.3M → Ene-Jun 2026: $29.4M · <span className="text-[#27AE60] font-semibold">+3.8%</span> · 43.7% del total</p>
+      <p className="text-gray-500 text-sm mb-5">Ene-Jun 2025: $28.3M → Ene-Jun 2026: $30.0M · <span className="text-[#27AE60] font-semibold">+5.9%</span> · 44.2% del total</p>
 
       <div className="grid grid-cols-3 gap-4 mb-5">
         {clientes.map((c, i) => {
@@ -120,7 +120,7 @@ export default function Slide5Exportacion() {
               </div>
             ))}
           </div>
-          <p className="text-[#27AE60] text-[10px] mt-3 font-semibold">Export crece +3.8% Ene-Jun — motor de diversificacion activo + 5 clientes nuevos</p>
+          <p className="text-[#27AE60] text-[10px] mt-3 font-semibold">Export crece +5.9% Ene-Jun — motor de diversificacion activo + 5 clientes nuevos</p>
         </div>
       </div>
     </SlideWrapper>

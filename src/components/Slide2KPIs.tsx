@@ -14,7 +14,7 @@ const months = [
   { mes: "Feb", q26: 11.1, q25: 9.1, var: "+21.7%", pos: true },
   { mes: "Mar", q26: 11.7, q25: 18.5, var: "-37.0%", pos: false },
   { mes: "Abr", q26: 12.7, q25: 16.8, var: "-24.5%", pos: false },
-  { mes: "May", q26: 9.5, q25: 10.5, var: "-9.5%", pos: false },
+  { mes: "May", q26: 10.1, q25: 10.5, var: "-3.9%", pos: false },
   { mes: "Jun", q26: 11.0, q25: 10.7, var: "+3.2%", pos: true },
 ];
 
@@ -31,13 +31,13 @@ export default function Slide2KPIs() {
       <div className="flex items-center gap-8 mb-5">
         <div className="animate-count-up">
           <p className="text-gray-500 text-sm mb-1">Venta Ene-Jun 2026</p>
-          <p className="text-6xl font-bold text-[#F7B500] tracking-tight">$67.2M</p>
+          <p className="text-6xl font-bold text-[#F7B500] tracking-tight">$67.8M</p>
           <p className="text-gray-400 text-xs mt-1">Ene a Jun 2026 — primer semestre</p>
         </div>
         <div className="flex items-center gap-2 bg-[#E31837]/10 border border-[#E31837]/20 rounded-xl px-5 py-3 animate-count-up" style={{ animationDelay: "150ms" }}>
           <TrendingDown className="w-5 h-5 text-[#E31837]" />
           <div>
-            <p className="text-[#E31837] text-2xl font-bold">-10.9%</p>
+            <p className="text-[#E31837] text-2xl font-bold">-10.1%</p>
             <p className="text-gray-500 text-[10px]">vs Ene-Jun 2025 ($75.5M)</p>
           </div>
         </div>
@@ -93,7 +93,7 @@ export default function Slide2KPIs() {
         </div>
         <div className="bg-[#F7B500]/5 border border-[#F7B500]/20 rounded-xl px-5 py-4 max-w-[380px] flex items-center">
           <p className="text-[#B8860B] text-[11px] font-semibold leading-relaxed">
-            &#9888; H1 baja -10.9% vs 2025, pero la caida viene de Mar-Abr 25 (pedidos atipicos de ALSUPER $15.2M). Ene +14.4%, Feb +21.7% y Jun +3.2% crecen — tendencia de fondo positiva. Jun 2026 regresa a terreno positivo.
+            &#9888; H1 baja -10.1% vs 2025, pero la caida viene de Mar-Abr 25 (pedidos atipicos de ALSUPER $15.2M). Ene +14.4%, Feb +21.7% y Jun +3.2% crecen — tendencia de fondo positiva. Jun 2026 regresa a terreno positivo.
           </p>
         </div>
       </div>

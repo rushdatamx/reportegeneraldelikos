@@ -4,12 +4,12 @@ import SlideWrapper from "./SlideWrapper";
 import { PieChart } from "lucide-react";
 
 const clientShares = [
-  { nombre: "La Molienda", pct: 32.2, color: "#2E75B6", monto: "$21.6M" },
-  { nombre: "ALSUPER", pct: 27.2, color: "#F7B500", monto: "$18.3M" },
-  { nombre: "MERCO", pct: 18.2, color: "#1A1A1A", monto: "$12.3M" },
+  { nombre: "La Molienda", pct: 31.7, color: "#2E75B6", monto: "$21.5M" },
+  { nombre: "ALSUPER", pct: 27.0, color: "#F7B500", monto: "$18.3M" },
+  { nombre: "MERCO", pct: 18.1, color: "#1A1A1A", monto: "$12.3M" },
   { nombre: "Dulces La Mejor", pct: 9.0, color: "#27AE60", monto: "$6.1M" },
-  { nombre: "HEB", pct: 6.1, color: "#9CA3AF", monto: "$4.1M" },
-  { nombre: "Otros (28)", pct: 7.2, color: "#E5E7EB", monto: "$4.9M" },
+  { nombre: "HEB", pct: 6.0, color: "#9CA3AF", monto: "$4.1M" },
+  { nombre: "Otros (28)", pct: 8.2, color: "#E5E7EB", monto: "$5.6M" },
 ];
 
 const segments = (() => {
@@ -46,7 +46,7 @@ export default function Slide8Concentracion() {
         <PieChart className="w-7 h-7 text-[#2E75B6]" />
         <h2 className="text-3xl font-bold text-gray-800">Concentracion de Clientes</h2>
       </div>
-      <p className="text-gray-500 text-sm mb-5">Ene-Jun 2026 · Top 3 = 77.6% del ingreso</p>
+      <p className="text-gray-500 text-sm mb-5">Ene-Jun 2026 · Top 3 = 76.8% del ingreso</p>
 
       <div className="flex gap-6 flex-1">
         {/* Donut */}
@@ -55,7 +55,7 @@ export default function Slide8Concentracion() {
             {segments.map((s, i) => (
               <DonutSegment key={i} start={s.start} end={s.end} color={s.color} />
             ))}
-            <text x="120" y="110" textAnchor="middle" className="text-2xl font-bold" fill="#1A1A1A">77.6%</text>
+            <text x="120" y="110" textAnchor="middle" className="text-2xl font-bold" fill="#1A1A1A">76.8%</text>
             <text x="120" y="135" textAnchor="middle" className="text-xs" fill="#9CA3AF">Top 3</text>
           </svg>
           <div className="flex flex-wrap gap-2 mt-3 justify-center">
@@ -95,24 +95,24 @@ export default function Slide8Concentracion() {
           <div className="grid grid-cols-3 gap-3">
             <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-3 text-center">
               <p className="text-gray-400 text-[10px] mb-1">HHI Ene-Jun 2026</p>
-              <p className="text-[#2E75B6] text-2xl font-bold">0.223</p>
+              <p className="text-[#2E75B6] text-2xl font-bold">0.219</p>
               <p className="text-gray-400 text-[9px]">Concentracion moderada</p>
             </div>
             <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-3 text-center">
               <p className="text-gray-400 text-[10px] mb-1">Nacional</p>
-              <p className="text-gray-800 text-2xl font-bold">56.3%</p>
+              <p className="text-gray-800 text-2xl font-bold">55.8%</p>
               <p className="text-[#E31837] text-[9px] font-semibold">-19.8% vs Ene-Jun 25</p>
             </div>
             <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-3 text-center">
               <p className="text-gray-400 text-[10px] mb-1">Exportacion</p>
-              <p className="text-[#2E75B6] text-2xl font-bold">43.7%</p>
-              <p className="text-[#27AE60] text-[9px] font-semibold">+3.8% vs Ene-Jun 25</p>
+              <p className="text-[#2E75B6] text-2xl font-bold">44.2%</p>
+              <p className="text-[#27AE60] text-[9px] font-semibold">+5.9% vs Ene-Jun 25</p>
             </div>
           </div>
 
           <div className="bg-[#2E75B6]/5 border border-[#2E75B6]/20 rounded-xl px-4 py-2">
             <p className="text-[#2E75B6] text-[11px] font-semibold">
-              &#9888; HHI en 0.223 — concentracion moderada. La Molienda se mantiene como cliente #1 (32.2%). Diversificar con nuevos clientes nacionales es prioridad.
+              &#9888; HHI en 0.219 — concentracion moderada. La Molienda se mantiene como cliente #1 (31.7%). Diversificar con nuevos clientes nacionales es prioridad.
             </p>
           </div>
         </div>

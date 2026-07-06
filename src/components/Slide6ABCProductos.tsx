@@ -4,27 +4,27 @@ import SlideWrapper from "./SlideWrapper";
 import { BarChart3 } from "lucide-react";
 
 const abcSummary = [
-  { clase: "A", productos: 35, pct: "79.8%", color: "#2E75B6", desc: "Top productos — 80% del ingreso" },
+  { clase: "A", productos: 36, pct: "79.8%", color: "#2E75B6", desc: "Top productos — 80% del ingreso" },
   { clase: "B", productos: 45, pct: "15.1%", color: "#F7B500", desc: "Contribucion media" },
-  { clase: "C", productos: 75, pct: "5.1%", color: "#9CA3AF", desc: "Cola larga" },
+  { clase: "C", productos: 75, pct: "5.0%", color: "#9CA3AF", desc: "Cola larga" },
 ];
 
 const top15 = [
-  { rank: 1, nombre: "Papa Diabla 5.5oz", venta: "$10.4M", acum: "15.4%", clase: "A" },
-  { rank: 2, nombre: "Papa Salada 5.5oz", venta: "$8.1M", acum: "27.4%", clase: "A" },
-  { rank: 3, nombre: "Tostada Roja 70PZ", venta: "$6.5M", acum: "37.1%", clase: "A" },
-  { rank: 4, nombre: "Durito 20 pzs", venta: "$2.4M", acum: "40.7%", clase: "A" },
-  { rank: 5, nombre: "Almendra Entera Domo", venta: "$1.9M", acum: "43.5%", clase: "A" },
-  { rank: 6, nombre: "Papa Nat. Mimarca 450g", venta: "$1.8M", acum: "46.3%", clase: "A" },
-  { rank: 7, nombre: "Ranchito Chile", venta: "$1.5M", acum: "48.4%", clase: "A" },
-  { rank: 8, nombre: "Almendra Reb. Domo", venta: "$1.4M", acum: "50.5%", clase: "A" },
-  { rank: 9, nombre: "Uva Pasa Domo 250g", venta: "$1.4M", acum: "52.6%", clase: "A" },
-  { rank: 10, nombre: "Papa Desh. 300g", venta: "$1.1M", acum: "54.2%", clase: "A" },
-  { rank: 11, nombre: "Rueda Enchilada 84g", venta: "$1.0M", acum: "55.7%", clase: "A" },
-  { rank: 12, nombre: "Rueda c/Salsita 84g", venta: "$1.0M", acum: "57.2%", clase: "A" },
-  { rank: 13, nombre: "PDQ 1260 Papa 45g HEB", venta: "$994K", acum: "58.7%", clase: "A" },
-  { rank: 14, nombre: "Papa Jalapeño 5.5oz", venta: "$941K", acum: "60.1%", clase: "A" },
-  { rank: 15, nombre: "Pepita Calabaza Domo", venta: "$938K", acum: "61.5%", clase: "A" },
+  { rank: 1, nombre: "Papa Diabla 5.5oz", venta: "$10.3M", acum: "15.2%", clase: "A" },
+  { rank: 2, nombre: "Papa Salada 5.5oz", venta: "$8.0M", acum: "27.1%", clase: "A" },
+  { rank: 3, nombre: "Tostada Roja 70PZ", venta: "$6.5M", acum: "36.6%", clase: "A" },
+  { rank: 4, nombre: "Durito 20 pzs", venta: "$2.4M", acum: "40.2%", clase: "A" },
+  { rank: 5, nombre: "Almendra Entera Domo", venta: "$1.9M", acum: "43.0%", clase: "A" },
+  { rank: 6, nombre: "Papa Nat. Mimarca 450g", venta: "$1.8M", acum: "45.7%", clase: "A" },
+  { rank: 7, nombre: "Ranchito Chile", venta: "$1.5M", acum: "47.9%", clase: "A" },
+  { rank: 8, nombre: "Almendra Reb. Domo", venta: "$1.4M", acum: "50.0%", clase: "A" },
+  { rank: 9, nombre: "Uva Pasa Domo 250g", venta: "$1.4M", acum: "51.9%", clase: "A" },
+  { rank: 10, nombre: "Papa Desh. 300g", venta: "$1.1M", acum: "53.5%", clase: "A" },
+  { rank: 11, nombre: "Rueda Enchilada 84g", venta: "$1.0M", acum: "55.1%", clase: "A" },
+  { rank: 12, nombre: "Rueda c/Salsita 84g", venta: "$1.0M", acum: "56.6%", clase: "A" },
+  { rank: 13, nombre: "PDQ 1260 Papa 45g HEB", venta: "$994K", acum: "58.0%", clase: "A" },
+  { rank: 14, nombre: "Pepita Calabaza Domo", venta: "$938K", acum: "59.4%", clase: "A" },
+  { rank: 15, nombre: "Rueda Natural 330g", venta: "$928K", acum: "60.8%", clase: "A" },
 ];
 
 export default function Slide6ABCProductos() {
@@ -34,7 +34,7 @@ export default function Slide6ABCProductos() {
         <BarChart3 className="w-7 h-7 text-[#2E75B6]" />
         <h2 className="text-3xl font-bold text-gray-800">Analisis ABC — Productos</h2>
       </div>
-      <p className="text-gray-500 text-sm mb-4">155 productos activos Ene-Jun 2026 · Clasificacion Pareto</p>
+      <p className="text-gray-500 text-sm mb-4">156 productos activos Ene-Jun 2026 · Clasificacion Pareto</p>
 
       <div className="flex gap-4 flex-1">
         {/* Left: Pareto visual + ABC summary */}

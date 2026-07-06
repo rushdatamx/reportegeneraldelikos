@@ -80,7 +80,7 @@ export default function Slide7CrecimientoCaida() {
         <div className="bg-[#27AE60]/5 border border-[#27AE60]/20 rounded-xl px-5 py-3 flex items-center gap-3">
           <Plus className="w-5 h-5 text-[#27AE60]" />
           <div>
-            <span className="text-[#27AE60] font-bold text-lg">66</span>
+            <span className="text-[#27AE60] font-bold text-lg">67</span>
             <span className="text-gray-500 text-sm ml-2">productos nuevos en Ene-Jun 2026</span>
             <p className="text-gray-400 text-[10px]">PDQ HEB + SKUs Domo ALSUPER + nuevos MERCO</p>
           </div>

@@ -35,7 +35,7 @@ const data = [
   { mes: "Feb 26", alsuper: 3095625, merco: 2292048, lamolienda: 3928636 },
   { mes: "Mar 26", alsuper: 3495697, merco: 2355983, lamolienda: 3866295 },
   { mes: "Abr 26", alsuper: 3159981, merco: 1245931, lamolienda: 4994678 },
-  { mes: "May 26", alsuper: 1859415, merco: 2495887, lamolienda: 3014810 },
+  { mes: "May 26", alsuper: 1859415, merco: 2495887, lamolienda: 2898008 },
   { mes: "Jun 26", alsuper: 2725803, merco: 1679048, lamolienda: 3513155 },
 ];
 

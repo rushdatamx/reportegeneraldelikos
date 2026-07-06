@@ -4,7 +4,7 @@ import SlideWrapper from "./SlideWrapper";
 import { UserPlus, AlertTriangle } from "lucide-react";
 
 const nuevos = [
-  { nombre: "Abarrotes Mixteca Corp", tipo: "Export", monto: "$601K", nota: "Nuevo cliente USA — diversificacion export" },
+  { nombre: "Abarrotes Mixteca Corp", tipo: "Export", monto: "$1.2M", nota: "Nuevo cliente USA — diversificacion export" },
   { nombre: "Aztek Marketing LLC", tipo: "Export", monto: "$447K", nota: "Nuevo cliente USA" },
   { nombre: "Puente Foods LLC", tipo: "Export", monto: "$437K", nota: "Nuevo cliente USA (+ Safari $163K, Chavito $123K)" },
 ];
