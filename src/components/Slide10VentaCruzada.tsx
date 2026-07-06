@@ -16,16 +16,16 @@ const clientes = [
 const matrix: number[][] = [
   // TOSTADA, PAPA, DURITO, CACAHUATE, RUEDA, CHURRITO, ROTINI, MINICUADRO, CONCHITA, PALOMITAS, ALMENDRA, FRUT.SECOS, DONITA
   [1, 1, 0, 1, 1, 0, 1, 1, 0, 0, 1, 1, 0],  // ALSUPER
-  [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1],  // MERCO
+  [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0],  // MERCO
   [0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],  // HEB
-  [0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0],  // La Molienda
+  [0, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0],  // La Molienda
   [0, 1, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 1],  // Dulces La Mejor
 ];
 
 const oportunidades = [
   { cliente: "HEB", cats: "Tostada, Cacahuate, Rueda, Churrito +7 mas", potencial: "Alto" },
   { cliente: "ALSUPER", cats: "Durito, Churrito, Conchita, Palomitas, Donita", potencial: "Alto" },
-  { cliente: "La Molienda", cats: "Tostada, Cacahuate, Rotini, Minicuadro +5", potencial: "Medio" },
+  { cliente: "La Molienda", cats: "Tostada, Cacahuate, Churrito, Rotini +5", potencial: "Medio" },
 ];
 
 export default function Slide10VentaCruzada() {
@@ -35,7 +35,7 @@ export default function Slide10VentaCruzada() {
         <Grid3X3 className="w-7 h-7 text-[#2E75B6]" />
         <h2 className="text-3xl font-bold text-gray-800">Venta Cruzada</h2>
       </div>
-      <p className="text-gray-500 text-sm mb-4">Categorias por cliente Ene-May 2026 · Oportunidades de expansion</p>
+      <p className="text-gray-500 text-sm mb-4">Categorias por cliente Ene-Jun 2026 · Oportunidades de expansion</p>
 
       <div className="flex gap-4 flex-1">
         {/* Matrix */}
@@ -111,7 +111,7 @@ export default function Slide10VentaCruzada() {
           </div>
           <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-3">
             <p className="text-gray-500 text-[10px]">
-              <span className="font-bold text-gray-800">MERCO</span> es el cliente mas diversificado (11/13 categorias).
+              <span className="font-bold text-gray-800">MERCO</span> es el cliente mas diversificado (10/13 categorias).
               <span className="font-bold text-gray-800"> HEB</span> tiene el mayor potencial de expansion (solo 2/13).
             </p>
           </div>

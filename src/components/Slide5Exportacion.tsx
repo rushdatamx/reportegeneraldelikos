@@ -7,41 +7,41 @@ const clientes = [
   {
     nombre: "La Molienda Mexicana",
     pais: "USA",
-    q1_2025: "$18.2M",
-    q1_2026: "$18.0M",
-    variacion: "-1.2%",
+    q1_2025: "$23.0M",
+    q1_2026: "$21.6M",
+    variacion: "-6.1%",
     positivo: false,
     tc: "Factura en MXN (TC=1.00)",
-    nota: "Cliente #1 export — 75.7% del total export",
+    nota: "Cliente #1 export — 73.6% del total export",
   },
   {
     nombre: "Dulces La Mejor",
     pais: "USA",
-    q1_2025: "$4.5M",
-    q1_2026: "$4.9M",
-    variacion: "+8.8%",
+    q1_2025: "$5.3M",
+    q1_2026: "$6.1M",
+    variacion: "+14.9%",
     positivo: true,
-    tc: "TC prom: 17.43",
-    nota: "Crecimiento sostenido — 20.6% del export",
+    tc: "TC prom: ~17.2-17.5",
+    nota: "Crecimiento sostenido — 20.7% del export",
   },
   {
-    nombre: "Mixteca + Aztek + Puente",
+    nombre: "Mixteca + Aztek + Puente + 2",
     pais: "USA",
     q1_2025: "$0",
-    q1_2026: "$1.5M",
+    q1_2026: "$1.8M",
     variacion: "Nuevos",
     positivo: true,
-    tc: "TC prom: ~17.50",
-    nota: "3 clientes nuevos Ene-May 2026 — diversificacion",
+    tc: "Incluye Safari Group y Chavito",
+    nota: "5 clientes nuevos Ene-Jun 2026 — diversificacion",
   },
 ];
 
 const topProductos = [
-  { nombre: "Papa Diabla 5.5oz La Molienda", venta: "$8.7M" },
-  { nombre: "Papa Salada 5.5oz La Molienda", venta: "$6.7M" },
-  { nombre: "Ranchito con Chile La Molienda", venta: "$1.2M" },
-  { nombre: "Rueda Enchilada 84g C/24", venta: "$829K" },
-  { nombre: "Rueda con Salsita 84g C/24", venta: "$813K" },
+  { nombre: "Papa Diabla 5.5oz La Molienda", venta: "$10.4M" },
+  { nombre: "Papa Salada 5.5oz La Molienda", venta: "$8.0M" },
+  { nombre: "Ranchito con Chile La Molienda", venta: "$1.5M" },
+  { nombre: "Rueda Enchilada 84g C/24", venta: "$1.0M" },
+  { nombre: "Rueda con Salsita 84g C/24", venta: "$1.0M" },
 ];
 
 const exportAnual = [
@@ -55,9 +55,9 @@ export default function Slide5Exportacion() {
     <SlideWrapper className="bg-[#F5F5F5] p-10">
       <div className="flex items-center gap-3 mb-1">
         <Globe className="w-7 h-7 text-[#F7B500]" />
-        <h2 className="text-3xl font-bold text-gray-800">Exportacion Ene-May</h2>
+        <h2 className="text-3xl font-bold text-gray-800">Exportacion Ene-Jun</h2>
       </div>
-      <p className="text-gray-500 text-sm mb-5">Ene-May 2025: $22.7M → Ene-May 2026: $24.4M · <span className="text-[#27AE60] font-semibold">+7.3%</span> · 43.0% del total</p>
+      <p className="text-gray-500 text-sm mb-5">Ene-Jun 2025: $28.3M → Ene-Jun 2026: $29.4M · <span className="text-[#27AE60] font-semibold">+3.8%</span> · 43.7% del total</p>
 
       <div className="grid grid-cols-3 gap-4 mb-5">
         {clientes.map((c, i) => {
@@ -79,7 +79,7 @@ export default function Slide5Exportacion() {
                   {c.variacion}
                 </span>
               </div>
-              <p className="text-gray-400 text-[10px] mb-1">Ene-May 2025: {c.q1_2025}</p>
+              <p className="text-gray-400 text-[10px] mb-1">Ene-Jun 2025: {c.q1_2025}</p>
               <p className="text-gray-400 text-[10px]">{c.tc}</p>
               <p className="text-[#B8860B] text-[10px] mt-2 font-semibold">{c.nota}</p>
             </div>
@@ -89,7 +89,7 @@ export default function Slide5Exportacion() {
 
       <div className="grid grid-cols-2 gap-4 flex-1">
         <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-4">
-          <p className="text-gray-500 text-xs mb-3">Top productos exportacion Ene-May 2026</p>
+          <p className="text-gray-500 text-xs mb-3">Top productos exportacion Ene-Jun 2026</p>
           <div className="space-y-2.5">
             {topProductos.map((p, i) => (
               <div key={i} className="flex items-center justify-between">
@@ -120,7 +120,7 @@ export default function Slide5Exportacion() {
               </div>
             ))}
           </div>
-          <p className="text-[#27AE60] text-[10px] mt-3 font-semibold">Export crece +7.3% Ene-May — motor de diversificacion activo + 3 clientes nuevos</p>
+          <p className="text-[#27AE60] text-[10px] mt-3 font-semibold">Export crece +3.8% Ene-Jun — motor de diversificacion activo + 5 clientes nuevos</p>
         </div>
       </div>
     </SlideWrapper>

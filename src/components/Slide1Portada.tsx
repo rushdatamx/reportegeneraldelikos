@@ -15,12 +15,12 @@ export default function Slide1Portada() {
           <img src="/delikos-logo.jpeg" alt="Botanas Delikos" className="h-36 object-contain rounded-lg" />
         </div>
         <h1 className="text-5xl font-bold text-gray-800 tracking-tight">
-          Ene-May 2026 vs 2025
+          Ene-Jun 2026 vs 2025
         </h1>
         <p className="text-2xl text-gray-500 font-light">Resumen Ejecutivo Sell-In · DELIKOS</p>
-        <p className="text-lg text-gray-400">Enero — Mayo 2026</p>
+        <p className="text-lg text-gray-400">Enero — Junio 2026 · Primer Semestre</p>
         <div className="inline-block mt-4 px-6 py-2 rounded-full border border-[#F7B500]/50 text-[#F7B500] text-sm font-semibold bg-white/50">
-          5 meses · $56.7M facturados
+          6 meses · $67.2M facturados
         </div>
       </div>
     </SlideWrapper>

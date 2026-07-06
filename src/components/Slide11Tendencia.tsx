@@ -13,7 +13,6 @@ import {
 } from "recharts";
 
 const data = [
-  { mes: "Jun 24", alsuper: 1272529, merco: 1088115, lamolienda: 1647150 },
   { mes: "Jul 24", alsuper: 1073999, merco: 1132286, lamolienda: 2177861 },
   { mes: "Ago 24", alsuper: 1211506, merco: 1015489, lamolienda: 1727405 },
   { mes: "Sep 24", alsuper: 1468531, merco: 1526147, lamolienda: 2437685 },
@@ -36,7 +35,8 @@ const data = [
   { mes: "Feb 26", alsuper: 3095625, merco: 2292048, lamolienda: 3928636 },
   { mes: "Mar 26", alsuper: 3495697, merco: 2355983, lamolienda: 3866295 },
   { mes: "Abr 26", alsuper: 3159981, merco: 1245931, lamolienda: 4994678 },
-  { mes: "May 26", alsuper: 1855434, merco: 2495887, lamolienda: 2898008 },
+  { mes: "May 26", alsuper: 1859415, merco: 2495887, lamolienda: 3014810 },
+  { mes: "Jun 26", alsuper: 2725803, merco: 1679048, lamolienda: 3513155 },
 ];
 
 const formatPesos = (v: number) => `$${(v / 1_000_000).toFixed(1)}M`;
@@ -63,7 +63,7 @@ export default function Slide11Tendencia() {
   return (
     <SlideWrapper className="bg-[#F5F5F5] p-10">
       <h2 className="text-3xl font-bold text-gray-800 mb-1">Tendencia Mensual 24 Meses</h2>
-      <p className="text-gray-500 text-sm mb-3">Top 3 clientes por facturacion · Jun 2024 — May 2026</p>
+      <p className="text-gray-500 text-sm mb-3">Top 3 clientes por facturacion · Jul 2024 — Jun 2026</p>
 
       <div className="flex gap-5 mb-3 text-[10px]">
         <div className="flex items-center gap-1.5">
@@ -102,7 +102,7 @@ export default function Slide11Tendencia() {
       </div>
 
       <div className="flex justify-between mt-2 text-[10px] text-gray-500">
-        <span>MERCO: tendencia ascendente sostenida (+59.9% Ene-May YoY)</span>
+        <span>MERCO: tendencia ascendente sostenida (+55.9% Ene-Jun YoY)</span>
         <span>La Molienda: estable $2.3-5.0M/mes — cliente ancla de exportacion</span>
       </div>
     </SlideWrapper>

@@ -28,7 +28,7 @@ export default function Slide12Precios() {
         <DollarSign className="w-7 h-7 text-[#27AE60]" />
         <h2 className="text-3xl font-bold text-gray-800">Evolucion de Precios</h2>
       </div>
-      <p className="text-gray-500 text-sm mb-4">Precio unitario promedio Ene-May 2025 vs Ene-May 2026 · Top productos</p>
+      <p className="text-gray-500 text-sm mb-4">Precio unitario promedio Ene-May 2025 vs Ene-May 2026 · Top productos (jun sin dato de cantidad en ERP)</p>
 
       <div className="flex gap-4 flex-1">
         {/* Price table */}
