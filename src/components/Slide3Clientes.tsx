@@ -12,14 +12,14 @@ const contrato = [
 export default function Slide3Clientes() {
   return (
     <SlideWrapper className="bg-[#F5F5F5] p-10">
-      <h2 className="text-3xl font-bold text-gray-800 mb-1">Un contrato que terminó y ya fue reemplazado</h2>
+      <h2 className="text-3xl font-bold text-gray-800 mb-1">Composición de las ventas 2026</h2>
       <p className="text-gray-500 text-sm mb-6">
-        Producción para un tercero bajo su propia marca · concluida de forma progresiva desde 2024
+        Conclusión de un contrato de manufactura para terceros, absorbida por el crecimiento del negocio base
       </p>
 
       <div className="flex gap-5 flex-1">
         <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 w-[400px] flex flex-col">
-          <p className="text-gray-500 text-xs mb-5">Facturación de ese contrato por año</p>
+          <p className="text-gray-500 text-xs mb-5">Contrato de manufactura para terceros</p>
 
           <div className="space-y-5 flex-1 flex flex-col justify-center">
             {contrato.map((m, i) => (
@@ -49,7 +49,7 @@ export default function Slide3Clientes() {
 
             <div className="grid grid-cols-2 gap-6">
               <div>
-                <p className="text-gray-400 text-[10px] mb-2 uppercase tracking-wide">Incluyendo ese contrato</p>
+                <p className="text-gray-400 text-[10px] mb-2 uppercase tracking-wide">Ventas totales</p>
                 <div className="flex items-center gap-3">
                   <div>
                     <p className="text-gray-400 text-[10px]">2025</p>
@@ -65,7 +65,7 @@ export default function Slide3Clientes() {
 
               <div className="border-l border-gray-200 pl-6">
                 <p className="text-[#27AE60] text-[10px] mb-2 uppercase tracking-wide font-bold">
-                  Resto del negocio
+                  Negocio base
                 </p>
                 <div className="flex items-center gap-3">
                   <div>
@@ -85,19 +85,19 @@ export default function Slide3Clientes() {
 
           <div className="bg-[#27AE60]/5 border-2 border-[#27AE60]/30 rounded-xl p-6 flex-1 flex flex-col justify-center">
             <p className="text-[#1E8449] text-2xl font-bold mb-4">
-              Reemplazamos $10.9M en un solo periodo
+              El crecimiento del negocio base compensa el contrato concluido
             </p>
             <div className="flex gap-4">
               <div className="bg-white rounded-lg px-5 py-3 border border-gray-200 flex-1">
-                <p className="text-gray-400 text-[10px]">Venta que salió</p>
+                <p className="text-gray-400 text-[10px]">Contrato concluido</p>
                 <p className="text-2xl font-bold text-gray-600">$10.9M</p>
               </div>
               <div className="bg-white rounded-lg px-5 py-3 border border-gray-200 flex-1">
-                <p className="text-gray-400 text-[10px]">Venta nueva generada</p>
+                <p className="text-gray-400 text-[10px]">Crecimiento del negocio base</p>
                 <p className="text-2xl font-bold text-[#27AE60]">$11.7M</p>
               </div>
               <div className="bg-white rounded-lg px-5 py-3 border border-gray-200 flex-1">
-                <p className="text-gray-400 text-[10px]">Resultado</p>
+                <p className="text-gray-400 text-[10px]">Efecto neto</p>
                 <p className="text-2xl font-bold text-[#27AE60]">+$2.0M</p>
               </div>
             </div>
