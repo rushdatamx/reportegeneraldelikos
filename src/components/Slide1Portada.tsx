@@ -15,19 +15,19 @@ export default function Slide1Portada() {
           <img src="/delikos-logo.jpeg" alt="Botanas Delikos" className="h-32 object-contain rounded-lg" />
         </div>
         <h1 className="text-5xl font-bold text-gray-800 tracking-tight">
-          El negocio de marca crece
+          Resumen Ejecutivo de Ventas
         </h1>
-        <p className="text-2xl text-gray-500 font-light">Resumen Ejecutivo Sell-In · DELIKOS</p>
-        <p className="text-lg text-gray-400">Enero — Julio 2026 · 7 meses</p>
+        <p className="text-2xl text-gray-500 font-light">DELIKOS</p>
+        <p className="text-lg text-gray-400">Enero — Julio 2026</p>
         <div className="flex justify-center gap-3 mt-4">
-          <div className="px-6 py-2 rounded-full border border-[#27AE60]/50 text-[#27AE60] text-sm font-semibold bg-white/70">
-            Negocio comparable +2.6%
-          </div>
           <div className="px-6 py-2 rounded-full border border-[#F7B500]/50 text-[#B8860B] text-sm font-semibold bg-white/70">
             $78.6M facturados
           </div>
           <div className="px-6 py-2 rounded-full border border-[#2E75B6]/50 text-[#2E75B6] text-sm font-semibold bg-white/70">
-            34 clientes activos · +42%
+            34 clientes activos
+          </div>
+          <div className="px-6 py-2 rounded-full border border-[#27AE60]/50 text-[#27AE60] text-sm font-semibold bg-white/70">
+            7 mercados de exportación
           </div>
         </div>
       </div>
