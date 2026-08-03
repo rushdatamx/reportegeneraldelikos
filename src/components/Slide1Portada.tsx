@@ -24,7 +24,7 @@ export default function Slide1Portada() {
             $78.6M facturados
           </div>
           <div className="px-6 py-2 rounded-full border border-[#2E75B6]/50 text-[#2E75B6] text-sm font-semibold bg-white/70">
-            34 clientes activos
+            33 clientes activos
           </div>
           <div className="px-6 py-2 rounded-full border border-[#27AE60]/50 text-[#27AE60] text-sm font-semibold bg-white/70">
             7 mercados de exportación

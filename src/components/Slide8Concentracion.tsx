@@ -95,7 +95,7 @@ export default function Slide8Concentracion() {
           <div className="grid grid-cols-3 gap-3">
             <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-3 text-center">
               <p className="text-gray-400 text-[10px] mb-1">HHI Ene-Jul 2026</p>
-              <p className="text-[#2E75B6] text-2xl font-bold">0.206</p>
+              <p className="text-[#2E75B6] text-2xl font-bold">0.208</p>
               <p className="text-[#27AE60] text-[9px] font-semibold">Baja desde 0.220 en 2025</p>
             </div>
             <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-3 text-center">
@@ -112,7 +112,7 @@ export default function Slide8Concentracion() {
 
           <div className="bg-[#27AE60]/5 border border-[#27AE60]/25 rounded-xl px-4 py-2">
             <p className="text-[#1E8449] text-[11px] font-semibold leading-relaxed">
-              El riesgo de concentracion baja: HHI de 0.220 a 0.206, el cliente #1 pasa de 32.1% a 29.3% del ingreso
+              El riesgo de concentracion baja: HHI de 0.220 a 0.208, el cliente #1 pasa de 32.1% a 29.7% del ingreso
               y la cola de clientes fuera del top 5 crece de $7.2M a $8.1M. Ninguna cuenta supera el 30%.
             </p>
           </div>

@@ -14,7 +14,7 @@ const months = [
 ];
 
 const kpis = [
-  { label: "Clientes activos", val: "34", sub: "vs 24" },
+  { label: "Clientes activos", val: "33", sub: "vs 24" },
   { label: "Facturas emitidas", val: "814", sub: "vs 705" },
   { label: "Clientes nuevos", val: "16", sub: "$5.1M" },
   { label: "Mercados export.", val: "7", sub: "vs 2" },

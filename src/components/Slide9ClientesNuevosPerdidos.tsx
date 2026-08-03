@@ -25,13 +25,13 @@ export default function Slide9ClientesNuevosPerdidos() {
   return (
     <SlideWrapper className="bg-[#F5F5F5] p-10">
       <h2 className="text-3xl font-bold text-gray-800 mb-1">Expansion de la cartera de clientes</h2>
-      <p className="text-gray-500 text-sm mb-4">Ene-Jul 2026 · 34 clientes activos vs 24 en 2025</p>
+      <p className="text-gray-500 text-sm mb-4">Ene-Jul 2026 · 33 clientes activos vs 24 en 2025</p>
 
       <div className="grid grid-cols-4 gap-3 mb-4">
         {[
-          { label: "Clientes activos", val: "34", sub: "+42% vs 24 en 2025", color: "#2E75B6" },
+          { label: "Clientes activos", val: "33", sub: "+38% vs 24 en 2025", color: "#2E75B6" },
           { label: "Clientes nuevos", val: "16", sub: "$5.1M facturados", color: "#27AE60" },
-          { label: "Facturas emitidas", val: "811", sub: "+15% vs 705", color: "#2E75B6" },
+          { label: "Facturas emitidas", val: "814", sub: "+15% vs 705", color: "#2E75B6" },
           { label: "SKUs activos", val: "163", sub: "69 productos nuevos", color: "#F7B500" },
         ].map((k, i) => (
           <div

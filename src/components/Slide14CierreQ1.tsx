@@ -17,12 +17,12 @@ const fortalezas = [
   {
     titulo: "Cartera mas amplia",
     detalle:
-      "34 clientes activos (+42%), 16 clientes nuevos que aportan $5.1M y 811 facturas emitidas (+15%).",
+      "33 clientes activos (+38%), 16 clientes nuevos que aportan $5.1M y 814 facturas emitidas (+15%).",
   },
   {
     titulo: "Menor riesgo de concentracion",
     detalle:
-      "HHI baja de 0.220 a 0.206. El cliente #1 pasa de 32.1% a 29.3%. Exportacion de 2 a 7 compradores.",
+      "HHI baja de 0.220 a 0.208. El cliente #1 pasa de 32.1% a 29.7%. Exportacion de 2 a 7 compradores.",
   },
   {
     titulo: "Mezcla de mayor valor",
@@ -104,7 +104,7 @@ export default function Slide14CierreQ1() {
             </div>
             <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-3 text-center">
               <p className="text-gray-400 text-[9px]">Clientes activos</p>
-              <p className="text-gray-800 text-xl font-bold">34</p>
+              <p className="text-gray-800 text-xl font-bold">33</p>
             </div>
           </div>
 
