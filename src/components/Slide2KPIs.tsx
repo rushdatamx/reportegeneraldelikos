@@ -1,16 +1,17 @@
 "use client";
 
 import SlideWrapper from "./SlideWrapper";
+import NotaSlide from "./NotaSlide";
 import { TrendingUp, TrendingDown } from "lucide-react";
 
 const months = [
-  { mes: "Ene", v26: 11.0, v25: 8.1, var: "+36%", pos: true },
-  { mes: "Feb", v26: 11.1, v25: 6.3, var: "+75%", pos: true },
-  { mes: "Mar", v26: 11.7, v25: 14.4, var: "-19%", pos: false },
-  { mes: "Abr", v26: 12.7, v25: 15.3, var: "-17%", pos: false },
-  { mes: "May", v26: 10.1, v25: 10.0, var: "+1%", pos: true },
-  { mes: "Jun", v26: 10.9, v25: 10.2, var: "+7%", pos: true },
-  { mes: "Jul", v26: 10.8, v25: 12.0, var: "-10%", pos: false },
+  { mes: "Ene", v26: 11.2, v25: 9.8, var: "+14.4%", pos: true },
+  { mes: "Feb", v26: 11.1, v25: 9.1, var: "+21.7%", pos: true },
+  { mes: "Mar", v26: 11.7, v25: 18.5, var: "-37.0%", pos: false },
+  { mes: "Abr", v26: 12.7, v25: 16.8, var: "-24.5%", pos: false },
+  { mes: "May", v26: 10.1, v25: 10.5, var: "-3.9%", pos: false },
+  { mes: "Jun", v26: 11.0, v25: 10.7, var: "+3.2%", pos: true },
+  { mes: "Jul", v26: 10.9, v25: 12.0, var: "-9.2%", pos: false },
 ];
 
 const kpis = [
@@ -22,11 +23,11 @@ const kpis = [
 
 export default function Slide2KPIs() {
   return (
-    <SlideWrapper className="bg-[#F5F5F5] p-10">
+    <SlideWrapper className="bg-[#F5F5F5] px-10 pt-8 pb-6">
       <h2 className="text-3xl font-bold text-gray-800 mb-1">Ventas Ene-Jul 2026</h2>
-      <p className="text-gray-500 text-sm mb-6">Facturación DELIKOS · comparativo contra 2025</p>
+      <p className="text-gray-500 text-sm mb-4">Facturación DELIKOS · comparativo contra 2025</p>
 
-      <div className="flex items-stretch gap-4 mb-6">
+      <div className="flex items-stretch gap-4 mb-4">
         <div className="bg-white rounded-xl border-2 border-[#27AE60]/40 shadow-sm px-7 py-5 animate-count-up">
           <p className="text-gray-500 text-xs mb-1">Ventas del negocio</p>
           <p className="text-6xl font-bold text-[#27AE60] tracking-tight">$78.4M</p>
@@ -52,7 +53,7 @@ export default function Slide2KPIs() {
         </div>
       </div>
 
-      <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-5 mb-5">
+      <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-4 mb-3">
         <div className="flex items-center justify-between mb-4">
           <p className="text-gray-500 text-xs">Facturación mensual (millones MXN)</p>
           <div className="flex gap-3">
@@ -77,10 +78,10 @@ export default function Slide2KPIs() {
                 style={{ animationDelay: `${200 + i * 90}ms` }}
               >
                 <div className="flex items-end gap-1 h-[95px]">
-                  <div className="w-8 rounded-t bg-gray-300" style={{ height: `${(m.v25 / 16) * 95}px` }} />
-                  <div className="w-8 rounded-t bg-[#F7B500]" style={{ height: `${(m.v26 / 16) * 95}px` }} />
+                  <div className="w-8 rounded-t bg-gray-300" style={{ height: `${(m.v25 / 19) * 95}px` }} />
+                  <div className="w-8 rounded-t bg-[#F7B500]" style={{ height: `${(m.v26 / 19) * 95}px` }} />
                 </div>
-                <p className="text-gray-800 text-base font-bold mt-2">${m.v26}M</p>
+                <p className="text-gray-800 text-base font-bold mt-2">${m.v26.toFixed(1)}M</p>
                 <div className="flex items-center gap-0.5">
                   <Trend className="w-3 h-3" style={{ color }} />
                   <span className="text-[11px] font-bold" style={{ color }}>{m.var}</span>
@@ -92,7 +93,7 @@ export default function Slide2KPIs() {
         </div>
       </div>
 
-      <div className="bg-[#27AE60]/5 border border-[#27AE60]/25 rounded-xl px-6 py-4 flex items-center gap-8">
+      <div className="bg-[#27AE60]/5 border border-[#27AE60]/25 rounded-xl px-6 py-3 flex items-center gap-8">
         <div>
           <p className="text-[#1E8449] text-base font-bold">Ingreso más estable</p>
           <p className="text-gray-500 text-[11px]">Variación mensual</p>
@@ -118,6 +119,13 @@ export default function Slide2KPIs() {
           Marzo y abril 2025 incluyen pedidos extraordinarios de un cliente por $15.2M.
         </p>
       </div>
+
+      <NotaSlide titulo="Qué muestra este slide:">
+        El negocio creció 2.6% y hoy tiene más clientes que el año pasado: 33 activos contra 24, y 7 mercados
+        de exportación contra 2. Igual de importante que el crecimiento es la regularidad: los siete meses de
+        2026 facturaron entre $10.1M y $12.7M, mientras que en 2025 el rango iba de $9.1M a $18.5M. El ingreso
+        dejó de depender de pedidos extraordinarios.
+      </NotaSlide>
     </SlideWrapper>
   );
 }

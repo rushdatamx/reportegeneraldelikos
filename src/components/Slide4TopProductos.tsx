@@ -1,6 +1,7 @@
 "use client";
 
 import SlideWrapper from "./SlideWrapper";
+import NotaSlide from "./NotaSlide";
 import { TrendingUp, TrendingDown } from "lucide-react";
 
 const clientes = [
@@ -53,7 +54,7 @@ export default function Slide4TopProductos() {
       <h2 className="text-3xl font-bold text-gray-800 mb-1">Clientes nacionales principales</h2>
       <p className="text-gray-500 text-sm mb-5">Ene-Jul 2025 vs 2026 — Facturacion sell-in</p>
 
-      <div className="grid grid-cols-3 gap-5 flex-1">
+      <div className="grid grid-cols-3 gap-5 flex-1 items-stretch">
         {clientes.map((c, i) => {
           const bar2025pct = (c.y2025 / maxVal) * 100;
           const bar2026pct = (c.y2026 / maxVal) * 100;
@@ -83,7 +84,7 @@ export default function Slide4TopProductos() {
               </div>
               <p className="text-gray-400 text-[10px] mb-4">{c.razon}</p>
 
-              <div className="space-y-2 mb-4">
+              <div className="space-y-3 mb-4 flex-1 flex flex-col justify-center">
                 <div>
                   <div className="flex justify-between text-[10px] mb-1">
                     <span className="text-gray-500">Ene-Jul 2025</span>
@@ -119,7 +120,7 @@ export default function Slide4TopProductos() {
                 </div>
               </div>
 
-              <div className="mt-auto bg-[#FDF8F0] rounded-lg p-3 border border-[#E8DCC8]">
+              <div className="bg-[#FDF8F0] rounded-lg p-3 border border-[#E8DCC8]">
                 <p className="text-gray-400 text-[10px] mb-1">Producto #1 Ene-Jul 2026</p>
                 <p className="text-gray-800 text-sm font-semibold">{c.topProducto}</p>
                 <p className="text-gray-500 text-xs">{c.topVenta}</p>
@@ -129,14 +130,13 @@ export default function Slide4TopProductos() {
         })}
       </div>
 
-      <div className="bg-white border border-gray-200 rounded-xl px-5 py-3 mt-4">
-        <p className="text-gray-600 text-[11px] leading-relaxed">
-          <span className="font-bold text-[#27AE60]">MERCO +51% y HEB +17%</span> impulsan el crecimiento nacional.
-          <span className="font-bold text-gray-800"> ALSUPER -14.8%</span> se compara contra Mar-Abr 2025, cuando facturo
-          $15.2M en dos meses por pedidos extraordinarios. Excluyendo esos dos meses, la corrida normal de 2025 fue
-          $1.9M/mes: <span className="font-bold text-[#27AE60]">ALSUPER 2026 promedia $3.0M/mes, +57% sobre esa base</span>.
-        </p>
-      </div>
+      <NotaSlide titulo="Qué muestra este slide:">
+        MERCO es la cuenta que más crece del año, +51%, y la mitad de su compra es Tostada Roja 70PZ.
+        HEB crece +17% impulsado por Durito 20PZ. ALSUPER aparece en −14.8%, pero se compara contra marzo
+        y abril de 2025, cuando facturó $15.2M en dos meses por pedidos extraordinarios: su corrida normal
+        de 2025 fue $1.9M al mes y este año promedia $3.0M, un 57% por encima. Sigue siendo la cuenta
+        nacional número uno.
+      </NotaSlide>
     </SlideWrapper>
   );
 }

@@ -30,6 +30,10 @@ export default function Slide1Portada() {
             7 mercados de exportación
           </div>
         </div>
+        <p className="text-gray-500 text-sm max-w-[720px] mx-auto leading-relaxed pt-4">
+          Este documento resume la facturación de DELIKOS de enero a julio de 2026, comparada contra el
+          mismo periodo del año anterior. Cada slide incluye una nota que explica qué está mostrando.
+        </p>
       </div>
     </SlideWrapper>
   );

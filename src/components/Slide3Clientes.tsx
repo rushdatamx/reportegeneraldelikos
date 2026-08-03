@@ -1,6 +1,7 @@
 "use client";
 
 import SlideWrapper from "./SlideWrapper";
+import NotaSlide from "./NotaSlide";
 import { ArrowRight } from "lucide-react";
 
 const contrato = [
@@ -104,6 +105,13 @@ export default function Slide3Clientes() {
           </div>
         </div>
       </div>
+
+      <NotaSlide titulo="Qué muestra este slide:">
+        Aquí se explica la diferencia contra 2025. Si se compara la facturación total, 2025 sale por encima,
+        y la razón es un contrato de manufactura para terceros que fue concluyendo hasta cerrar este año.
+        Si se compara el negocio base — el de marca propia, que es el negocio recurrente — 2026 está por
+        encima del año anterior y con meses más parejos.
+      </NotaSlide>
     </SlideWrapper>
   );
 }

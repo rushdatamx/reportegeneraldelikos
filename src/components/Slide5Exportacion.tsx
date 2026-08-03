@@ -1,6 +1,7 @@
 "use client";
 
 import SlideWrapper from "./SlideWrapper";
+import NotaSlide from "./NotaSlide";
 import { Globe, TrendingUp, ArrowRight } from "lucide-react";
 
 const clientes = [
@@ -43,16 +44,16 @@ const topProductos = [
 
 export default function Slide5Exportacion() {
   return (
-    <SlideWrapper className="bg-[#F5F5F5] p-10">
+    <SlideWrapper className="bg-[#F5F5F5] px-10 pt-8 pb-6">
       <div className="flex items-center gap-3 mb-1">
         <Globe className="w-7 h-7 text-[#F7B500]" />
         <h2 className="text-3xl font-bold text-gray-800">Exportacion: de 2 a 7 compradores</h2>
       </div>
-      <p className="text-gray-500 text-sm mb-5">
+      <p className="text-gray-500 text-sm mb-3">
         Ene-Jul 2026 · $24.9M exportados · 31.7% de la facturacion total
       </p>
 
-      <div className="grid grid-cols-3 gap-4 mb-4">
+      <div className="grid grid-cols-3 gap-4 mb-3">
         {clientes.map((c, i) => {
           const color = c.positivo ? "#27AE60" : "#E31837";
           return (
@@ -80,7 +81,7 @@ export default function Slide5Exportacion() {
         })}
       </div>
 
-      <div className="bg-[#27AE60]/5 border-2 border-[#27AE60]/30 rounded-xl px-5 py-4 mb-4">
+      <div className="bg-[#27AE60]/5 border-2 border-[#27AE60]/30 rounded-xl px-5 py-3 mb-3">
         <div className="flex items-center gap-6">
           <div className="flex items-center gap-2">
             <TrendingUp className="w-6 h-6 text-[#27AE60]" />
@@ -155,6 +156,12 @@ export default function Slide5Exportacion() {
           </p>
         </div>
       </div>
+
+      <NotaSlide titulo="Qué muestra este slide:">
+        El punto es la diversificación. Pasamos de 2 a 7 compradores en el extranjero, y lo que se vende
+        fuera de nuestro cliente más grande creció 51%. En 2025 el 81% de la exportación dependía de un solo
+        comprador; hoy esa dependencia bajó a 61% y el riesgo está repartido entre siete cuentas.
+      </NotaSlide>
     </SlideWrapper>
   );
 }

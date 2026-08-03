@@ -8,6 +8,7 @@ import Slide2KPIs from "@/components/Slide2KPIs";
 import Slide3Clientes from "@/components/Slide3Clientes";
 import Slide4TopProductos from "@/components/Slide4TopProductos";
 import Slide5Exportacion from "@/components/Slide5Exportacion";
+import Slide6VentasAnuales from "@/components/Slide6VentasAnuales";
 import Slide6ABCProductos from "@/components/Slide6ABCProductos";
 import Slide7CrecimientoCaida from "@/components/Slide7CrecimientoCaida";
 import Slide8Concentracion from "@/components/Slide8Concentracion";
@@ -33,6 +34,7 @@ const tabs = [
       Slide3Clientes,
       Slide4TopProductos,
       Slide5Exportacion,
+      Slide6VentasAnuales,
     ],
   },
   {
