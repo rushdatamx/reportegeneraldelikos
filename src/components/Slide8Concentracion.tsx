@@ -4,12 +4,12 @@ import SlideWrapper from "./SlideWrapper";
 import { PieChart } from "lucide-react";
 
 const clientShares = [
-  { nombre: "La Molienda", pct: 31.7, color: "#2E75B6", monto: "$21.5M" },
-  { nombre: "ALSUPER", pct: 27.0, color: "#F7B500", monto: "$18.3M" },
-  { nombre: "MERCO", pct: 18.1, color: "#1A1A1A", monto: "$12.3M" },
-  { nombre: "Dulces La Mejor", pct: 9.0, color: "#27AE60", monto: "$6.1M" },
-  { nombre: "HEB", pct: 6.0, color: "#9CA3AF", monto: "$4.1M" },
-  { nombre: "Otros (28)", pct: 8.2, color: "#E5E7EB", monto: "$5.6M" },
+  { nombre: "La Molienda", pct: 29.3, color: "#2E75B6", monto: "$23.0M" },
+  { nombre: "ALSUPER", pct: 26.9, color: "#F7B500", monto: "$21.2M" },
+  { nombre: "MERCO", pct: 18.7, color: "#1A1A1A", monto: "$14.7M" },
+  { nombre: "Dulces La Mejor", pct: 8.7, color: "#27AE60", monto: "$6.9M" },
+  { nombre: "HEB", pct: 6.0, color: "#9CA3AF", monto: "$4.7M" },
+  { nombre: "Otros (29)", pct: 10.3, color: "#E5E7EB", monto: "$8.1M" },
 ];
 
 const segments = (() => {
@@ -46,7 +46,7 @@ export default function Slide8Concentracion() {
         <PieChart className="w-7 h-7 text-[#2E75B6]" />
         <h2 className="text-3xl font-bold text-gray-800">Concentracion de Clientes</h2>
       </div>
-      <p className="text-gray-500 text-sm mb-5">Ene-Jun 2026 · Top 3 = 76.8% del ingreso</p>
+      <p className="text-gray-500 text-sm mb-5">Ene-Jul 2026 · Top 3 = 74.9% del ingreso</p>
 
       <div className="flex gap-6 flex-1">
         {/* Donut */}
@@ -55,7 +55,7 @@ export default function Slide8Concentracion() {
             {segments.map((s, i) => (
               <DonutSegment key={i} start={s.start} end={s.end} color={s.color} />
             ))}
-            <text x="120" y="110" textAnchor="middle" className="text-2xl font-bold" fill="#1A1A1A">76.8%</text>
+            <text x="120" y="110" textAnchor="middle" className="text-2xl font-bold" fill="#1A1A1A">74.9%</text>
             <text x="120" y="135" textAnchor="middle" className="text-xs" fill="#9CA3AF">Top 3</text>
           </svg>
           <div className="flex flex-wrap gap-2 mt-3 justify-center">
@@ -94,25 +94,26 @@ export default function Slide8Concentracion() {
           {/* KPI cards */}
           <div className="grid grid-cols-3 gap-3">
             <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-3 text-center">
-              <p className="text-gray-400 text-[10px] mb-1">HHI Ene-Jun 2026</p>
-              <p className="text-[#2E75B6] text-2xl font-bold">0.219</p>
-              <p className="text-gray-400 text-[9px]">Concentracion moderada</p>
+              <p className="text-gray-400 text-[10px] mb-1">HHI Ene-Jul 2026</p>
+              <p className="text-[#2E75B6] text-2xl font-bold">0.206</p>
+              <p className="text-[#27AE60] text-[9px] font-semibold">Baja desde 0.220 en 2025</p>
             </div>
             <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-3 text-center">
               <p className="text-gray-400 text-[10px] mb-1">Nacional</p>
-              <p className="text-gray-800 text-2xl font-bold">55.8%</p>
-              <p className="text-[#E31837] text-[9px] font-semibold">-19.8% vs Ene-Jun 25</p>
+              <p className="text-gray-800 text-2xl font-bold">68.3%</p>
+              <p className="text-[#27AE60] text-[9px] font-semibold">+$0.8M vs Ene-Jul 25</p>
             </div>
             <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-3 text-center">
               <p className="text-gray-400 text-[10px] mb-1">Exportacion</p>
-              <p className="text-[#2E75B6] text-2xl font-bold">44.2%</p>
-              <p className="text-[#27AE60] text-[9px] font-semibold">+5.9% vs Ene-Jun 25</p>
+              <p className="text-[#2E75B6] text-2xl font-bold">31.7%</p>
+              <p className="text-[#27AE60] text-[9px] font-semibold">7 compradores vs 2</p>
             </div>
           </div>
 
-          <div className="bg-[#2E75B6]/5 border border-[#2E75B6]/20 rounded-xl px-4 py-2">
-            <p className="text-[#2E75B6] text-[11px] font-semibold">
-              &#9888; HHI en 0.219 — concentracion moderada. La Molienda se mantiene como cliente #1 (31.7%). Diversificar con nuevos clientes nacionales es prioridad.
+          <div className="bg-[#27AE60]/5 border border-[#27AE60]/25 rounded-xl px-4 py-2">
+            <p className="text-[#1E8449] text-[11px] font-semibold leading-relaxed">
+              El riesgo de concentracion baja: HHI de 0.220 a 0.206, el cliente #1 pasa de 32.1% a 29.3% del ingreso
+              y la cola de clientes fuera del top 5 crece de $7.2M a $8.1M. Ninguna cuenta supera el 30%.
             </p>
           </div>
         </div>

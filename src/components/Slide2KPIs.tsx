@@ -1,99 +1,118 @@
 "use client";
 
 import SlideWrapper from "./SlideWrapper";
-import { TrendingUp, TrendingDown } from "lucide-react";
-
-const annualData = [
-  { year: "2023", value: "$107.9M", growth: null },
-  { year: "2024", value: "$113.5M", growth: "+5.1%" },
-  { year: "2025", value: "$138.6M", growth: "+22.1%" },
-];
+import { TrendingUp, TrendingDown, ShieldCheck } from "lucide-react";
 
 const months = [
-  { mes: "Ene", q26: 11.2, q25: 9.8, var: "+14.4%", pos: true },
-  { mes: "Feb", q26: 11.1, q25: 9.1, var: "+21.7%", pos: true },
-  { mes: "Mar", q26: 11.7, q25: 18.5, var: "-37.0%", pos: false },
-  { mes: "Abr", q26: 12.7, q25: 16.8, var: "-24.5%", pos: false },
-  { mes: "May", q26: 10.1, q25: 10.5, var: "-3.9%", pos: false },
-  { mes: "Jun", q26: 11.0, q25: 10.7, var: "+3.2%", pos: true },
+  { mes: "Ene", v26: 11.2, v25: 8.1, var: "+36%", pos: true },
+  { mes: "Feb", v26: 11.1, v25: 6.3, var: "+75%", pos: true },
+  { mes: "Mar", v26: 11.7, v25: 14.4, var: "-19%", pos: false },
+  { mes: "Abr", v26: 12.7, v25: 15.3, var: "-17%", pos: false },
+  { mes: "May", v26: 10.1, v25: 10.0, var: "+1%", pos: true },
+  { mes: "Jun", v26: 11.0, v25: 10.2, var: "+9%", pos: true },
+  { mes: "Jul", v26: 10.8, v25: 12.0, var: "-10%", pos: false },
 ];
-
-const stackAlsuper = Math.round((18305 / (18305 + 12253 + 4092)) * 100);
-const stackMerco = Math.round((12253 / (18305 + 12253 + 4092)) * 100);
-const stackHeb = 100 - stackAlsuper - stackMerco;
 
 export default function Slide2KPIs() {
   return (
     <SlideWrapper className="bg-[#F5F5F5] p-10">
-      <h2 className="text-3xl font-bold text-gray-800 mb-1">KPIs Ene-Jun 2026</h2>
-      <p className="text-gray-500 text-sm mb-5">Facturacion sell-in DELIKOS · Enero - Junio 2026 (H1)</p>
+      <h2 className="text-3xl font-bold text-gray-800 mb-1">Negocio comparable Ene-Jul 2026</h2>
+      <p className="text-gray-500 text-sm mb-5">
+        Facturacion sell-in DELIKOS · excluye maquila de terceros descontinuada (Botanas y Derivados)
+      </p>
 
-      <div className="flex items-center gap-8 mb-5">
-        <div className="animate-count-up">
-          <p className="text-gray-500 text-sm mb-1">Venta Ene-Jun 2026</p>
-          <p className="text-6xl font-bold text-[#F7B500] tracking-tight">$67.8M</p>
-          <p className="text-gray-400 text-xs mt-1">Ene a Jun 2026 — primer semestre</p>
-        </div>
-        <div className="flex items-center gap-2 bg-[#E31837]/10 border border-[#E31837]/20 rounded-xl px-5 py-3 animate-count-up" style={{ animationDelay: "150ms" }}>
-          <TrendingDown className="w-5 h-5 text-[#E31837]" />
-          <div>
-            <p className="text-[#E31837] text-2xl font-bold">-10.1%</p>
-            <p className="text-gray-500 text-[10px]">vs Ene-Jun 2025 ($75.5M)</p>
+      <div className="flex items-stretch gap-4 mb-5">
+        <div className="bg-white rounded-xl border-2 border-[#27AE60]/40 shadow-sm px-6 py-4 animate-count-up">
+          <p className="text-gray-500 text-xs mb-1">Negocio comparable Ene-Jul 2026</p>
+          <p className="text-5xl font-bold text-[#27AE60] tracking-tight">$78.4M</p>
+          <div className="flex items-center gap-1.5 mt-1">
+            <TrendingUp className="w-4 h-4 text-[#27AE60]" />
+            <span className="text-[#27AE60] text-lg font-bold">+2.6%</span>
+            <span className="text-gray-400 text-[11px]">vs $76.4M en 2025</span>
           </div>
         </div>
-        <div className="flex-1" />
-        {months.map((m, i) => {
-          const Trend = m.pos ? TrendingUp : TrendingDown;
-          const color = m.pos ? "#27AE60" : "#E31837";
-          return (
-            <div key={i} className="text-right animate-count-up" style={{ animationDelay: `${300 + i * 120}ms` }}>
-              <p className="text-gray-500 text-xs mb-1">{m.mes} 2026</p>
-              <p className="text-2xl font-bold text-gray-800">${m.q26}M</p>
-              <div className="flex items-center justify-end gap-1 mt-1">
-                <Trend className="w-3 h-3" style={{ color }} />
-                <span className="text-sm font-bold" style={{ color }}>{m.var}</span>
-                <span className="text-gray-400 text-[10px]">vs ${m.q25}M</span>
-              </div>
-            </div>
-          );
-        })}
+
+        <div className="bg-white rounded-xl border border-gray-200 shadow-sm px-6 py-4 animate-count-up" style={{ animationDelay: "120ms" }}>
+          <p className="text-gray-500 text-xs mb-1">Facturacion total</p>
+          <p className="text-5xl font-bold text-gray-800 tracking-tight">$78.6M</p>
+          <p className="text-gray-400 text-[11px] mt-1">
+            vs $87.5M en 2025 · incluye $11.1M de maquila 2025 ya descontinuada
+          </p>
+        </div>
+
+        <div className="flex-1 grid grid-cols-2 gap-3">
+          <div className="bg-white rounded-xl border border-gray-200 shadow-sm px-4 py-3 flex flex-col justify-center animate-count-up" style={{ animationDelay: "240ms" }}>
+            <p className="text-gray-500 text-[11px]">Clientes activos</p>
+            <p className="text-2xl font-bold text-[#2E75B6]">34</p>
+            <p className="text-[#27AE60] text-[10px] font-semibold">+42% vs 24 en 2025</p>
+          </div>
+          <div className="bg-white rounded-xl border border-gray-200 shadow-sm px-4 py-3 flex flex-col justify-center animate-count-up" style={{ animationDelay: "300ms" }}>
+            <p className="text-gray-500 text-[11px]">Facturas emitidas</p>
+            <p className="text-2xl font-bold text-[#2E75B6]">811</p>
+            <p className="text-[#27AE60] text-[10px] font-semibold">+15% vs 705</p>
+          </div>
+          <div className="bg-white rounded-xl border border-gray-200 shadow-sm px-4 py-3 flex flex-col justify-center animate-count-up" style={{ animationDelay: "360ms" }}>
+            <p className="text-gray-500 text-[11px]">Clientes nuevos 2026</p>
+            <p className="text-2xl font-bold text-[#2E75B6]">16</p>
+            <p className="text-[#27AE60] text-[10px] font-semibold">$5.1M facturados</p>
+          </div>
+          <div className="bg-white rounded-xl border border-gray-200 shadow-sm px-4 py-3 flex flex-col justify-center animate-count-up" style={{ animationDelay: "420ms" }}>
+            <p className="text-gray-500 text-[11px]">Mercados de export.</p>
+            <p className="text-2xl font-bold text-[#2E75B6]">7</p>
+            <p className="text-[#27AE60] text-[10px] font-semibold">vs 2 clientes en 2025</p>
+          </div>
+        </div>
       </div>
 
-      <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-5 mb-4">
-        <p className="text-gray-500 text-xs mb-3">Composicion Ene-Jun 2026 — Top 3 clientes nacionales</p>
-        <div className="w-full h-6 rounded-full overflow-hidden flex animate-bar-grow border border-gray-200">
-          <div style={{ width: `${stackAlsuper}%`, backgroundColor: "#F7B500" }} className="h-full" />
-          <div style={{ width: `${stackMerco}%`, backgroundColor: "#1A1A1A" }} className="h-full" />
-          <div style={{ width: `${stackHeb}%`, backgroundColor: "#9CA3AF" }} className="h-full" />
-        </div>
-        <div className="flex justify-between mt-2 text-[10px]">
-          <span className="text-[#B8860B] font-semibold">ALSUPER $18.3M ({stackAlsuper}%)</span>
-          <span className="text-gray-800 font-semibold">MERCO $12.3M ({stackMerco}%)</span>
-          <span className="text-[#6B7280] font-semibold">HEB $4.1M ({stackHeb}%)</span>
+      <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-4 mb-4">
+        <p className="text-gray-500 text-xs mb-3">
+          Facturacion mensual comparable — 2026 vs 2025 (millones MXN, sin maquila)
+        </p>
+        <div className="flex items-end justify-between gap-3">
+          {months.map((m, i) => {
+            const Trend = m.pos ? TrendingUp : TrendingDown;
+            const color = m.pos ? "#27AE60" : "#E31837";
+            return (
+              <div key={i} className="flex-1 flex flex-col items-center animate-count-up" style={{ animationDelay: `${200 + i * 90}ms` }}>
+                <div className="flex items-end gap-1 h-[86px]">
+                  <div className="w-7 rounded-t bg-gray-300" style={{ height: `${(m.v25 / 16) * 86}px` }} />
+                  <div className="w-7 rounded-t bg-[#F7B500]" style={{ height: `${(m.v26 / 16) * 86}px` }} />
+                </div>
+                <p className="text-gray-800 text-sm font-bold mt-1.5">${m.v26}M</p>
+                <div className="flex items-center gap-0.5">
+                  <Trend className="w-3 h-3" style={{ color }} />
+                  <span className="text-[11px] font-bold" style={{ color }}>{m.var}</span>
+                </div>
+                <p className="text-gray-400 text-[10px]">{m.mes}</p>
+              </div>
+            );
+          })}
+          <div className="flex flex-col gap-1.5 pl-3 border-l border-gray-200">
+            <div className="flex items-center gap-1.5">
+              <div className="w-3 h-3 rounded-sm bg-[#F7B500]" />
+              <span className="text-gray-500 text-[10px]">2026</span>
+            </div>
+            <div className="flex items-center gap-1.5">
+              <div className="w-3 h-3 rounded-sm bg-gray-300" />
+              <span className="text-gray-500 text-[10px]">2025</span>
+            </div>
+          </div>
         </div>
       </div>
 
       <div className="flex gap-4 flex-1">
-        <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-5 flex-1">
-          <p className="text-gray-500 text-xs mb-3">Trayectoria anual</p>
-          <div className="flex items-end gap-8">
-            {annualData.map((d, i) => (
-              <div key={i} className="flex flex-col items-center gap-1">
-                <span className="text-gray-800 font-bold text-xl">{d.value}</span>
-                {d.growth && (
-                  <span className="text-[#27AE60] text-xs font-semibold flex items-center gap-1">
-                    <TrendingUp className="w-3 h-3" />
-                    {d.growth}
-                  </span>
-                )}
-                <span className="text-gray-400 text-sm">{d.year}</span>
-              </div>
-            ))}
+        <div className="bg-[#27AE60]/5 border border-[#27AE60]/25 rounded-xl px-5 py-3 flex-1 flex items-center gap-3">
+          <ShieldCheck className="w-8 h-8 text-[#27AE60] shrink-0" />
+          <div>
+            <p className="text-[#1E8449] text-sm font-bold mb-0.5">Ingreso mas predecible: variacion mensual de 27.2% a 6.6%</p>
+            <p className="text-gray-600 text-[11px] leading-relaxed">
+              Piso mensual sube de $9.1M (2025) a $10.1M (2026). Los 7 meses de 2026 caen en un rango de $10.1M a $12.7M — el flujo dejo de depender de pedidos extraordinarios.
+            </p>
           </div>
         </div>
-        <div className="bg-[#F7B500]/5 border border-[#F7B500]/20 rounded-xl px-5 py-4 max-w-[380px] flex items-center">
-          <p className="text-[#B8860B] text-[11px] font-semibold leading-relaxed">
-            &#9888; H1 baja -10.1% vs 2025, pero la caida viene de Mar-Abr 25 (pedidos atipicos de ALSUPER $15.2M). Ene +14.4%, Feb +21.7% y Jun +3.2% crecen — tendencia de fondo positiva. Jun 2026 regresa a terreno positivo.
+        <div className="bg-white border border-gray-200 rounded-xl px-5 py-3 w-[330px] flex items-center">
+          <p className="text-gray-600 text-[11px] leading-relaxed">
+            <span className="font-bold text-gray-800">Marzo y abril 2025</span> incluyen pedidos extraordinarios de ALSUPER por $15.2M en dos meses, contra una corrida normal de $1.9M/mes. Es la unica razon de la variacion negativa en esos meses.
           </p>
         </div>
       </div>

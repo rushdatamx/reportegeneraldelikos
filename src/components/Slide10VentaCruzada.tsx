@@ -35,7 +35,7 @@ export default function Slide10VentaCruzada() {
         <Grid3X3 className="w-7 h-7 text-[#2E75B6]" />
         <h2 className="text-3xl font-bold text-gray-800">Venta Cruzada</h2>
       </div>
-      <p className="text-gray-500 text-sm mb-4">Categorias por cliente Ene-Jun 2026 · Oportunidades de expansion</p>
+      <p className="text-gray-500 text-sm mb-4">Categorias por cliente Ene-Jul 2026 · Oportunidades de expansion</p>
 
       <div className="flex gap-4 flex-1">
         {/* Matrix */}

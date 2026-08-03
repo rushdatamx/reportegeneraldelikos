@@ -5,49 +5,40 @@ import { Globe, TrendingUp, ArrowRight } from "lucide-react";
 
 const clientes = [
   {
-    nombre: "La Molienda Mexicana",
-    pais: "USA",
-    q1_2025: "$23.0M",
-    q1_2026: "$21.5M",
-    variacion: "-6.6%",
-    positivo: false,
-    tc: "Factura en MXN (TC=1.00)",
-    nota: "Cliente #1 export — 71.7% del total export",
-  },
-  {
     nombre: "Dulces La Mejor",
     pais: "USA",
-    q1_2025: "$5.3M",
-    q1_2026: "$6.1M",
-    variacion: "+14.9%",
+    y2025: "$6.5M",
+    y2026: "$6.9M",
+    variacion: "+5.6%",
     positivo: true,
-    tc: "TC prom: ~17.2-17.5",
-    nota: "Crecimiento sostenido — 20.3% del export",
+    nota: "Cliente export consolidado, crecimiento sostenido",
   },
   {
-    nombre: "Mixteca + Aztek + Puente + 2",
+    nombre: "6 clientes nuevos export",
     pais: "USA",
-    q1_2025: "$0",
-    q1_2026: "$2.4M",
+    y2025: "$0",
+    y2026: "$3.0M",
     variacion: "Nuevos",
     positivo: true,
-    tc: "Incluye Safari Group y Chavito",
-    nota: "5 clientes nuevos Ene-Jun 2026 — Mixteca lidera con $1.2M",
+    nota: "Mixteca $1.2M · Chavito $0.9M · Aztek, Puente, Safari, Sakia",
+  },
+  {
+    nombre: "La Molienda Mexicana",
+    pais: "USA · MXN",
+    y2025: "$28.1M",
+    y2026: "$15.1M",
+    variacion: "-46.3%",
+    positivo: false,
+    nota: "Menor dependencia de un solo comprador",
   },
 ];
 
 const topProductos = [
-  { nombre: "Papa Diabla 5.5oz La Molienda", venta: "$10.3M" },
-  { nombre: "Papa Salada 5.5oz La Molienda", venta: "$8.0M" },
-  { nombre: "Ranchito con Chile La Molienda", venta: "$1.5M" },
-  { nombre: "Rueda Enchilada 84g C/24", venta: "$1.0M" },
-  { nombre: "Rueda con Salsita 84g C/24", venta: "$1.0M" },
-];
-
-const exportAnual = [
-  { year: "2023", value: "$49.6M", bar: 88 },
-  { year: "2024", value: "$47.0M", bar: 83 },
-  { year: "2025", value: "$56.5M", bar: 100 },
+  { nombre: "Papa Diabla 5.5oz La Molienda", venta: "$7.3M" },
+  { nombre: "Papa Salada 5.5oz La Molienda", venta: "$5.8M" },
+  { nombre: "Rueda Enchilada 84g C/24", venta: "$1.1M" },
+  { nombre: "Rueda con Salsita 84g C/24", venta: "$1.1M" },
+  { nombre: "Ranchito con Chile La Molienda", venta: "$0.9M" },
 ];
 
 export default function Slide5Exportacion() {
@@ -55,17 +46,21 @@ export default function Slide5Exportacion() {
     <SlideWrapper className="bg-[#F5F5F5] p-10">
       <div className="flex items-center gap-3 mb-1">
         <Globe className="w-7 h-7 text-[#F7B500]" />
-        <h2 className="text-3xl font-bold text-gray-800">Exportacion Ene-Jun</h2>
+        <h2 className="text-3xl font-bold text-gray-800">Exportacion: de 2 a 7 compradores</h2>
       </div>
-      <p className="text-gray-500 text-sm mb-5">Ene-Jun 2025: $28.3M → Ene-Jun 2026: $30.0M · <span className="text-[#27AE60] font-semibold">+5.9%</span> · 44.2% del total</p>
+      <p className="text-gray-500 text-sm mb-5">
+        Ene-Jul 2026 · $24.9M exportados · 31.7% de la facturacion total
+      </p>
 
-      <div className="grid grid-cols-3 gap-4 mb-5">
+      <div className="grid grid-cols-3 gap-4 mb-4">
         {clientes.map((c, i) => {
           const color = c.positivo ? "#27AE60" : "#E31837";
           return (
             <div
               key={i}
-              className="rounded-xl p-5 animate-count-up bg-white border border-gray-200 shadow-sm"
+              className={`rounded-xl p-5 animate-count-up bg-white border shadow-sm ${
+                c.positivo ? "border-[#27AE60]/30" : "border-gray-200"
+              }`}
               style={{ animationDelay: `${i * 150}ms` }}
             >
               <div className="flex items-center justify-between mb-3">
@@ -73,23 +68,53 @@ export default function Slide5Exportacion() {
                 <span className="text-gray-500 text-[10px] bg-gray-100 px-2 py-0.5 rounded">{c.pais}</span>
               </div>
               <div className="flex items-baseline gap-2 mb-2">
-                <span className="text-gray-800 text-2xl font-bold">{c.q1_2026}</span>
-                <span className="text-xs font-bold flex items-center gap-0.5" style={{ color }}>
-                  <TrendingUp className="w-3 h-3" />
+                <span className="text-gray-800 text-2xl font-bold">{c.y2026}</span>
+                <span className="text-xs font-bold" style={{ color }}>
                   {c.variacion}
                 </span>
               </div>
-              <p className="text-gray-400 text-[10px] mb-1">Ene-Jun 2025: {c.q1_2025}</p>
-              <p className="text-gray-400 text-[10px]">{c.tc}</p>
-              <p className="text-[#B8860B] text-[10px] mt-2 font-semibold">{c.nota}</p>
+              <p className="text-gray-400 text-[10px] mb-2">Ene-Jul 2025: {c.y2025}</p>
+              <p className="text-[#B8860B] text-[10px] font-semibold leading-relaxed">{c.nota}</p>
             </div>
           );
         })}
       </div>
 
+      <div className="bg-[#27AE60]/5 border-2 border-[#27AE60]/30 rounded-xl px-5 py-4 mb-4">
+        <div className="flex items-center gap-6">
+          <div className="flex items-center gap-2">
+            <TrendingUp className="w-6 h-6 text-[#27AE60]" />
+            <div>
+              <p className="text-[#1E8449] text-sm font-bold">Exportacion fuera de La Molienda</p>
+              <p className="text-gray-500 text-[10px]">El motor de diversificacion real</p>
+            </div>
+          </div>
+          <div className="flex items-center gap-3">
+            <div className="text-center">
+              <p className="text-gray-400 text-[10px]">2025</p>
+              <p className="text-xl font-bold text-gray-600">$6.5M</p>
+              <p className="text-gray-400 text-[10px]">1 cliente</p>
+            </div>
+            <ArrowRight className="w-5 h-5 text-gray-300" />
+            <div className="text-center">
+              <p className="text-gray-400 text-[10px]">2026</p>
+              <p className="text-xl font-bold text-[#27AE60]">$9.8M</p>
+              <p className="text-gray-400 text-[10px]">6 clientes</p>
+            </div>
+            <div className="bg-[#27AE60] text-white rounded-lg px-3 py-1.5 ml-2">
+              <p className="text-lg font-bold">+51%</p>
+            </div>
+          </div>
+          <p className="text-gray-600 text-[11px] leading-relaxed flex-1 border-l border-gray-200 pl-5">
+            En 2025 el 81% de la exportacion dependia de un solo comprador. En 2026 esa dependencia baja
+            a 61% y el riesgo se reparte entre siete cuentas en Estados Unidos.
+          </p>
+        </div>
+      </div>
+
       <div className="grid grid-cols-2 gap-4 flex-1">
         <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-4">
-          <p className="text-gray-500 text-xs mb-3">Top productos exportacion Ene-Jun 2026</p>
+          <p className="text-gray-500 text-xs mb-3">Top productos exportacion Ene-Jul 2026</p>
           <div className="space-y-2.5">
             {topProductos.map((p, i) => (
               <div key={i} className="flex items-center justify-between">
@@ -103,24 +128,31 @@ export default function Slide5Exportacion() {
           </div>
         </div>
         <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-4">
-          <p className="text-gray-500 text-xs mb-3">Exportacion anual (Total M)</p>
-          <div className="space-y-2">
-            {exportAnual.map((d, i) => (
-              <div key={i}>
-                <div className="flex items-center justify-between mb-1">
-                  <span className="text-gray-500 text-xs">{d.year}</span>
-                  <span className="text-gray-800 font-bold text-sm">{d.value}</span>
-                </div>
-                <div className="w-full bg-gray-200 rounded-full h-2">
-                  <div
-                    className="h-2 rounded-full bg-[#F7B500] animate-bar-grow"
-                    style={{ width: `${d.bar}%`, animationDelay: `${i * 150}ms` }}
-                  />
-                </div>
+          <p className="text-gray-500 text-xs mb-3">Compradores de exportacion activos (Ene-Jul)</p>
+          <div className="flex items-end gap-6 h-[100px] px-2">
+            {[
+              { year: "2023", n: 2 },
+              { year: "2024", n: 3 },
+              { year: "2025", n: 2 },
+              { year: "2026", n: 7 },
+            ].map((d, i) => (
+              <div key={i} className="flex-1 flex flex-col items-center justify-end h-full">
+                <span className="text-gray-800 font-bold text-lg mb-1">{d.n}</span>
+                <div
+                  className="w-full rounded-t animate-bar-grow"
+                  style={{
+                    height: `${(d.n / 7) * 70}px`,
+                    backgroundColor: i === 3 ? "#27AE60" : "#D1D5DB",
+                    animationDelay: `${i * 150}ms`,
+                  }}
+                />
+                <span className="text-gray-400 text-[10px] mt-1">{d.year}</span>
               </div>
             ))}
           </div>
-          <p className="text-[#27AE60] text-[10px] mt-3 font-semibold">Export crece +5.9% Ene-Jun — motor de diversificacion activo + 5 clientes nuevos</p>
+          <p className="text-[#27AE60] text-[10px] mt-2 font-semibold">
+            Mayor numero de compradores internacionales en la historia de la compania
+          </p>
         </div>
       </div>
     </SlideWrapper>

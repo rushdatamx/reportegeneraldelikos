@@ -37,6 +37,7 @@ const data = [
   { mes: "Abr 26", alsuper: 3159981, merco: 1245931, lamolienda: 4994678 },
   { mes: "May 26", alsuper: 1859415, merco: 2495887, lamolienda: 2898008 },
   { mes: "Jun 26", alsuper: 2725803, merco: 1679048, lamolienda: 3513155 },
+  { mes: "Jul 26", alsuper: 2868421, merco: 2424613, lamolienda: 1535635 },
 ];
 
 const formatPesos = (v: number) => `$${(v / 1_000_000).toFixed(1)}M`;
@@ -62,8 +63,8 @@ function CustomTooltip({ active, payload, label }: { active?: boolean; payload?:
 export default function Slide11Tendencia() {
   return (
     <SlideWrapper className="bg-[#F5F5F5] p-10">
-      <h2 className="text-3xl font-bold text-gray-800 mb-1">Tendencia Mensual 24 Meses</h2>
-      <p className="text-gray-500 text-sm mb-3">Top 3 clientes por facturacion · Jul 2024 — Jun 2026</p>
+      <h2 className="text-3xl font-bold text-gray-800 mb-1">Tendencia Mensual 25 Meses</h2>
+      <p className="text-gray-500 text-sm mb-3">Top 3 clientes por facturacion · Jul 2024 — Jul 2026</p>
 
       <div className="flex gap-5 mb-3 text-[10px]">
         <div className="flex items-center gap-1.5">
@@ -102,8 +103,8 @@ export default function Slide11Tendencia() {
       </div>
 
       <div className="flex justify-between mt-2 text-[10px] text-gray-500">
-        <span>MERCO: tendencia ascendente sostenida (+55.9% Ene-Jun YoY)</span>
-        <span>La Molienda: estable $2.3-5.0M/mes — cliente ancla de exportacion</span>
+        <span className="font-semibold text-[#27AE60]">MERCO: tendencia ascendente sostenida (+51% Ene-Jul YoY)</span>
+        <span>ALSUPER 2026 corre sobre $3.0M/mes vs $1.9M de corrida normal 2025</span>
       </div>
     </SlideWrapper>
   );
