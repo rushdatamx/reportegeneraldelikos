@@ -166,7 +166,7 @@ export default function Slide6VentasAnuales() {
         </div>
       </div>
 
-      <NotaSlide titulo="Qué muestra este cuadro:">
+      <NotaSlide>
         La facturación mes a mes de los últimos tres años. Lo relevante no es el total, sino el piso:
         el mes más bajo de 2026 ($10.1M) es superior al mes más bajo de 2025 ($9.1M) y al de 2024 ($7.6M).
         Marzo y abril de 2025 son meses altos por pedidos extraordinarios de un cliente, no por corrida normal.

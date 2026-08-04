@@ -5,7 +5,7 @@ export default function NotaSlide({
   children,
   color = "#F7B500",
 }: {
-  titulo: string;
+  titulo?: string;
   children: React.ReactNode;
   color?: string;
 }) {
@@ -14,9 +14,9 @@ export default function NotaSlide({
       className="rounded-lg bg-white/90 border border-gray-200 pl-4 pr-5 py-3 mt-4"
       style={{ borderLeftWidth: "4px", borderLeftColor: color }}
     >
-      <p className="text-gray-800 text-[13px] leading-snug">
-        <span className="font-bold">{titulo}</span>{" "}
-        <span className="text-gray-600">{children}</span>
+      <p className="text-gray-700 text-[13px] leading-snug">
+        {titulo && <span className="font-bold text-gray-800">{titulo} </span>}
+        {children}
       </p>
     </div>
   );

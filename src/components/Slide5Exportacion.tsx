@@ -157,7 +157,7 @@ export default function Slide5Exportacion() {
         </div>
       </div>
 
-      <NotaSlide titulo="Qué muestra este slide:">
+      <NotaSlide>
         El punto es la diversificación. Pasamos de 2 a 7 compradores en el extranjero, y lo que se vende
         fuera de nuestro cliente más grande creció 51%. En 2025 el 81% de la exportación dependía de un solo
         comprador; hoy esa dependencia bajó a 61% y el riesgo está repartido entre siete cuentas.

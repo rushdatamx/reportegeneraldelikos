@@ -130,7 +130,7 @@ export default function Slide4TopProductos() {
         })}
       </div>
 
-      <NotaSlide titulo="Qué muestra este slide:">
+      <NotaSlide>
         MERCO es la cuenta que más crece del año, +51%, y la mitad de su compra es Tostada Roja 70PZ.
         HEB crece +17% impulsado por Durito 20PZ. ALSUPER aparece en −14.8%, pero se compara contra marzo
         y abril de 2025, cuando facturó $15.2M en dos meses por pedidos extraordinarios: su corrida normal

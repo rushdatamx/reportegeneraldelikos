@@ -106,7 +106,7 @@ export default function Slide3Clientes() {
         </div>
       </div>
 
-      <NotaSlide titulo="Qué muestra este slide:">
+      <NotaSlide>
         Aquí se explica la diferencia contra 2025. Si se compara la facturación total, 2025 sale por encima,
         y la razón es un contrato de manufactura para terceros que fue concluyendo hasta cerrar este año.
         Si se compara el negocio base — el de marca propia, que es el negocio recurrente — 2026 está por

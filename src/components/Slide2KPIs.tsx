@@ -120,7 +120,7 @@ export default function Slide2KPIs() {
         </p>
       </div>
 
-      <NotaSlide titulo="Qué muestra este slide:">
+      <NotaSlide>
         El negocio creció 2.6% y hoy tiene más clientes que el año pasado: 33 activos contra 24, y 7 mercados
         de exportación contra 2. Igual de importante que el crecimiento es la regularidad: los siete meses de
         2026 facturaron entre $10.1M y $12.7M, mientras que en 2025 el rango iba de $9.1M a $18.5M. El ingreso
