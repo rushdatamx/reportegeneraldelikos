@@ -9,8 +9,8 @@ const meses = [
   { mes: "Marzo",      y24: 10.5, y25: 18.5, y26: 11.7 },
   { mes: "Abril",      y24: 8.6,  y25: 16.8, y26: 12.7 },
   { mes: "Mayo",       y24: 9.4,  y25: 10.5, y26: 10.1 },
-  { mes: "Junio",      y24: 7.6,  y25: 10.7, y26: 11.0 },
-  { mes: "Julio",      y24: 8.8,  y25: 12.0, y26: 10.9 },
+  { mes: "Junio",      y24: 7.6,  y25: 10.7, y26: 10.9 },
+  { mes: "Julio",      y24: 8.8,  y25: 12.0, y26: 10.8 },
   { mes: "Agosto",     y24: 7.8,  y25: 9.9,  y26: null },
   { mes: "Septiembre", y24: 8.9,  y25: 9.6,  y26: null },
   { mes: "Octubre",    y24: 9.9,  y25: 11.2, y26: null },
@@ -18,7 +18,7 @@ const meses = [
   { mes: "Diciembre",  y24: 8.1,  y25: 10.4, y26: null },
 ];
 
-const totales = { y24: 113.6, y25: 138.6, y26: 78.7 };
+const totales = { y24: 113.6, y25: 138.6, y26: 78.6 };
 const MAX = 19;
 
 const fmt = (v: number) => `$${v.toFixed(1)}M`;
