@@ -15,31 +15,31 @@ const clientes = [
     nota: "Cliente export consolidado, crecimiento sostenido",
   },
   {
-    nombre: "6 clientes nuevos export",
+    nombre: "5 clientes nuevos export",
     pais: "USA",
     y2025: "$0",
-    y2026: "$3.0M",
+    y2026: "$2.4M",
     variacion: "Nuevos",
     positivo: true,
-    nota: "Mixteca $1.2M · Chavito $0.9M · Aztek, Puente, Safari, Sakia",
+    nota: "Mixteca $1.2M · Aztek $0.5M · Puente, Safari, Sakia",
   },
   {
     nombre: "La Molienda Mexicana",
     pais: "USA · MXN",
     y2025: "$28.1M",
-    y2026: "$15.1M",
-    variacion: "-46.3%",
+    y2026: "$23.3M",
+    variacion: "-16.9%",
     positivo: false,
     nota: "Menor dependencia de un solo comprador",
   },
 ];
 
 const topProductos = [
-  { nombre: "Papa Diabla 5.5oz La Molienda", venta: "$7.3M" },
-  { nombre: "Papa Salada 5.5oz La Molienda", venta: "$5.8M" },
-  { nombre: "Rueda Enchilada 84g C/24", venta: "$1.1M" },
-  { nombre: "Rueda con Salsita 84g C/24", venta: "$1.1M" },
-  { nombre: "Ranchito con Chile La Molienda", venta: "$0.9M" },
+  { nombre: "Papa Diabla 5.5oz La Molienda", venta: "$11.0M" },
+  { nombre: "Papa Salada 5.5oz La Molienda", venta: "$8.7M" },
+  { nombre: "Ranchito con Chile La Molienda", venta: "$1.6M" },
+  { nombre: "Rueda Enchilada 84g C/24", venta: "$1.2M" },
+  { nombre: "Rueda con Salsita 84g C/24", venta: "$1.2M" },
 ];
 
 export default function Slide5Exportacion() {
@@ -50,7 +50,7 @@ export default function Slide5Exportacion() {
         <h2 className="text-3xl font-bold text-gray-800">Exportacion: de 2 a 7 compradores</h2>
       </div>
       <p className="text-gray-500 text-sm mb-3">
-        Ene-Jul 2026 · $24.9M exportados · 31.7% de la facturacion total
+        Ene-Jul 2026 · $32.7M exportados · 41.6% de la facturacion total
       </p>
 
       <div className="grid grid-cols-3 gap-4 mb-3">
@@ -99,16 +99,16 @@ export default function Slide5Exportacion() {
             <ArrowRight className="w-5 h-5 text-gray-300" />
             <div className="text-center">
               <p className="text-gray-400 text-[10px]">2026</p>
-              <p className="text-xl font-bold text-[#27AE60]">$9.8M</p>
+              <p className="text-xl font-bold text-[#27AE60]">$9.4M</p>
               <p className="text-gray-400 text-[10px]">6 clientes</p>
             </div>
             <div className="bg-[#27AE60] text-white rounded-lg px-3 py-1.5 ml-2">
-              <p className="text-lg font-bold">+51%</p>
+              <p className="text-lg font-bold">+44%</p>
             </div>
           </div>
           <p className="text-gray-600 text-[11px] leading-relaxed flex-1 border-l border-gray-200 pl-5">
             En 2025 el 81% de la exportacion dependia de un solo comprador. En 2026 esa dependencia baja
-            a 61% y el riesgo se reparte entre siete cuentas en Estados Unidos.
+            a 71% y el riesgo se reparte entre siete cuentas en Estados Unidos.
           </p>
         </div>
       </div>
@@ -159,8 +159,8 @@ export default function Slide5Exportacion() {
 
       <NotaSlide>
         El punto es la diversificación. Pasamos de 2 a 7 compradores en el extranjero, y lo que se vende
-        fuera de nuestro cliente más grande creció 51%. En 2025 el 81% de la exportación dependía de un solo
-        comprador; hoy esa dependencia bajó a 61% y el riesgo está repartido entre siete cuentas.
+        fuera de nuestro cliente más grande creció 44%. En 2025 el 81% de la exportación dependía de un solo
+        comprador; hoy esa dependencia bajó a 71% y el riesgo está repartido entre siete cuentas.
       </NotaSlide>
     </SlideWrapper>
   );
