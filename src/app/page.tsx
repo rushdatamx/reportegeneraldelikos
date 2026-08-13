@@ -11,6 +11,7 @@ import Slide5Exportacion from "@/components/Slide5Exportacion";
 import Slide6VentasAnuales from "@/components/Slide6VentasAnuales";
 import Slide7MexicoExport from "@/components/Slide7MexicoExport";
 import Slide8Highlights from "@/components/Slide8Highlights";
+import Slide9MercadoHighlights from "@/components/Slide9MercadoHighlights";
 import Slide6ABCProductos from "@/components/Slide6ABCProductos";
 import Slide7CrecimientoCaida from "@/components/Slide7CrecimientoCaida";
 import Slide8Concentracion from "@/components/Slide8Concentracion";
@@ -39,6 +40,7 @@ const tabs = [
       Slide7MexicoExport,
       Slide6VentasAnuales,
       Slide8Highlights,
+      Slide9MercadoHighlights,
     ],
   },
   {
