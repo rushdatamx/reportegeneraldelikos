@@ -8,7 +8,7 @@ const meses = [
   { mes: "Febrero",    y24: 8.0,  y25: 9.1,  y26: 11.1 },
   { mes: "Marzo",      y24: 10.5, y25: 18.5, y26: 11.7 },
   { mes: "Abril",      y24: 8.6,  y25: 16.8, y26: 12.7 },
-  { mes: "Mayo",       y24: 9.4,  y25: 10.5, y26: 10.1 },
+  { mes: "Mayo",       y24: 9.4,  y25: 10.5, y26: 10.0 },
   { mes: "Junio",      y24: 7.6,  y25: 10.7, y26: 10.9 },
   { mes: "Julio",      y24: 8.8,  y25: 12.0, y26: 10.8 },
   { mes: "Agosto",     y24: 7.8,  y25: 9.9,  y26: null },
@@ -18,7 +18,7 @@ const meses = [
   { mes: "Diciembre",  y24: 8.1,  y25: 10.4, y26: null },
 ];
 
-const totales = { y24: 113.6, y25: 138.6, y26: 78.6 };
+const totales = { y24: 113.6, y25: 138.6, y26: 78.5 };
 const MAX = 19;
 
 const fmt = (v: number) => `$${v.toFixed(1)}M`;
@@ -118,7 +118,7 @@ export default function Slide6VentasAnuales() {
               {[
                 { año: "2024", val: "$7.6M", color: "text-gray-500" },
                 { año: "2025", val: "$9.1M", color: "text-gray-500" },
-                { año: "2026", val: "$10.1M", color: "text-[#27AE60]" },
+                { año: "2026", val: "$10.0M", color: "text-[#27AE60]" },
               ].map((d, i) => (
                 <div key={i} className="flex items-baseline justify-between">
                   <span className="text-gray-400 text-xs">{d.año}</span>
@@ -136,7 +136,7 @@ export default function Slide6VentasAnuales() {
             {[
               { año: "2024", min: 7.6, max: 14.3, c: "#D1D5DB" },
               { año: "2025", min: 9.1, max: 18.5, c: "#D1D5DB" },
-              { año: "2026", min: 10.1, max: 12.7, c: "#F7B500" },
+              { año: "2026", min: 10.0, max: 12.7, c: "#F7B500" },
             ].map((d, i) => (
               <div key={i} className="mb-3">
                 <div className="flex justify-between text-[10px] mb-1">
@@ -159,7 +159,7 @@ export default function Slide6VentasAnuales() {
             ))}
             <p className="text-gray-500 text-[11px] leading-snug mt-2">
               En 2026 los siete meses caen dentro de un rango de{" "}
-              <span className="font-bold text-gray-700">$2.6M</span>, contra{" "}
+              <span className="font-bold text-gray-700">$2.7M</span>, contra{" "}
               <span className="font-bold text-gray-700">$9.4M</span> en 2025.
             </p>
           </div>
@@ -168,7 +168,7 @@ export default function Slide6VentasAnuales() {
 
       <NotaSlide>
         La facturación mes a mes de los últimos tres años. Lo relevante no es el total, sino el piso:
-        el mes más bajo de 2026 ($10.1M) es superior al mes más bajo de 2025 ($9.1M) y al de 2024 ($7.6M).
+        el mes más bajo de 2026 ($10.0M) es superior al mes más bajo de 2025 ($9.1M) y al de 2024 ($7.6M).
         Marzo y abril de 2025 son meses altos por pedidos extraordinarios de un cliente, no por corrida normal.
       </NotaSlide>
     </SlideWrapper>

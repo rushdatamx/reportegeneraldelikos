@@ -27,8 +27,8 @@ const clientes = [
     nombre: "La Molienda Mexicana",
     pais: "USA · MXN",
     y2025: "$28.1M",
-    y2026: "$23.3M",
-    variacion: "-16.9%",
+    y2026: "$23.2M",
+    variacion: "-17.4%",
     positivo: false,
     nota: "Menor dependencia de un solo comprador",
   },
@@ -36,7 +36,7 @@ const clientes = [
 
 const topProductos = [
   { nombre: "Papa Diabla 5.5oz La Molienda", venta: "$11.0M" },
-  { nombre: "Papa Salada 5.5oz La Molienda", venta: "$8.7M" },
+  { nombre: "Papa Salada 5.5oz La Molienda", venta: "$8.6M" },
   { nombre: "Ranchito con Chile La Molienda", venta: "$1.6M" },
   { nombre: "Rueda Enchilada 84g C/24", venta: "$1.2M" },
   { nombre: "Rueda con Salsita 84g C/24", venta: "$1.2M" },
@@ -50,7 +50,7 @@ export default function Slide5Exportacion() {
         <h2 className="text-3xl font-bold text-gray-800">Exportacion: de 2 a 7 compradores</h2>
       </div>
       <p className="text-gray-500 text-sm mb-3">
-        Ene-Jul 2026 · $32.7M exportados · 41.6% de la facturacion total
+        Ene-Jul 2026 · $32.6M exportados · 41.5% de la facturacion total
       </p>
 
       <div className="grid grid-cols-3 gap-4 mb-3">

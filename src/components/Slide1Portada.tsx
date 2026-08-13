@@ -21,7 +21,7 @@ export default function Slide1Portada() {
         <p className="text-lg text-gray-400">Enero — Julio 2026</p>
         <div className="flex justify-center gap-3 mt-4">
           <div className="px-6 py-2 rounded-full border border-[#F7B500]/50 text-[#B8860B] text-sm font-semibold bg-white/70">
-            $78.6M facturados
+            $78.5M facturados
           </div>
           <div className="px-6 py-2 rounded-full border border-[#2E75B6]/50 text-[#2E75B6] text-sm font-semibold bg-white/70">
             33 clientes activos

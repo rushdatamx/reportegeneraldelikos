@@ -25,9 +25,9 @@ const periodos: Periodo[] = [
   {
     titulo: "2026",
     subtitulo: "Enero a julio · 7 meses",
-    total: "$78.6M",
-    mexico: { monto: "$45.9M", pct: 58.4, clientes: 26 },
-    export: { monto: "$32.7M", pct: 41.6, clientes: 7 },
+    total: "$78.5M",
+    mexico: { monto: "$45.9M", pct: 58.5, clientes: 26 },
+    export: { monto: "$32.6M", pct: 41.5, clientes: 7 },
   },
 ];
 
@@ -156,7 +156,7 @@ export default function Slide7MexicoExport() {
         <p className="text-gray-500 text-[11px] leading-snug">
           Contra el mismo periodo del año anterior, la exportación pasa de{" "}
           <span className="font-bold text-gray-700">39.5%</span> a{" "}
-          <span className="font-bold text-gray-700">41.6%</span> de la facturación,
+          <span className="font-bold text-gray-700">41.5%</span> de la facturación,
           y de <span className="font-bold text-gray-700">2</span> a{" "}
           <span className="font-bold text-gray-700">7</span> compradores.
         </p>

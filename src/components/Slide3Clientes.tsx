@@ -59,7 +59,7 @@ export default function Slide3Clientes() {
                   <ArrowRight className="w-4 h-4 text-gray-300 mt-3" />
                   <div>
                     <p className="text-gray-400 text-[10px]">2026</p>
-                    <p className="text-3xl font-bold text-gray-600">$78.6M</p>
+                    <p className="text-3xl font-bold text-gray-600">$78.5M</p>
                   </div>
                 </div>
               </div>
