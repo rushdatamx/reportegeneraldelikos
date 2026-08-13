@@ -1,7 +1,6 @@
 "use client";
 
 import SlideWrapper from "./SlideWrapper";
-import NotaSlide from "./NotaSlide";
 
 const AZUL = "#2E75B6";
 const GOLD = "#F7B500";
@@ -133,43 +132,31 @@ export default function Slide7MexicoExport() {
         ))}
       </div>
 
-      <div className="bg-white rounded-xl border border-gray-200 shadow-sm px-6 py-3 flex items-center gap-6">
-        <div className="shrink-0">
-          <p className="text-gray-500 text-[11px] mb-0.5">
-            Referencia comparable · Ene-Jul 2025
-          </p>
-          <div className="flex items-baseline gap-2">
-            <span className="text-gray-600 text-sm">
-              Total <span className="font-bold tabular-nums">$88.3M</span>
-            </span>
-            <span className="text-gray-300">·</span>
-            <span className="text-sm tabular-nums" style={{ color: AZUL }}>
-              México <span className="font-bold">60.9%</span>
-            </span>
-            <span className="text-gray-300">·</span>
-            <span className="text-sm tabular-nums" style={{ color: GOLD }}>
-              Exportación <span className="font-bold">39.1%</span>
-            </span>
-          </div>
-        </div>
-        <div className="w-px h-9 bg-gray-200" />
-        <p className="text-gray-500 text-[11px] leading-snug">
-          Contra el mismo periodo del año anterior, la exportación pasa de{" "}
-          <span className="font-bold text-gray-700">39.1%</span> a{" "}
-          <span className="font-bold text-gray-700">41.1%</span> de la facturación,
-          y de <span className="font-bold text-gray-700">2</span> a{" "}
-          <span className="font-bold text-gray-700">7</span> compradores.
+      <div className="bg-white rounded-xl border border-gray-200 shadow-sm px-6 py-4">
+        <p className="text-gray-500 text-[11px] font-semibold uppercase tracking-wide mb-2.5">
+          Highlights
         </p>
+        <div className="grid grid-cols-2 gap-x-8 gap-y-2">
+          {[
+            "Caída en ventas a clientes nacionales y clientes de exportación.",
+            <>
+              Se compensa con <span className="font-bold text-gray-800">5</span>{" "}
+              nuevos clientes de exportación que se han desarrollado y se están
+              desarrollando.
+            </>,
+            "Contamos con 48 proyectos activos y por concretar en los mercados EEUU, Guatemala, República Dominicana y Corea del Sur.",
+            "Desarrollo de 4 cuentas globales en EEUU que cada una de ellas representará entre el 70% y 130% de la venta actual de la compañía.",
+          ].map((txt, i) => (
+            <div key={i} className="flex gap-2.5 items-start">
+              <span
+                className="mt-[6px] w-1.5 h-1.5 rounded-full shrink-0"
+                style={{ backgroundColor: GOLD }}
+              />
+              <p className="text-gray-700 text-[12px] leading-snug">{txt}</p>
+            </div>
+          ))}
+        </div>
       </div>
-
-      <NotaSlide>
-        La mezcla entre mercado nacional y exportación se mantiene estable: cerca de
-        60% México y 40% exportación en ambos periodos. La exportación no es un
-        ingreso ocasional, es una porción estructural del negocio, y este año se
-        reparte entre siete compradores en lugar de dos. Las cifras de 2026
-        corresponden a siete meses (enero a julio), por lo que el total no es
-        comparable contra el año completo de 2025.
-      </NotaSlide>
     </SlideWrapper>
   );
 }
