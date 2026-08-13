@@ -32,9 +32,9 @@ export default function Slide8Highlights() {
         Lo que está compensando y lo que viene
       </p>
 
-      <div className="bg-white rounded-xl border-2 border-[#E31837]/25 shadow-sm px-7 py-5 mb-5 flex items-center gap-4">
-        <TrendingDown className="w-8 h-8 text-[#E31837] shrink-0" />
-        <p className="text-gray-700 text-xl font-semibold">
+      <div className="bg-white rounded-xl border border-gray-300 shadow-sm px-7 py-5 mb-5 flex items-center gap-4">
+        <TrendingDown className="w-8 h-8 text-gray-400 shrink-0" />
+        <p className="text-gray-600 text-xl font-semibold">
           Caída en ventas a clientes nacionales y clientes de exportación.
         </p>
       </div>
