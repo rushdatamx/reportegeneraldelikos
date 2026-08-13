@@ -4,21 +4,21 @@ import SlideWrapper from "./SlideWrapper";
 import NotaSlide from "./NotaSlide";
 
 const meses = [
-  { mes: "Enero",      y24: 14.3, y25: 9.8,  y26: 11.2 },
-  { mes: "Febrero",    y24: 8.0,  y25: 9.1,  y26: 11.1 },
-  { mes: "Marzo",      y24: 10.5, y25: 18.5, y26: 11.7 },
-  { mes: "Abril",      y24: 8.6,  y25: 16.8, y26: 12.7 },
-  { mes: "Mayo",       y24: 9.4,  y25: 10.5, y26: 10.0 },
-  { mes: "Junio",      y24: 7.6,  y25: 10.7, y26: 10.9 },
-  { mes: "Julio",      y24: 8.8,  y25: 12.0, y26: 10.8 },
-  { mes: "Agosto",     y24: 7.8,  y25: 9.9,  y26: null },
-  { mes: "Septiembre", y24: 8.9,  y25: 9.6,  y26: null },
-  { mes: "Octubre",    y24: 9.9,  y25: 11.2, y26: null },
-  { mes: "Noviembre",  y24: 11.7, y25: 10.1, y26: null },
-  { mes: "Diciembre",  y24: 8.1,  y25: 10.4, y26: null },
+  { mes: "Enero",      y25: 10.0, y26: 11.4 },
+  { mes: "Febrero",    y25: 9.2,  y26: 11.2 },
+  { mes: "Marzo",      y25: 18.7, y26: 11.8 },
+  { mes: "Abril",      y25: 16.9, y26: 12.8 },
+  { mes: "Mayo",       y25: 10.6, y26: 10.1 },
+  { mes: "Junio",      y25: 10.8, y26: 11.0 },
+  { mes: "Julio",      y25: 12.2, y26: 10.9 },
+  { mes: "Agosto",     y25: 10.0, y26: null },
+  { mes: "Septiembre", y25: 9.7,  y26: null },
+  { mes: "Octubre",    y25: 11.3, y26: null },
+  { mes: "Noviembre",  y25: 10.2, y26: null },
+  { mes: "Diciembre",  y25: 10.5, y26: null },
 ];
 
-const totales = { y24: 113.6, y25: 138.6, y26: 78.5 };
+const totales = { y25: 140.0, y26: 79.2 };
 const MAX = 19;
 
 const fmt = (v: number) => `$${v.toFixed(1)}M`;
@@ -58,7 +58,7 @@ export default function Slide6VentasAnuales() {
   return (
     <SlideWrapper className="bg-[#F5F5F5] px-10 pt-8 pb-6">
       <h2 className="text-3xl font-bold text-gray-800 mb-1">
-        Ventas mensuales 2024 · 2025 · 2026
+        Ventas mensuales 2025 · 2026
       </h2>
       <p className="text-gray-500 text-sm mb-4">
         Facturación total por mes en millones de pesos (MXN)
@@ -72,7 +72,6 @@ export default function Slide6VentasAnuales() {
                 <th className="text-left py-2 px-3 text-gray-500 text-[11px] font-semibold uppercase tracking-wide">
                   Mes
                 </th>
-                <th className="text-right py-2 px-3 text-gray-500 text-[11px] font-semibold">2024</th>
                 <th className="text-right py-2 px-3 text-gray-500 text-[11px] font-semibold">2025</th>
                 <th className="text-right py-2 px-3 text-[#B8860B] text-[11px] font-bold">2026</th>
               </tr>
@@ -84,16 +83,12 @@ export default function Slide6VentasAnuales() {
                   className={`border-b border-gray-100 ${m.y26 === null ? "opacity-50" : ""}`}
                 >
                   <td className="py-[5px] px-3 text-gray-700 text-sm">{m.mes}</td>
-                  <Celda valor={m.y24} />
                   <Celda valor={m.y25} />
                   <Celda valor={m.y26} destacado />
                 </tr>
               ))}
               <tr className="border-t-2 border-gray-300 bg-gray-50/70">
                 <td className="py-2 px-3 text-gray-800 text-sm font-bold">Total</td>
-                <td className="py-2 px-3 text-right text-gray-700 text-sm font-bold tabular-nums">
-                  {fmt(totales.y24)}
-                </td>
                 <td className="py-2 px-3 text-right text-gray-700 text-sm font-bold tabular-nums">
                   {fmt(totales.y25)}
                 </td>
@@ -102,7 +97,7 @@ export default function Slide6VentasAnuales() {
                 </td>
               </tr>
               <tr>
-                <td className="pt-1 px-3 text-gray-400 text-[10px]" colSpan={3}>
+                <td className="pt-1 px-3 text-gray-400 text-[10px]" colSpan={2}>
                   2026 corresponde a siete meses (enero a julio)
                 </td>
                 <td className="pt-1 px-3 text-right text-gray-400 text-[10px]">7 meses</td>
@@ -116,9 +111,8 @@ export default function Slide6VentasAnuales() {
             <p className="text-gray-500 text-[11px] mb-1">Mes más bajo del año</p>
             <div className="space-y-2 mt-3">
               {[
-                { año: "2024", val: "$7.6M", color: "text-gray-500" },
-                { año: "2025", val: "$9.1M", color: "text-gray-500" },
-                { año: "2026", val: "$10.0M", color: "text-[#27AE60]" },
+                { año: "2025", val: "$9.2M", color: "text-gray-500" },
+                { año: "2026", val: "$10.1M", color: "text-[#27AE60]" },
               ].map((d, i) => (
                 <div key={i} className="flex items-baseline justify-between">
                   <span className="text-gray-400 text-xs">{d.año}</span>
@@ -127,16 +121,15 @@ export default function Slide6VentasAnuales() {
               ))}
             </div>
             <p className="text-[#1E8449] text-[11px] font-semibold mt-3 leading-snug">
-              El piso mensual sube por tercer año consecutivo
+              El piso mensual sube contra el año anterior
             </p>
           </div>
 
           <div className="bg-white rounded-xl border border-gray-200 shadow-sm px-5 py-4 flex-1">
             <p className="text-gray-500 text-[11px] mb-3">Rango del año</p>
             {[
-              { año: "2024", min: 7.6, max: 14.3, c: "#D1D5DB" },
-              { año: "2025", min: 9.1, max: 18.5, c: "#D1D5DB" },
-              { año: "2026", min: 10.0, max: 12.7, c: "#F7B500" },
+              { año: "2025", min: 9.2, max: 18.7, c: "#D1D5DB" },
+              { año: "2026", min: 10.1, max: 12.8, c: "#F7B500" },
             ].map((d, i) => (
               <div key={i} className="mb-3">
                 <div className="flex justify-between text-[10px] mb-1">
@@ -160,16 +153,17 @@ export default function Slide6VentasAnuales() {
             <p className="text-gray-500 text-[11px] leading-snug mt-2">
               En 2026 los siete meses caen dentro de un rango de{" "}
               <span className="font-bold text-gray-700">$2.7M</span>, contra{" "}
-              <span className="font-bold text-gray-700">$9.4M</span> en 2025.
+              <span className="font-bold text-gray-700">$9.5M</span> en 2025.
             </p>
           </div>
         </div>
       </div>
 
       <NotaSlide>
-        La facturación mes a mes de los últimos tres años. Lo relevante no es el total, sino el piso:
-        el mes más bajo de 2026 ($10.0M) es superior al mes más bajo de 2025 ($9.1M) y al de 2024 ($7.6M).
-        Marzo y abril de 2025 son meses altos por pedidos extraordinarios de un cliente, no por corrida normal.
+        La facturación mes a mes contra el año anterior. Lo relevante no es el total, sino el piso: el mes
+        más bajo de 2026 ($10.1M) es superior al mes más bajo de 2025 ($9.2M), y los siete meses del año
+        caen dentro de un rango de $2.7M contra $9.5M en 2025. Marzo y abril de 2025 son meses altos por
+        pedidos extraordinarios de un cliente, no por corrida normal.
       </NotaSlide>
     </SlideWrapper>
   );
