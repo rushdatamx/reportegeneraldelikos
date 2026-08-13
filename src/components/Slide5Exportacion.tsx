@@ -50,7 +50,7 @@ export default function Slide5Exportacion() {
         <h2 className="text-3xl font-bold text-gray-800">Exportacion: de 2 a 7 compradores</h2>
       </div>
       <p className="text-gray-500 text-sm mb-3">
-        Ene-Jul 2026 · $32.6M exportados · 41.5% de la facturacion total
+        Ene-Jul 2026 · $32.5M exportados · 41.1% de la facturacion total
       </p>
 
       <div className="grid grid-cols-3 gap-4 mb-3">
