@@ -18,16 +18,16 @@ const periodos: Periodo[] = [
   {
     titulo: "2025",
     subtitulo: "Año completo · 12 meses",
-    total: "$138.7M",
-    mexico: { monto: "$82.2M", pct: 59.3, clientes: 25 },
-    export: { monto: "$56.5M", pct: 40.7, clientes: 6 },
+    total: "$140.0M",
+    mexico: { monto: "$83.6M", pct: 59.7, clientes: 25 },
+    export: { monto: "$56.5M", pct: 40.3, clientes: 6 },
   },
   {
     titulo: "2026",
     subtitulo: "Enero a julio · 7 meses",
-    total: "$78.5M",
-    mexico: { monto: "$45.9M", pct: 58.5, clientes: 26 },
-    export: { monto: "$32.6M", pct: 41.5, clientes: 7 },
+    total: "$79.2M",
+    mexico: { monto: "$46.6M", pct: 58.9, clientes: 27 },
+    export: { monto: "$32.5M", pct: 41.1, clientes: 7 },
   },
 ];
 
@@ -140,23 +140,23 @@ export default function Slide7MexicoExport() {
           </p>
           <div className="flex items-baseline gap-2">
             <span className="text-gray-600 text-sm">
-              Total <span className="font-bold tabular-nums">$87.5M</span>
+              Total <span className="font-bold tabular-nums">$88.3M</span>
             </span>
             <span className="text-gray-300">·</span>
             <span className="text-sm tabular-nums" style={{ color: AZUL }}>
-              México <span className="font-bold">60.5%</span>
+              México <span className="font-bold">60.9%</span>
             </span>
             <span className="text-gray-300">·</span>
             <span className="text-sm tabular-nums" style={{ color: GOLD }}>
-              Exportación <span className="font-bold">39.5%</span>
+              Exportación <span className="font-bold">39.1%</span>
             </span>
           </div>
         </div>
         <div className="w-px h-9 bg-gray-200" />
         <p className="text-gray-500 text-[11px] leading-snug">
           Contra el mismo periodo del año anterior, la exportación pasa de{" "}
-          <span className="font-bold text-gray-700">39.5%</span> a{" "}
-          <span className="font-bold text-gray-700">41.5%</span> de la facturación,
+          <span className="font-bold text-gray-700">39.1%</span> a{" "}
+          <span className="font-bold text-gray-700">41.1%</span> de la facturación,
           y de <span className="font-bold text-gray-700">2</span> a{" "}
           <span className="font-bold text-gray-700">7</span> compradores.
         </p>
