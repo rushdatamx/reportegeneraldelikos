@@ -153,7 +153,7 @@ export default function Slide6VentasAnuales() {
             <p className="text-gray-500 text-[11px] leading-snug mt-2">
               En 2026 los siete meses caen dentro de un rango de{" "}
               <span className="font-bold text-gray-700">$2.7M</span>, contra{" "}
-              <span className="font-bold text-gray-700">$9.5M</span> en 2025.
+              <span className="font-bold text-gray-700">$9.4M</span> en 2025.
             </p>
           </div>
         </div>
@@ -162,7 +162,7 @@ export default function Slide6VentasAnuales() {
       <NotaSlide>
         La facturación mes a mes contra el año anterior. Lo relevante no es el total, sino el piso: el mes
         más bajo de 2026 ($10.1M) es superior al mes más bajo de 2025 ($9.2M), y los siete meses del año
-        caen dentro de un rango de $2.7M contra $9.5M en 2025. Marzo y abril de 2025 son meses altos por
+        caen dentro de un rango de $2.7M contra $9.4M en 2025. Marzo y abril de 2025 son meses altos por
         pedidos extraordinarios de un cliente, no por corrida normal.
       </NotaSlide>
     </SlideWrapper>
