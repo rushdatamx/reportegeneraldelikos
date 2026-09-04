@@ -18,20 +18,20 @@ export default function Slide1Portada() {
           Resumen Ejecutivo de Ventas
         </h1>
         <p className="text-2xl text-gray-500 font-light">DELIKOS</p>
-        <p className="text-lg text-gray-400">Enero — Julio 2026</p>
+        <p className="text-lg text-gray-400">Enero — Agosto 2026</p>
         <div className="flex justify-center gap-3 mt-4">
           <div className="px-6 py-2 rounded-full border border-[#F7B500]/50 text-[#B8860B] text-sm font-semibold bg-white/70">
-            $78.5M facturados
+            $83.5M facturados
           </div>
           <div className="px-6 py-2 rounded-full border border-[#2E75B6]/50 text-[#2E75B6] text-sm font-semibold bg-white/70">
-            33 clientes activos
+            34 clientes activos
           </div>
           <div className="px-6 py-2 rounded-full border border-[#27AE60]/50 text-[#27AE60] text-sm font-semibold bg-white/70">
             7 mercados de exportación
           </div>
         </div>
         <p className="text-gray-500 text-sm max-w-[720px] mx-auto leading-relaxed pt-4">
-          Este documento resume la facturación de DELIKOS de enero a julio de 2026, comparada contra el
+          Este documento resume la facturación de DELIKOS de enero a agosto de 2026, comparada contra el
           mismo periodo del año anterior. Cada slide incluye una nota que explica qué está mostrando.
         </p>
       </div>

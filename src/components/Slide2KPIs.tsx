@@ -5,35 +5,36 @@ import NotaSlide from "./NotaSlide";
 import { TrendingUp, TrendingDown } from "lucide-react";
 
 const months = [
-  { mes: "Ene", v26: 11.2, v25: 9.8, var: "+14.4%", pos: true },
-  { mes: "Feb", v26: 11.1, v25: 9.1, var: "+21.7%", pos: true },
-  { mes: "Mar", v26: 11.7, v25: 18.5, var: "-37.0%", pos: false },
-  { mes: "Abr", v26: 12.7, v25: 16.8, var: "-24.5%", pos: false },
-  { mes: "May", v26: 10.1, v25: 10.5, var: "-3.9%", pos: false },
-  { mes: "Jun", v26: 11.0, v25: 10.7, var: "+3.2%", pos: true },
-  { mes: "Jul", v26: 10.9, v25: 12.0, var: "-9.2%", pos: false },
+  { mes: "Ene", v26: 10.0, v25: 9.3, var: "+8.3%", pos: true },
+  { mes: "Feb", v26: 10.1, v25: 8.4, var: "+20.5%", pos: true },
+  { mes: "Mar", v26: 11.1, v25: 17.6, var: "-36.5%", pos: false },
+  { mes: "Abr", v26: 10.9, v25: 16.2, var: "-32.4%", pos: false },
+  { mes: "May", v26: 10.1, v25: 9.7, var: "+4.0%", pos: true },
+  { mes: "Jun", v26: 11.0, v25: 10.1, var: "+9.7%", pos: true },
+  { mes: "Jul", v26: 10.9, v25: 11.0, var: "-0.9%", pos: false },
+  { mes: "Ago", v26: 9.2, v25: 8.7, var: "+5.7%", pos: true },
 ];
 
 const kpis = [
-  { label: "Clientes activos", val: "33", sub: "vs 24" },
-  { label: "Facturas emitidas", val: "814", sub: "vs 705" },
-  { label: "Clientes nuevos", val: "16", sub: "$5.1M" },
+  { label: "Clientes activos", val: "34", sub: "vs 26" },
+  { label: "Facturas emitidas", val: "926", sub: "vs 814" },
+  { label: "Clientes nuevos", val: "15", sub: "ene-ago" },
   { label: "Mercados export.", val: "7", sub: "vs 2" },
 ];
 
 export default function Slide2KPIs() {
   return (
     <SlideWrapper className="bg-[#F5F5F5] px-10 pt-8 pb-6">
-      <h2 className="text-3xl font-bold text-gray-800 mb-1">Ventas Ene-Jul 2026</h2>
+      <h2 className="text-3xl font-bold text-gray-800 mb-1">Ventas Ene-Ago 2026</h2>
       <p className="text-gray-500 text-sm mb-4">Facturación DELIKOS · comparativo contra 2025</p>
 
       <div className="flex items-stretch gap-4 mb-4">
         <div className="bg-white rounded-xl border-2 border-[#27AE60]/40 shadow-sm px-7 py-5 animate-count-up">
           <p className="text-gray-500 text-xs mb-1">Ventas del negocio</p>
-          <p className="text-6xl font-bold text-[#27AE60] tracking-tight">$78.4M</p>
+          <p className="text-6xl font-bold text-[#E31837] tracking-tight">$83.5M</p>
           <div className="flex items-center gap-1.5 mt-2">
-            <TrendingUp className="w-5 h-5 text-[#27AE60]" />
-            <span className="text-[#27AE60] text-xl font-bold">+2.6%</span>
+            <TrendingDown className="w-5 h-5 text-[#E31837]" />
+            <span className="text-[#E31837] text-xl font-bold">-8.1%</span>
             <span className="text-gray-400 text-xs">vs 2025</span>
           </div>
         </div>
@@ -78,8 +79,8 @@ export default function Slide2KPIs() {
                 style={{ animationDelay: `${200 + i * 90}ms` }}
               >
                 <div className="flex items-end gap-1 h-[95px]">
-                  <div className="w-8 rounded-t bg-gray-300" style={{ height: `${(m.v25 / 19) * 95}px` }} />
-                  <div className="w-8 rounded-t bg-[#F7B500]" style={{ height: `${(m.v26 / 19) * 95}px` }} />
+                  <div className="w-7 rounded-t bg-gray-300" style={{ height: `${(m.v25 / 19) * 95}px` }} />
+                  <div className="w-7 rounded-t bg-[#F7B500]" style={{ height: `${(m.v26 / 19) * 95}px` }} />
                 </div>
                 <p className="text-gray-800 text-base font-bold mt-2">${m.v26.toFixed(1)}M</p>
                 <div className="flex items-center gap-0.5">
@@ -116,15 +117,13 @@ export default function Slide2KPIs() {
           </p>
         </div>
         <p className="text-gray-500 text-[11px] leading-relaxed border-l border-gray-200 pl-8 flex-1">
-          Marzo y abril 2025 incluyen pedidos extraordinarios de un cliente por $15.2M.
+          Marzo y abril 2025 concentran los picos del comparativo anual.
         </p>
       </div>
 
       <NotaSlide>
-        El negocio creció 2.6% y hoy tiene más clientes que el año pasado: 33 activos contra 24, y 7 mercados
-        de exportación contra 2. Igual de importante que el crecimiento es la regularidad: los siete meses de
-        2026 facturaron entre $10.1M y $12.7M, mientras que en 2025 el rango iba de $9.1M a $18.5M. El ingreso
-        dejó de depender de pedidos extraordinarios.
+        La facturación acumulada enero-agosto fue $83.5M, 8.1% por debajo del mismo periodo de 2025 ($90.9M).
+        Ocho meses de 2026 se ubicaron entre $9.2M y $11.1M; el comparativo 2025 tuvo picos marcados en marzo y abril.
       </NotaSlide>
     </SlideWrapper>
   );

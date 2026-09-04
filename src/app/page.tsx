@@ -29,7 +29,7 @@ import Slide18FDAWholesaleRetail from "@/components/Slide17FDAWholesaleRetail";
 const tabs = [
   {
     id: "q1",
-    label: "Ene-Jul 2026",
+    label: "Ene-Ago 2026",
     color: "#F7B500",
     slides: [
       Slide1Portada,
