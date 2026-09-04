@@ -8,51 +8,51 @@ const clientes = [
   {
     nombre: "MERCO",
     razon: "Operadora Merco",
-    y2025: 9.7,
-    y2026: 14.7,
-    variacion: "+51.2%",
+    y2025: 11.2,
+    y2026: 16.1,
+    variacion: "+43.6%",
     positivo: true,
     topMes: "May 26: $2.5M",
     topProducto: "Tostada Roja 70PZ",
-    topVenta: "$7.5M (51%) · +24% vs 2025",
+    topVenta: "$8.4M (52.3%) · +23.6% vs 2025",
     skus: 40,
     dotColor: "#27AE60",
   },
   {
     nombre: "ALSUPER",
     razon: "Operadora Futurama",
-    y2025: 24.8,
-    y2026: 21.2,
-    variacion: "-14.8%",
+    y2025: 26.9,
+    y2026: 23.6,
+    variacion: "-12.3%",
     positivo: false,
     topMes: "Ene 26: $4.0M",
-    topProducto: "Almendra Entera Domo 250g",
-    topVenta: "$2.2M (10.6%) · +478%",
+    topProducto: "Papa Frita Natural Mimarca 450g",
+    topVenta: "$2.5M (10.6%) · -2.1% vs 2025",
     skus: 41,
     dotColor: "#F7B500",
   },
   {
     nombre: "HEB",
     razon: "Supermercados Internacionales",
-    y2025: 4.0,
-    y2026: 4.7,
-    variacion: "+16.8%",
-    positivo: true,
+    y2025: 5.2,
+    y2026: 5.1,
+    variacion: "-2.1%",
+    positivo: false,
     topMes: "May 26: $1.0M",
     topProducto: "Durito 20 piezas",
-    topVenta: "$2.2M (45.6%) · +47%",
+    topVenta: "$2.4M (47.1%) · +31.6% vs 2025",
     skus: 9,
     dotColor: "#2E75B6",
   },
 ];
 
-const maxVal = 24.8;
+const maxVal = 26.9;
 
 export default function Slide4TopProductos() {
   return (
     <SlideWrapper className="bg-[#F5F5F5] p-10">
       <h2 className="text-3xl font-bold text-gray-800 mb-1">Clientes nacionales principales</h2>
-      <p className="text-gray-500 text-sm mb-5">Ene-Jul 2025 vs 2026 — Facturacion sell-in</p>
+      <p className="text-gray-500 text-sm mb-5">Ene-Ago 2025 vs 2026 — Facturacion sell-in</p>
 
       <div className="grid grid-cols-3 gap-5 flex-1 items-stretch">
         {clientes.map((c, i) => {
@@ -87,7 +87,7 @@ export default function Slide4TopProductos() {
               <div className="space-y-3 mb-4 flex-1 flex flex-col justify-center">
                 <div>
                   <div className="flex justify-between text-[10px] mb-1">
-                    <span className="text-gray-500">Ene-Jul 2025</span>
+                    <span className="text-gray-500">Ene-Ago 2025</span>
                     <span className="text-gray-600 font-semibold">${c.y2025}M</span>
                   </div>
                   <div className="w-full bg-gray-100 rounded-full h-4">
@@ -99,7 +99,7 @@ export default function Slide4TopProductos() {
                 </div>
                 <div>
                   <div className="flex justify-between text-[10px] mb-1">
-                    <span className="text-[#B8860B] font-semibold">Ene-Jul 2026</span>
+                    <span className="text-[#B8860B] font-semibold">Ene-Ago 2026</span>
                     <span className="text-[#B8860B] font-bold">${c.y2026}M</span>
                   </div>
                   <div className="w-full bg-gray-100 rounded-full h-4">
@@ -121,7 +121,7 @@ export default function Slide4TopProductos() {
               </div>
 
               <div className="bg-[#FDF8F0] rounded-lg p-3 border border-[#E8DCC8]">
-                <p className="text-gray-400 text-[10px] mb-1">Producto #1 Ene-Jul 2026</p>
+                <p className="text-gray-400 text-[10px] mb-1">Producto #1 Ene-Ago 2026</p>
                 <p className="text-gray-800 text-sm font-semibold">{c.topProducto}</p>
                 <p className="text-gray-500 text-xs">{c.topVenta}</p>
               </div>
@@ -131,11 +131,9 @@ export default function Slide4TopProductos() {
       </div>
 
       <NotaSlide>
-        MERCO es la cuenta que más crece del año, +51%, y la mitad de su compra es Tostada Roja 70PZ.
-        HEB crece +17% impulsado por Durito 20PZ. ALSUPER aparece en −14.8%, pero se compara contra marzo
-        y abril de 2025, cuando facturó $15.2M en dos meses por pedidos extraordinarios: su corrida normal
-        de 2025 fue $1.9M al mes y este año promedia $3.0M, un 57% por encima. Sigue siendo la cuenta
-        nacional número uno.
+        MERCO es la cuenta nacional que más crece, +43.6%, y más de la mitad de su compra corresponde a
+        Tostada Roja 70PZ. HEB se mantiene prácticamente estable (-2.1%) y ALSUPER es la cuenta nacional
+        más grande con $23.6M; su comparación anual sigue afectada por los picos de marzo y abril de 2025.
       </NotaSlide>
     </SlideWrapper>
   );
