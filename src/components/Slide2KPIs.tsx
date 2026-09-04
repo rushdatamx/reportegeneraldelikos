@@ -29,12 +29,12 @@ export default function Slide2KPIs() {
       <p className="text-gray-500 text-sm mb-4">Facturación DELIKOS · comparativo contra 2025</p>
 
       <div className="flex items-stretch gap-4 mb-4">
-        <div className="bg-white rounded-xl border-2 border-[#27AE60]/40 shadow-sm px-7 py-5 animate-count-up">
+        <div className="bg-white rounded-xl border-2 border-gray-300 shadow-sm px-7 py-5 animate-count-up">
           <p className="text-gray-500 text-xs mb-1">Ventas del negocio</p>
-          <p className="text-6xl font-bold text-[#E31837] tracking-tight">$83.5M</p>
+          <p className="text-6xl font-bold text-gray-800 tracking-tight">$83.5M</p>
           <div className="flex items-center gap-1.5 mt-2">
-            <TrendingDown className="w-5 h-5 text-[#E31837]" />
-            <span className="text-[#E31837] text-xl font-bold">-8.1%</span>
+            <TrendingDown className="w-5 h-5 text-gray-500" />
+            <span className="text-gray-600 text-xl font-bold">-8.1%</span>
             <span className="text-gray-400 text-xs">vs 2025</span>
           </div>
         </div>
