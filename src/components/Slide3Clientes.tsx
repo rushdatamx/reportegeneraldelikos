@@ -6,7 +6,7 @@ import { ArrowRight } from "lucide-react";
 
 const contrato = [
   { year: "2024", value: 29.1, label: "$29.1M" },
-  { year: "2025", value: 11.7, label: "$11.7M" },
+  { year: "2025", value: 10.2, label: "$10.2M" },
   { year: "2026", value: 0.2, label: "$0.2M" },
 ];
 
@@ -46,7 +46,7 @@ export default function Slide3Clientes() {
 
         <div className="flex-1 flex flex-col gap-4">
           <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6">
-            <p className="text-gray-500 text-xs mb-5">Ventas Ene-Jul</p>
+            <p className="text-gray-500 text-xs mb-5">Ventas Ene-Sep</p>
 
             <div className="grid grid-cols-2 gap-6">
               <div>
@@ -54,12 +54,12 @@ export default function Slide3Clientes() {
                 <div className="flex items-center gap-3">
                   <div>
                     <p className="text-gray-400 text-[10px]">2025</p>
-                    <p className="text-3xl font-bold text-gray-600">$87.5M</p>
+                    <p className="text-3xl font-bold text-gray-600">$99.4M</p>
                   </div>
                   <ArrowRight className="w-4 h-4 text-gray-300 mt-3" />
                   <div>
                     <p className="text-gray-400 text-[10px]">2026</p>
-                    <p className="text-3xl font-bold text-gray-600">$78.5M</p>
+                    <p className="text-3xl font-bold text-gray-600">$92.4M</p>
                   </div>
                 </div>
               </div>
@@ -71,15 +71,15 @@ export default function Slide3Clientes() {
                 <div className="flex items-center gap-3">
                   <div>
                     <p className="text-gray-400 text-[10px]">2025</p>
-                    <p className="text-3xl font-bold text-gray-600">$76.4M</p>
+                    <p className="text-3xl font-bold text-gray-600">$89.2M</p>
                   </div>
                   <ArrowRight className="w-4 h-4 text-gray-300 mt-3" />
                   <div>
                     <p className="text-gray-400 text-[10px]">2026</p>
-                    <p className="text-3xl font-bold text-[#27AE60]">$78.4M</p>
+                    <p className="text-3xl font-bold text-[#27AE60]">$92.2M</p>
                   </div>
                 </div>
-                <p className="text-[#27AE60] text-base font-bold mt-1">+2.6%</p>
+                <p className="text-[#27AE60] text-base font-bold mt-1">+3.3%</p>
               </div>
             </div>
           </div>
@@ -91,15 +91,15 @@ export default function Slide3Clientes() {
             <div className="flex gap-4">
               <div className="bg-white rounded-lg px-5 py-3 border border-gray-200 flex-1">
                 <p className="text-gray-400 text-[10px]">Contrato concluido</p>
-                <p className="text-2xl font-bold text-gray-600">$10.9M</p>
+                <p className="text-2xl font-bold text-gray-600">$10.0M</p>
               </div>
               <div className="bg-white rounded-lg px-5 py-3 border border-gray-200 flex-1">
                 <p className="text-gray-400 text-[10px]">Crecimiento del negocio base</p>
-                <p className="text-2xl font-bold text-[#27AE60]">$11.7M</p>
+                <p className="text-2xl font-bold text-[#27AE60]">$3.0M</p>
               </div>
               <div className="bg-white rounded-lg px-5 py-3 border border-gray-200 flex-1">
                 <p className="text-gray-400 text-[10px]">Efecto neto</p>
-                <p className="text-2xl font-bold text-[#27AE60]">+$2.0M</p>
+                <p className="text-2xl font-bold text-gray-600">-$7.0M</p>
               </div>
             </div>
           </div>
