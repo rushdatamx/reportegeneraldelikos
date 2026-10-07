@@ -19,16 +19,16 @@ const periodos: Periodo[] = [
   {
     titulo: "2025",
     subtitulo: "Año completo · 12 meses",
-    total: "$140.0M",
-    mexico: { monto: "$83.6M", pct: 59.7, clientes: 25 },
-    export: { monto: "$56.5M", pct: 40.3, clientes: 6 },
+    total: "$99.4M",
+    mexico: { monto: "$64.3M", pct: 64.7, clientes: 22 },
+    export: { monto: "$35.1M", pct: 35.3, clientes: 5 },
   },
   {
     titulo: "2026",
-    subtitulo: "Enero a julio · 7 meses",
-    total: "$79.2M",
-    mexico: { monto: "$46.6M", pct: 58.9, clientes: 27 },
-    export: { monto: "$32.5M", pct: 41.1, clientes: 7 },
+    subtitulo: "Enero a septiembre · 9 meses",
+    total: "$92.4M",
+    mexico: { monto: "$57.8M", pct: 62.6, clientes: 29 },
+    export: { monto: "$34.6M", pct: 37.4, clientes: 8 },
   },
 ];
 

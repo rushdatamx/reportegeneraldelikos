@@ -13,6 +13,7 @@ const months = [
   { mes: "Jun", v26: 11.0, v25: 10.1, var: "+9.7%", pos: true },
   { mes: "Jul", v26: 10.9, v25: 11.0, var: "-0.9%", pos: false },
   { mes: "Ago", v26: 9.2, v25: 8.7, var: "+5.7%", pos: true },
+  { mes: "Sep", v26: 8.9, v25: 8.6, var: "+3.7%", pos: true },
 ];
 
 const kpis = [
@@ -25,13 +26,13 @@ const kpis = [
 export default function Slide2KPIs() {
   return (
     <SlideWrapper className="bg-[#F5F5F5] px-10 pt-8 pb-6">
-      <h2 className="text-3xl font-bold text-gray-800 mb-1">Ventas Ene-Ago 2026</h2>
+      <h2 className="text-3xl font-bold text-gray-800 mb-1">Ventas Ene-Sep 2026</h2>
       <p className="text-gray-500 text-sm mb-4">Facturación DELIKOS · comparativo contra 2025</p>
 
       <div className="flex items-stretch gap-4 mb-4">
         <div className="bg-white rounded-xl border-2 border-gray-300 shadow-sm px-7 py-5 animate-count-up">
           <p className="text-gray-500 text-xs mb-1">Ventas del negocio</p>
-          <p className="text-6xl font-bold text-gray-800 tracking-tight">$83.5M</p>
+          <p className="text-6xl font-bold text-gray-800 tracking-tight">$92.4M</p>
           <div className="flex items-center gap-1.5 mt-2">
             <TrendingDown className="w-5 h-5 text-gray-500" />
             <span className="text-gray-600 text-xl font-bold">-8.1%</span>
@@ -122,8 +123,8 @@ export default function Slide2KPIs() {
       </div>
 
       <NotaSlide>
-        La facturación acumulada enero-agosto fue $83.5M, 8.1% por debajo del mismo periodo de 2025 ($90.9M).
-        Ocho meses de 2026 se ubicaron entre $9.2M y $11.1M; el comparativo 2025 tuvo picos marcados en marzo y abril.
+        La facturación acumulada enero-septiembre fue $92.4M, 7.1% por debajo del mismo periodo de 2025 ($99.4M).
+        Septiembre aportó $8.9M, 3.7% por encima de septiembre de 2025; marzo y abril de 2025 concentran los picos del comparativo.
       </NotaSlide>
     </SlideWrapper>
   );

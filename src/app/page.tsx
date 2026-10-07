@@ -25,11 +25,19 @@ import Slide15FDAPortada from "@/components/Slide15FDAPortada";
 import Slide16FDAGrossSales from "@/components/Slide15FDAGrossSales";
 import Slide17FDAExportSales from "@/components/Slide16FDAExportSales";
 import Slide18FDAWholesaleRetail from "@/components/Slide17FDAWholesaleRetail";
+import SlideHalloweenHistorico from "@/components/SlideHalloweenHistorico";
+import SlideHalloweenPropuesta from "@/components/SlideHalloweenPropuesta";
 
 const tabs = [
   {
+    id: "halloween",
+    label: "Halloween 2026",
+    color: "#EA580C",
+    slides: [SlideHalloweenHistorico, SlideHalloweenPropuesta],
+  },
+  {
     id: "q1",
-    label: "Ene-Ago 2026",
+    label: "Ene-Sep 2026",
     color: "#F7B500",
     slides: [
       Slide1Portada,
@@ -149,7 +157,7 @@ function HomeInner() {
       }
 
       document.body.removeChild(container);
-      pdf.save(`${tab.label}_DELIKOS_EneJul_2026.pdf`);
+      pdf.save(`${tab.label}_DELIKOS_EneSep_2026.pdf`);
     } catch (err) {
       console.error("Error exporting PDF:", err);
     } finally {

@@ -1,20 +1,9 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
 export const metadata: Metadata = {
-  title: "Q1 2026 vs Q1 2025 — DELIKOS Sell-In",
-  description: "Presentación ejecutiva Q1 2026 — facturación sell-in DELIKOS",
+  title: "Ene-Sep 2026 — DELIKOS Sell-In",
+  description: "Presentación ejecutiva enero-septiembre 2026 — facturación sell-in DELIKOS",
 };
 
 export default function RootLayout({
@@ -24,9 +13,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className="antialiased">
         {children}
       </body>
     </html>
