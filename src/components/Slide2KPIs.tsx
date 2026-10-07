@@ -17,10 +17,10 @@ const months = [
 ];
 
 const kpis = [
-  { label: "Clientes activos", val: "34", sub: "vs 26" },
-  { label: "Facturas emitidas", val: "926", sub: "vs 814" },
-  { label: "Clientes nuevos", val: "15", sub: "ene-ago" },
-  { label: "Mercados export.", val: "7", sub: "vs 2" },
+  { label: "Clientes activos", val: "37", sub: "vs 27" },
+  { label: "Facturas emitidas", val: "1,041", sub: "vs 930" },
+  { label: "Clientes nuevos", val: "10", sub: "ene-sep" },
+  { label: "Mercados export.", val: "8", sub: "vs 5" },
 ];
 
 export default function Slide2KPIs() {
